@@ -1,103 +1,122 @@
-#include <iostream>
 #include <string>
+#include <fstream>
 
 using namespace std;
 
+ofstream out;
 char token;
-//string expression = "3*(4 + 5) * (6 + 7)";
-string expression = "((2))";
+string expression;
 int counter = 0;
 bool error = false;
+
+//function declarations
 void exp();
 void term();
 void factor();
 void number();
 void digit();
 void parse();
-bool isTerminal(char token) {
-	if (isdigit(token) || token == '+' || token == '*' || token == '(' || token == ')' || token == '\0')
-		return true;
-	else
+
+bool printToken(char token) {
+	if (token == '+' || token == '*' || token == '(' || token == ')' || token == '\0')
 		return false;
+	else
+		return true;
 }
 
-void getToken() {		
+void getToken() {
 	token = expression[counter];
+	//if there's a space, ignore
 	if (token == ' ') {
 		counter++;
 		token = expression[counter];
 	}
+	//no need to print new line on first call
 	if (counter == 0)
-		cout << "<getToken> " << token;
+		out << "<getToken> " << token;
 	else if (counter < expression.length())
-		cout << endl << "<getToken> " << token;
-	counter++;	
+		out << endl << "<getToken> " << token;
+	counter++;
 }
 
 void exp() {
-	if(isTerminal(token))
-		cout << " <exp> ";
+	if(printToken(token))
+		out << " <exp> ";
 	term();
 	while (token == '+') {
 		getToken();
 		term();
-	}	
+	}
 }
 
 void term() {
-	if (isTerminal(token))
-		cout << " <term> ";
+	if(printToken(token))
+		out << " <term> ";
 	factor();
-	while (token == '*') {		
+	while (token == '*') {
 		getToken();
 		factor();
-	}	
+	}
 }
 
 void factor() {
-	if (isTerminal(token))
-		cout << " <factor> ";
+	if(printToken(token))
+		out << " <factor> ";
 	if (token == '(') {
 		getToken();
-		cout << " <factor> ";
+		if(printToken(token))
+			out << " <factor> ";
 		exp();
 		if (token == ')')
 			getToken();
-		else 
+		else
 			error = true;
-	}	
-	number();
+	}
+		number();
 }
 
 void number() {
-	if (isTerminal(token))
-		cout << " <number> ";	
+	if(printToken(token))
+		out << " <number> ";
 	while (isdigit(token))
-		digit();	
+		digit();
 }
 
 void digit() {
-	if (isTerminal(token))
-		cout << " <digit> ";
-	if (isdigit(token)) 
+	if(printToken(token))
+		out << " <digit> ";
+	if (isdigit(token))
 		getToken();
 	else {
-		error = true;
-		cout << "Expected Digit" << endl;
-	}	
+		error = false;
+	}
 }
 
 void parse() {
-	cout << "<parse>" << endl;
+	out << "<parse>" << endl;
 	getToken();
 	exp();
 }
 
 
-int main() {	
-	parse();
-	if (error) cout << endl << "Parse failed." << endl;
-	else cout << endl << "Parsed Correctly!" << endl;
-	cin.get();
+int main() {
+	ifstream in;
+	in.open("input.txt");
+	out.open("output.txt");
+	while(!in.eof()) {
+		getline(in, expression);
+		if(expression != "") {
+			parse();
+			if (error) out << endl << "Parse failed..." << endl;
+			else out << endl << "Parsed Correctly!" << endl;
+			//renint variables
+			counter = 0;
+			error = false;
+			out << endl;
+		}
+	}
+
+	in.close();
+	out.close();
 	return 0;
 }
