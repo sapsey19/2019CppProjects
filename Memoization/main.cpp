@@ -10,7 +10,10 @@
 	Date: 10/6/2019
 	Program: Calculates the Longest Increasing Subsequence from a given file, and prints out both the length, and the 
 	subsequence itself.
-	Credit to: https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/ for help with algorithm
+	The input file should be structued like this:
+		15 10/09/2019
+		7, 3, 11, 1, 9, 5, 13, 2, 8, 4, 12, 2, 10, 6, 14
+	Credit to: https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/ for help with understanding the algorithm
 */
 
 using namespace std;
@@ -18,7 +21,7 @@ using namespace std;
 void printLIS(vector<int>& arr);
 void findLIS(vector<int>& vect);
 
-int main() {
+int main() {	
 	ifstream in;
 	in.open("input.txt");
 	vector<int> vect;
@@ -50,8 +53,10 @@ void printLIS(vector<int>& vect) {
 void findLIS(vector<int>& vect) {
 	vector<vector<int>> LIS(vect.size());
 	LIS[0].push_back(vect.at(0));
-
-	//Time complexity is O(n^2), as there are two nested for loops
+	/*
+		Time complexity is O(n^2), as there are two nested for loops
+		that loop through our vector of integers. 
+	*/
 	for (int i = 1; i < vect.size(); i++)	{	
 		for (int j = 0; j < i; j++)	{		
 			if ((vect.at(i) > vect.at(j)) && (LIS[i].size() < LIS[j].size() + 1))
@@ -66,6 +71,5 @@ void findLIS(vector<int>& vect) {
 			max = x;
 		}
 	}
-
 	printLIS(max);
 }
