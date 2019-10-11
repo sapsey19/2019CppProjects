@@ -1,0 +1,78 @@
+<parse>
+<getToken> (
+<getToken> (
+<getToken> 2 <factor>  <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> )
+<getToken> )
+Parsed correctly!
+
+<parse>
+<getToken> 3 <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> +
+<getToken> 4 <term>  <factor>  <number>  <digit> 
+<getToken> *
+<getToken> 5 <factor>  <number>  <digit> 
+<getToken> +
+<getToken> 6 <term>  <factor>  <number>  <digit> 
+<getToken> *
+<getToken> 7 <factor>  <number>  <digit> 
+Parsed correctly!
+
+<parse>
+<getToken> 3 <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> *
+<getToken> 2 <factor>  <number>  <digit> 
+<getToken> +
+<getToken> 4 <term>  <factor>  <number>  <digit> 
+<getToken> *
+<getToken> 5 <factor>  <number>  <digit> 
+<getToken> +
+<getToken> 1 <term>  <factor>  <number>  <digit> 
+Parsed correctly!
+
+<parse>
+<getToken> 3 <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> *
+<getToken> (
+<getToken> 4 <factor>  <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> +
+<getToken> 5 <term>  <factor>  <number>  <digit> 
+<getToken> )
+<getToken> *
+<getToken> (
+<getToken> 6 <factor>  <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> +
+<getToken> 7 <term>  <factor>  <number>  <digit> 
+<getToken> )
+Parsed correctly!
+
+<parse>
+<getToken> (
+<getToken> 2 <factor>  <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> +
+<getToken> (
+<getToken> 3 <factor>  <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> *
+<getToken> (
+<getToken> 4 <factor>  <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> +
+<getToken> 5 <term>  <factor>  <number>  <digit> 
+<getToken> )
+<getToken> )
+<getToken> )
+Parsed correctly!
+
+<parse>
+<getToken> (
+<getToken> 2 <factor>  <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> +
+<getToken> 3 <term>  <factor>  <number>  <digit> 
+<getToken> )
+<getToken> *
+Parse failed: Expected digit
+
+<parse>
+<getToken> 2 <exp>  <term>  <factor>  <number>  <digit> 
+<getToken> +
+Parse failed: Expected digit
+

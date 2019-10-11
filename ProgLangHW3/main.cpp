@@ -7,7 +7,7 @@ ofstream out;
 char token;
 string expression;
 int counter = 0;
-bool error = false;
+int error = 0;
 
 //function declarations
 void exp();
@@ -16,13 +16,6 @@ void factor();
 void number();
 void digit();
 void parse();
-
-bool printToken(char token) {
-	if (token == '+' || token == '*' || token == '(' || token == ')' || token == '\0')
-		return false;
-	else
-		return true;
-}
 
 void getToken() {
 	token = expression[counter];
@@ -40,7 +33,7 @@ void getToken() {
 }
 
 void exp() {
-	if(printToken(token))
+	if(isdigit(token))
 		out << " <exp> ";
 	term();
 	while (token == '+') {
@@ -50,7 +43,7 @@ void exp() {
 }
 
 void term() {
-	if(printToken(token))
+	if(isdigit(token))
 		out << " <term> ";
 	factor();
 	while (token == '*') {
@@ -60,36 +53,37 @@ void term() {
 }
 
 void factor() {
-	if(printToken(token))
+	if(isdigit(token))
 		out << " <factor> ";
 	if (token == '(') {
 		getToken();
-		if(printToken(token))
+		if(isdigit(token))
 			out << " <factor> ";
 		exp();
 		if (token == ')')
 			getToken();
-		else
-			error = true;
+		else 
+			error = 1;
 	}
+	else
 		number();
 }
 
 void number() {
-	if(printToken(token))
+	if(isdigit(token))
 		out << " <number> ";
+	digit();
 	while (isdigit(token))
-		digit();
+		digit();	
 }
 
 void digit() {
-	if(printToken(token))
+	if(isdigit(token))
 		out << " <digit> ";
 	if (isdigit(token))
 		getToken();
-	else {
-		error = false;
-	}
+	else 
+		error = 2;
 }
 
 void parse() {
@@ -97,7 +91,6 @@ void parse() {
 	getToken();
 	exp();
 }
-
 
 int main() {
 	ifstream in;
@@ -107,8 +100,14 @@ int main() {
 		getline(in, expression);
 		if(expression != "") {
 			parse();
-			if (error) out << endl << "Parse failed..." << endl;
-			else out << endl << "Parsed Correctly!" << endl;
+			switch (error) {
+				case 0: out << endl << "Parsed correctly!" << endl;
+						break;
+				case 1: out << endl << "Parse failed: Expected closing parentheses" << endl;
+						break;
+				case 2: out << endl << "Parse failed: Expected digit" << endl;
+						break;
+			}
 			//renint variables
 			counter = 0;
 			error = false;
