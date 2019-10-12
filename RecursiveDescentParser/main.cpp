@@ -41,12 +41,8 @@ class Tokenizer{
           return Token(MULTIPLICATIVE_OP,sm[1]);
         if (regex_match(remaining,sm,regex("(not).*"))) 
           return Token(UNARY_OP,sm[1]);
-        if (regex_match(remaining,sm,regex("([0-9]+).*"))) {
-			//cout << "Number" << endl;
-			//cout << "sm.str(): " << sm.str() << endl;
-			//cout << "sm[1]: " << sm[1] << endl;
-		  return Token(UNSIGNED_INT,sm[1]);
-		}
+        if (regex_match(remaining,sm,regex("([0-9]+).*"))) 
+		      return Token(UNSIGNED_INT,sm[1]);	    	
         if (regex_match(remaining,sm,regex("(\\().*"))) 
           return Token(OPEN_PAREN,sm[1]);
         if (regex_match(remaining,sm,regex("(\\)).*"))) 
