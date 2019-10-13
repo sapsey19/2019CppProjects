@@ -24,10 +24,12 @@ class Tokenizer{
     int getPosition() {
         return pos;
     }
+
     void start(string newLine) {
         line=newLine;
         pos=0;
     }
+
     Token peek() {
         smatch sm;
         string remaining=line.substr(pos);
@@ -51,6 +53,7 @@ class Tokenizer{
 //          return Token(UNSIGNED_REAL,sm.str());
         return Token();
     }
+
     Token next() {
         Token t;
         t=peek();
@@ -68,22 +71,23 @@ class ExpressionTree{
         left=newLeft;
         right=newRight;
     }
+
     void showRPN(ostream &out) {
         if (left!=NULL) left->showRPN(out);
         if (right!=NULL) right->showRPN(out);
         out << operation.value;
     }
+
     void show(ostream &out) {
         if (left!=NULL) {
-			left->show(out);
-			out << "<--";
-		}
+			  left->show(out);
+			  out << "<--";
+	  	}
         out << "[" <<operation.value<<"]"; 
         if (right!=NULL) {
-			out <<
-			"-->";
-			right->show(out);
-		}
+			  out << "-->";
+			  right->show(out);
+		  }
     }
 };
 
@@ -95,33 +99,57 @@ class Parser{
         return multiplicativeExpression(tree);
     }
     bool additiveExpression(ExpressionTree &tree) {
-        return false;
+        ExpressionTree *subtree = new ExpressionTree();
+        ExpressionTree *left = nullptr;
+        Token last;
+        Token next = tokenizer.peek();
+        while(unaryExpression(*subtree)) {
+          next = tokenizer.peek();
+          if(!(next.type == ADDITIVE_OP)) {
+            break;
+          }
+          else {
+            next = tokenizer.peek();
+            if(left != nullptr)
+              left = new ExpressionTree(last, left, subtree);
+            else {
+              left = subtree;
+              subtree = new ExpressionTree();
+              last = next;
+            }
+          }
+        }
+      if(left != nullptr) {
+        left = new ExpressionTree(last, left, subtree);
+      }
+      return next.type == EOL;
     }
     bool multiplicativeExpression(ExpressionTree &tree) {
 	    ExpressionTree *subtree=new ExpressionTree();		
 	    ExpressionTree *left=NULL;
 	    Token last;
 	    Token next=tokenizer.peek();
-		while (unaryExpression(*subtree)) {
+		  while (unaryExpression(*subtree)) {
 			// Do something with sub tree
-			next=tokenizer.peek();
-			if (!(next.type==MULTIPLICATIVE_OP))
-			  break;
-			else {
-			  next=tokenizer.next();
-			  if (left!=NULL)
-				  left=new ExpressionTree(last,left,subtree);
-			  else 
-			    left=subtree;
-			  subtree=new ExpressionTree();
-			  last=next;
-			}
-		}
-		if (left!=NULL) {
-			tree=ExpressionTree(last,left,subtree);
-		}
-		return next.type==EOL;
+			  next=tokenizer.peek();
+			  if (!(next.type==MULTIPLICATIVE_OP))
+			    break;
+			  else {
+			    next=tokenizer.next();
+			    if(left!=NULL)
+				    left=new ExpressionTree(last,left,subtree);
+			    else 
+			      left=subtree;
+			      subtree=new ExpressionTree();
+			      last=next;
+			  }
+		  }
+		  if (left!=NULL) {
+			  tree=ExpressionTree(last,left,subtree);
+	  	}
+		  return next.type==EOL;
     }
+
     bool unaryExpression(ExpressionTree &tree) {
 		Token next=tokenizer.peek();
 		if (next.type==UNARY_OP || next.type==PLUSMINUS_OP) {
@@ -138,54 +166,59 @@ class Parser{
 		} else error="Expected a unary expression";
         return false;
     }
+
     bool primaryExpression(ExpressionTree &tree) {
         Token next=tokenizer.next();
         if (next.type==OPEN_PAREN) {
-			cout << "Open Paren" << endl;
-            ExpressionTree subtree;
-            if (expression(subtree)){
-              next=tokenizer.next();
-              if (next.type!=CLOSE_PAREN)
-			   	error="Syntax error missing )";
-              else {
-                tree=subtree;
-                cout << "Yeah" << endl;
-                return true;
-              }
-            } else
-				error="Expected expression after (";
+			    cout << "Open Paren" << endl;
+          ExpressionTree subtree;
+          if (expression(subtree)){
+            next=tokenizer.next();
+            if (next.type!=CLOSE_PAREN)
+			   	  error="Syntax error missing )";
+            else {
+              tree=subtree;
+              cout << "Yeah" << endl;
+              return true;
+            }
+          } 
+        else
+				  error="Expected expression after (";
         }
         else if (next.type==UNSIGNED_INT) {
-			cout << "uint" << endl;
-            tree=ExpressionTree(next); // Just a leaf with an Unsigned Int
-			next = tokenizer.next();
-			if(next.type == PLUSMINUS_OP) {
-				cout << "plus/minus" << endl;
-				next = tokenizer.next();
+			    cout << "uint" << endl;
+          tree=ExpressionTree(next); // Just a leaf with an Unsigned Int
+			    next = tokenizer.next();
+			  if(next.type == PLUSMINUS_OP) {
+				  cout << "plus/minus" << endl;
+				  next = tokenizer.next();
 				if(next.type == UNSIGNED_INT) {
 					cout << "uint" << endl;
 				}
 				else
 					error = "Expected Integer after Operator";
-			}
-            return true;
+			  }
+          return true;
         }
         else if (next.type==UNSIGNED_REAL) {
-			cout << "ureal" << endl;
-            tree=ExpressionTree(next); // Just a leaf with an Unsigned Real
-            return true;
+			    cout << "ureal" << endl;
+          tree=ExpressionTree(next); // Just a leaf with an Unsigned Real
+          return true;
         }
-        else error="Syntax error expected a primary expression";
-        return false;
-    }
+          else error="Syntax error expected a primary expression";
+          return false;
+      }
     ExpressionTree scan(string s){
         ExpressionTree tree; // Empty Tree Really
         tokenizer.start(s);
-        if (primaryExpression(tree)) {
-            return tree;
-        } else {
-          cerr << error << ":" << tokenizer.getPosition() << endl;
+        if (primaryExpression(tree))
+          return tree;
+        if(additiveExpression(tree)) {
+          cout << "Additive Expression" << endl;
+          return tree;
         }
+        else 
+          cerr << error << ":" << tokenizer.getPosition() << endl;
         return ExpressionTree();
     }
 };
@@ -216,6 +249,9 @@ int main() {
   }*/
   ExpressionTree t=p.scan("1+2");
   t.show(cout);
+  cout << endl;
+  t.showRPN(cout);
+  cout << endl;
   return 0;
 }
 
