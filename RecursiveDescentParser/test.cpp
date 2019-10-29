@@ -6,6 +6,7 @@
 
 using namespace std;
 
+#define DEBUG true
 class Token {
 public:
     enum Type { UNSIGNED_INT, UNSIGNED_REAL, RELATIONAL_OP, LOGICAL_AND, LOGICAL_OR, 
@@ -84,8 +85,7 @@ public:
 
             while(remaining[0] == ' ')
                 remaining = remaining.substr(1);
-            
-            /*
+
             if (regex_match(remaining, sm, regex("((<=)|(=>)|(<>)|=|<|>).*"))) 
                 tokens.emplace_back(Token::RELATIONAL_OP, sm[1], count);
             else if (regex_match(remaining, sm, regex("(\\+|-).*")))
@@ -98,11 +98,8 @@ public:
                 tokens.emplace_back(Token::MULTIPLICATIVE_OP, sm[1], count);
             else if(regex_match(remaining, sm, regex("(not).*")))
                 tokens.emplace_back(Token::LOGICAL_NOT, sm[1], count);
-            else if(regex_match(remaining, sm, regex("([0-9]+\\.[0-9]+[Ee][+-]?[0-9]+)?).*")))
+            else if(regex_match(remaining, sm, regex("([0-9]+\\.[0-9]+([Ee][+-]?[0-9]+)?).*")))
                 tokens.emplace_back(Token::UNSIGNED_REAL, sm[1], count);
-            */
-            if (regex_match(remaining, sm, regex("(\\+|-).*")))
-                tokens.emplace_back(Token::PLUS_MINUS, sm[1], count);
             else if(regex_match(remaining, sm, regex("([0-9]+).*")))
                 tokens.emplace_back(Token::UNSIGNED_INT, sm[1], count);
             else if(regex_match(remaining, sm, regex("(\\().*")))
@@ -176,10 +173,11 @@ class RecursiveDescent {
     }
 
     bool additiveExpression(Tree *&t) {
+        if(DEBUG) cout << "additiveExpression" << endl;
         Tree *subtree = new Tree();
         Tree *left = nullptr;
         Token last, next;
-        while(additiveExpression(subtree)) {
+        while(multiplicativeExpression(subtree)) {
             next = tokens.peek();
             if(!(next.type == Token::PLUS_MINUS || next.type == Token::LOGICAL_OR)) {
                 break;
@@ -202,10 +200,11 @@ class RecursiveDescent {
     }
 
      bool multiplicativeExpression(Tree *&t) {
+         if(DEBUG) cout << "multiplicativeExpression" << endl;
         Tree *subtree = new Tree();
         Tree *left = nullptr;
         Token last, next;
-        while(additiveExpression(subtree)) {
+        while(unaryExpression(subtree)) {
             next = tokens.peek();
             if(!(next.type == Token::MULTIPLICATIVE_OP || next.type == Token::LOGICAL_AND)) {
                 break;
@@ -228,6 +227,7 @@ class RecursiveDescent {
     }
 
     bool unaryExpression(Tree *&t) {
+        if(DEBUG) cout << "unaryExpression" << endl;
         Token operation = tokens.peek();
         if(operation.type == Token::PLUS_MINUS || operation.type == Token::LOGICAL_NOT) {
             Tree *subtree = new Tree();
@@ -241,6 +241,7 @@ class RecursiveDescent {
     }
 
     bool primaryExpression(Tree *&t) {
+        if(DEBUG) cout << "primaryExpression" << endl;
         Token primary;
         primary = tokens.next();       
         if(primary.type == Token::UNSIGNED_INT || primary.type == Token::UNSIGNED_REAL) {
