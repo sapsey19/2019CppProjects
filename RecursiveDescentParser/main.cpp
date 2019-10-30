@@ -17,23 +17,27 @@
 
 using namespace std;
 
+#define DEBUG false
 //Token types
-typedef enum { PLUSMINUS_OP,RELATIONAL_OP,ADDITIVE_OP,MULTIPLICATIVE_OP,UNARY_OP,UNSIGNED_INT,UNSIGNED_REAL,OPEN_PAREN,CLOSE_PAREN,EOL } TokenType;
+typedef enum { PLUSMINUS_OP, RELATIONAL_OP, ADDITIVE_OP, MULTIPLICATIVE_OP, UNARY_OP, 
+    UNSIGNED_INT, UNSIGNED_REAL, OPEN_PAREN, CLOSE_PAREN, EOL } TokenType;
 
 class Token {
-    public:
+public:
     TokenType type;
     string value;
-    Token(TokenType newType=EOL,string newValue="") {
-      type=newType;
-      value=newValue;
+    Token(TokenType newType=EOL, string newValue="") {
+        type=newType;
+        value=newValue;
     }
 };
 
 class Tokenizer{
     string line;
     int pos;
-    public:
+    vector<Token> tokenList;
+    vector<Token>::iterator it;
+public:
     int getPosition() {
         return pos;
     }
@@ -43,68 +47,96 @@ class Tokenizer{
         pos=0;
     }
 
+    void tokenize(string line) {
+        string token;
+        smatch sm;
+        string remaining = line;
+        int count = 1;       
+        while(!remaining.empty()) {
+            if(regex_match(remaining, sm, regex("(\\+|-).*")))            
+                tokenList.emplace_back(ADDITIVE_OP, sm[1]);
+            else if(regex_match(remaining, sm, regex("([0-9]+\\.[0-9]+([Ee][+-]?[0-9]+)?).*")))
+                tokenList.emplace_back(UNSIGNED_REAL, sm[1]);            
+            else if(regex_match(remaining, sm, regex("([0-9]+).*")))
+		        tokenList.emplace_back(UNSIGNED_INT, sm[1]);            
+            else if(regex_match(remaining, sm, regex("(<|<=|=|=>|>|<>).*")))
+                 tokenList.emplace_back(RELATIONAL_OP, sm[1]);
+            //else if (regex_match(remaining, sm, regex("(or).*")))
+                //return Token(ADDITIVE_OP,sm[1]);
+            else if(regex_match(remaining,sm,regex("(\\*|/|div|mod|and).*")))
+                tokenList.emplace_back(MULTIPLICATIVE_OP, sm[1]);
+            //if (regex_match(remaining,sm,regex("(not).*")))
+                //return Token(UNARY_OP,sm[1]);
+            else if(regex_match(remaining,sm,regex("(\\().*"))) 
+                tokenList.emplace_back(OPEN_PAREN,sm[1]);            
+            else if(regex_match(remaining,sm,regex("(\\)).*")))
+                tokenList.emplace_back(CLOSE_PAREN,sm[1]); 
+            remaining = remaining.substr(sm[1].length());
+            count++;
+        }
+        it = tokenList.begin();
+    }
+
     //Function peek grabs next token, doesn't eat it.
     //Function next grabs next token and eats it.
     Token peek() {
-        smatch sm;
-        string remaining=line.substr(pos);
-        if (regex_match(remaining,sm,regex("(\\+|-).*")))
-          return Token(PLUSMINUS_OP,sm[1]);
-        if (regex_match(remaining,sm,regex("(<|<=|=|=>|>|<>).*")))
-          return Token(RELATIONAL_OP,sm[1]);
-        if (regex_match(remaining,sm,regex("(or).*")))
-          return Token(ADDITIVE_OP,sm[1]);
-        if (regex_match(remaining,sm,regex("(\\*|/|div|mod|and).*")))
-          return Token(MULTIPLICATIVE_OP,sm[1]);
-        if (regex_match(remaining,sm,regex("(not).*")))
-          return Token(UNARY_OP,sm[1]);
-        if (regex_match(remaining,sm,regex("([0-9]+).*")))
-		      return Token(UNSIGNED_INT,sm[1]);
-        if (regex_match(remaining,sm,regex("(\\().*")))
-          return Token(OPEN_PAREN,sm[1]);
-        if (regex_match(remaining,sm,regex("(\\)).*")))
-          return Token(CLOSE_PAREN,sm[1]);
-        //TODO: complete type-matching for unsigned reals
-//        if (regex_match(remaining,sm,regex("[0-9]+")))
-//          return Token(UNSIGNED_REAL,sm.str());
-        return Token();
+        if(it<tokenList.end())
+            return (*it);
+        else {
+            Token t;
+            t.type = EOL;
+            t.value = "$";
+            return t;
+        }
     }
 
     Token next() {
         Token t;
-        t=peek();
-        pos+=t.value.size();
+        if(it < tokenList.end()) {
+            t = *it;
+            it++;
+        }
+        else {
+            t.type = EOL;
+            t.value = "$";
+        }
         return t;
     }
 };
 
 //ExpressionTree should store members of the expression in a binary tree
 class ExpressionTree{
-    ExpressionTree *left,*right;
+    ExpressionTree *left, *right;
     Token operation;
-    public:
-    ExpressionTree(Token t=Token(),ExpressionTree *newLeft=NULL,ExpressionTree *newRight=NULL){
-        operation=t;
-        left=newLeft;
-        right=newRight;
+public:
+    ExpressionTree(Token t = Token(), ExpressionTree *newLeft=nullptr, ExpressionTree *newRight=nullptr) {
+        operation = t;
+        left = newLeft;
+        right = newRight;
+    }
+
+    ExpressionTree(ExpressionTree *tree) {
+        operation = tree->operation;
+        left = tree->left;
+        right = tree->right;
     }
 
     void showRPN(ostream &out) {
-      //postfix traversal of the tree
-        if (left!=NULL)
+      //postfix traversal of the tree  
+        if (left!=nullptr)
             left->showRPN(out);
-        if (right!=NULL)
+        if (right!=nullptr)
             right->showRPN(out);
-        out << operation.value;
+        out << operation.value << " ";
     }
 
     void show(ostream &out) {
-        if (left!=NULL) {
+        if (left!=nullptr) {
 			  left-> show(out);
 			  out << "<--";
 	  	}
         out << "[" << operation.value << "]";
-        if (right!=NULL) {
+        if (right!=nullptr) {
 			  out << "-->";
 			  right->show(out);
 		  }
@@ -116,164 +148,187 @@ class Parser {
     string error;
     public:
 
-    bool expression(ExpressionTree &tree) {
-        return multiplicativeExpression(tree);
+    bool expression(ExpressionTree &tree) {        
+        ExpressionTree *subtree = new ExpressionTree();
+        ExpressionTree *left = new ExpressionTree();
+        Token last;
+        Token next;
+        while(additiveExpression(*subtree)) {
+            next = tokenizer.peek();
+            if (DEBUG) cout << "expression: " << next.value << endl;
+            if(!(next.type == RELATIONAL_OP))
+                break;
+            else {
+                next = tokenizer.next();
+                if(left != nullptr)
+                    left = new ExpressionTree(*subtree);
+                subtree = new ExpressionTree();
+                last = next;
+            }
+        }
+        if(left != nullptr)
+            tree = new ExpressionTree(last, left, subtree);
+        else 
+            tree = new ExpressionTree(*subtree);
     }
 
     bool additiveExpression(ExpressionTree &tree) {
-        cout << "started additive" << endl;
         ExpressionTree *subtree = new ExpressionTree();
-        ExpressionTree *left = NULL;
+        ExpressionTree *left = nullptr;
         Token last;
-        Token next = tokenizer.peek();
-        while(unaryExpression(*subtree)) {
+        Token next;
+        while(multiplicativeExpression(*subtree)) {
             next = tokenizer.peek();
+            if(DEBUG) cout << "additveExpression: " << next.value << endl;
             if(!(next.type == ADDITIVE_OP))
                 break;
             else {
-                next = tokenizer.peek();
-                if(left != NULL)
+                next = tokenizer.next();
+                if(left != nullptr)
                     left = new ExpressionTree(last, left, subtree);
-                else {
+                else 
                     left = subtree;
-                    subtree = new ExpressionTree();
-                    last = next;
-                }
+                subtree = new ExpressionTree();
+                last = next;                
             }
         }
-        if(left != NULL) {
-            left = new ExpressionTree(last, left, subtree);
-        }
-        return next.type == EOL;
+        if(left != nullptr) 
+            tree = new ExpressionTree(last, left, subtree);
+        else 
+            tree = new ExpressionTree(subtree);
+        return true;
     }
 
     bool multiplicativeExpression(ExpressionTree &tree) {
         ExpressionTree *subtree = new ExpressionTree();
-        ExpressionTree *left = NULL;
+        ExpressionTree *left = nullptr;
         Token last;
-        Token next = tokenizer.peek();
+        Token next;
         while(unaryExpression(*subtree)) {
             next = tokenizer.peek();
+            if(DEBUG) cout << "multiplicativeExpression: " << next.value << endl;
             if(!(next.type == MULTIPLICATIVE_OP))
                 break;
             else {
                 next = tokenizer.next();
-                if(left != NULL)
+                if(left != nullptr)
                     left = new ExpressionTree(last, left, subtree);
                 else
                     left = subtree;
-                    subtree = new ExpressionTree();
-                    last = next;
+                subtree = new ExpressionTree();
+                last = next;
             }
         }
-        if (left != NULL) {
-            tree = ExpressionTree(last, left, subtree);
-        }
+        if (left != nullptr)
+            tree = new ExpressionTree(last, left, subtree);
+        else 
+            tree = new ExpressionTree(subtree);
+        
         return next.type = EOL;
     }
 
     bool unaryExpression(ExpressionTree &tree) {
         Token next = tokenizer.peek();
+        if(DEBUG) cout << "unaryExpression: " << next.value << endl;
         if(next.type == UNARY_OP || next.type == PLUSMINUS_OP) {
             ExpressionTree *subtree = new ExpressionTree();
             next = tokenizer.next();
             if(unaryExpression(*subtree)) {
-                tree = ExpressionTree(next, NULL, subtree);
-                cout << "yeah 2" << endl;
+                tree = new ExpressionTree(next, nullptr, subtree);
+                cout << "here: " << next.type << endl;
                 return true;
-            }
-            else
-                error = "Expected Unary Expression";
+            }           
+                
         }
-        else if (primaryExpression(tree)) {
-            cout << "yeah 3" << endl;
+        else if(primaryExpression(tree)) {
             return true;
         }
-        else
-            error = "Expected Primary Expression";
-            return false;
-    }
-
-    bool primaryExpression(ExpressionTree &tree) {
-        Token next = tokenizer.next();
-        if(next.type == OPEN_PAREN) {
-            cout << "Open Paren" << endl;
-            ExpressionTree subtree;
-            if(expression(subtree)) {
-                next = tokenizer.next();
-                if(next.type != CLOSE_PAREN)
-                    error = "Syntax error: missing )";
-                else {
-                    tree = subtree;
-                    cout << "yeah" << endl;
-                    return true;
-                }
-            }
-            else
-                error = "Expected expression after (";
-        }
-        else if (next.type == UNSIGNED_INT) {
-            cout << "uint" << endl;
-            tree = ExpressionTree(next);           
-            next = tokenizer.next();                      
-            return true;
-            
-        }
-        else if (next.type == UNSIGNED_REAL) {
-            cout << "ureal" << endl;
-            tree = ExpressionTree(next);
-            return true;
-        }
-        else
-            error = "Syntax error: Expected a primary expression";
+        error = "Expected primary expression";
         return false;
     }
 
+    bool primaryExpression(ExpressionTree &tree) {
+        if(DEBUG) cout << "primaryExpression" << endl;
+        Token next = tokenizer.next();       
+        if(next.type == UNSIGNED_INT) {
+            tree = new ExpressionTree(next);
+            return true;
+        }
+        else if(next.type == OPEN_PAREN) {
+            ExpressionTree *subtree = new ExpressionTree();
+            if(expression(*subtree)) {
+                tree = new ExpressionTree(subtree);
+                if(tokenizer.next().type != CLOSE_PAREN) {
+                    error = "ERROR: Mismatched (";
+                    return false;
+                }
+                else return true;
+            }
+            else {
+                error = "ERROR: Expected expression within ()";
+                return false;
+            }
+        }
+    }
+
     ExpressionTree scan(string s) {
-        ExpressionTree tree;
+        ExpressionTree tree = new ExpressionTree();
+        tokenizer.tokenize(s);
         tokenizer.start(s);
-        if(primaryExpression(tree))
-            return tree;
-        if(additiveExpression(tree))
-            return tree;
-        if(multiplicativeExpression(tree))
-            return tree;
+      
+        if(expression(tree))
+            return tree;        
         else
             cerr << error << ":" << tokenizer.getPosition() << endl;
         return ExpressionTree();
     }
 };
 
-vector<string> testExpressions;
+/*
 void loadTest() {
- //Some expressions to try that should work
- testExpressions.push_back("1+2");
- testExpressions.push_back("(1+2)*3");
- testExpressions.push_back("((1+2)*3)");
- testExpressions.push_back("1.0E10+2.0E10");
- testExpressions.push_back("(1.0E10+2.0E10)*3.0E10");
- testExpressions.push_back("((1.0E10+2.0E10)*3.0E10)");
- //Some that should error out in some informative way
- testExpressions.push_back("1+");
- testExpressions.push_back("(1+2*3");
- testExpressions.push_back("(1+2)*3");
- testExpressions.push_back("1.0E+2.0E10");
- testExpressions.push_back("(1.0E10+2.0E)*3.0E10");
- testExpressions.push_back("((1.0E10+2.0E10)*3.010)");
+    //Some expressions to try that should work
+    testExpressions.push_back("1+2");
+    testExpressions.push_back("(1+2)*3");
+    testExpressions.push_back("((1+2)*3)");
+    testExpressions.push_back("1.0E10+2.0E10");
+    testExpressions.push_back("(1.0E10+2.0E10)*3.0E10");
+    testExpressions.push_back("((1.0E10+2.0E10)*3.0E10)");
+    //Some that should error out in some informative way
+    testExpressions.push_back("1+");
+    testExpressions.push_back("(1+2*3");
+    testExpr essions.push_back("(1+2)*3");
+    testExpressions.push_back("1.0E+2.0E10");
+    testExpressions.push_back("(1.0E10+2.0E)*3.0E10");
+    testExpressions.push_back("((1.0E10+2.0E10)*3.010)");
 }
-
+*/
 int main() {
-  Parser p;
-/*  for (unsigned i=0;i<testExpressions.size();i++) {
-    ExpressionTree t=p.scan(testExpressions[i]);
+    vector<string> testExpressions;
+    //testExpressions.push_back("1+2");
+    testExpressions.push_back("(3+4)*5");
+    testExpressions.push_back("((6+7)*8)");
+    testExpressions.push_back("1.0E10+2.0E10");
+    testExpressions.push_back("(1.0E10+2.0E10)*3.0E10");
+    testExpressions.push_back("((1.0E10+2.0E10)*3.0E10)");
+
+    Parser p;
+    ExpressionTree t;
+    //for (int i = 0; i < testExpressions.size(); i++) {        
+        //t = new ExpressionTree(p.scan(testExpressions[i]));        
+        //t.showRPN(cout);
+        //cout << endl;
+        //need to clear tree each time???? 
+    //}
+    string line;
+    getline(cin, line);
+    t = p.scan(line);
     t.showRPN(cout);
-  }*/
-  ExpressionTree t = p.scan("1+2");
+  //ExpressionTree t = p.scan("1+");
   //t.show(cout);
   //cout << endl;
-  t.showRPN(cout);
-  cout << endl;
-  return 0;
+  //t.showRPN(cout);
+    cout << endl;
+    return 0;
 }
 
 /* Language Specification
@@ -314,3 +369,4 @@ primary-expression:
    // funcid ( expression-list )
    // [ element-list ]
    ( expression ) */
+ 
