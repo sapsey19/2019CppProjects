@@ -17,7 +17,7 @@
 
 using namespace std;
 
-#define DEBUG true
+#define DEBUG false
 //Token types
 typedef enum { PLUSMINUS_OP, RELATIONAL_OP, ADDITIVE_OP, MULTIPLICATIVE_OP, UNARY_OP, 
     UNSIGNED_INT, UNSIGNED_REAL, OPEN_PAREN, CLOSE_PAREN, EOL } TokenType;
@@ -55,8 +55,10 @@ public:
         while(!remaining.empty()) {
             if(regex_match(remaining, sm, regex("(\\+|-).*")))            
                 tokenList.emplace_back(ADDITIVE_OP, sm[1]);
+            else if(regex_match(remaining, sm, regex("([0-9]+\\.[0-9]+([Ee][+-]?[0-9]+)?).*")))
+                tokenList.emplace_back(UNSIGNED_REAL, sm[1]);            
             else if(regex_match(remaining, sm, regex("([0-9]+).*")))
-		        tokenList.emplace_back(UNSIGNED_INT, sm[1]);
+		        tokenList.emplace_back(UNSIGNED_INT, sm[1]);            
             else if(regex_match(remaining, sm, regex("(<|<=|=|=>|>|<>).*")))
                  tokenList.emplace_back(RELATIONAL_OP, sm[1]);
             //else if (regex_match(remaining, sm, regex("(or).*")))
@@ -65,16 +67,10 @@ public:
                 tokenList.emplace_back(MULTIPLICATIVE_OP, sm[1]);
             //if (regex_match(remaining,sm,regex("(not).*")))
                 //return Token(UNARY_OP,sm[1]);
-            else if(regex_match(remaining,sm,regex("(\\().*"))) {
-                //cout << "Matched open paren" << endl;
-                tokenList.emplace_back(OPEN_PAREN,sm[1]);
-            }
+            else if(regex_match(remaining,sm,regex("(\\().*"))) 
+                tokenList.emplace_back(OPEN_PAREN,sm[1]);            
             else if(regex_match(remaining,sm,regex("(\\)).*")))
-                tokenList.emplace_back(CLOSE_PAREN,sm[1]);
-        //TODO: complete type-matching for unsigned reals
-//        if (regex_match(remaining,sm,regex("[0-9]+")))
-//          return Token(UNSIGNED_REAL,sm.str());
-
+                tokenList.emplace_back(CLOSE_PAREN,sm[1]); 
             remaining = remaining.substr(sm[1].length());
             count++;
         }
@@ -114,9 +110,9 @@ class ExpressionTree{
     Token operation;
 public:
     ExpressionTree(Token t = Token(), ExpressionTree *newLeft=nullptr, ExpressionTree *newRight=nullptr) {
-        operation=t;
-        left=newLeft;
-        right=newRight;
+        operation = t;
+        left = newLeft;
+        right = newRight;
     }
 
     ExpressionTree(ExpressionTree *tree) {
@@ -159,7 +155,7 @@ class Parser {
         Token next;
         while(additiveExpression(*subtree)) {
             next = tokenizer.peek();
-            cout << "expression: " << next.value << endl;
+            if (DEBUG) cout << "expression: " << next.value << endl;
             if(!(next.type == RELATIONAL_OP))
                 break;
             else {
@@ -252,26 +248,24 @@ class Parser {
     }
 
     bool primaryExpression(ExpressionTree &tree) {
-        Token next = tokenizer.next();
-        if(DEBUG) cout << "primaryExpression: " << next.value << endl;
+        if(DEBUG) cout << "primaryExpression" << endl;
+        Token next = tokenizer.next();       
         if(next.type == UNSIGNED_INT) {
             tree = new ExpressionTree(next);
             return true;
         }
-        else if(tokenizer.next().type == OPEN_PAREN) {
-            cout << "OPEN PAREN" << endl;
+        else if(next.type == OPEN_PAREN) {
             ExpressionTree *subtree = new ExpressionTree();
             if(expression(*subtree)) {
                 tree = new ExpressionTree(subtree);
-                if(tokenizer.peek().type != CLOSE_PAREN) {
-                    error = "Error: Missing closing paren";
+                if(tokenizer.next().type != CLOSE_PAREN) {
+                    error = "ERROR: Mismatched (";
                     return false;
                 }
-                else 
-                    return true;
+                else return true;
             }
-            else  {
-                error = "Error: Expected expression within ()";
+            else {
+                error = "ERROR: Expected expression within ()";
                 return false;
             }
         }
@@ -290,34 +284,45 @@ class Parser {
     }
 };
 
-vector<string> testExpressions;
+/*
 void loadTest() {
- //Some expressions to try that should work
- testExpressions.push_back("1+2");
- testExpressions.push_back("(1+2)*3");
- testExpressions.push_back("((1+2)*3)");
- testExpressions.push_back("1.0E10+2.0E10");
- testExpressions.push_back("(1.0E10+2.0E10)*3.0E10");
- testExpressions.push_back("((1.0E10+2.0E10)*3.0E10)");
- //Some that should error out in some informative way
- testExpressions.push_back("1+");
- testExpressions.push_back("(1+2*3");
- testExpressions.push_back("(1+2)*3");
- testExpressions.push_back("1.0E+2.0E10");
- testExpressions.push_back("(1.0E10+2.0E)*3.0E10");
- testExpressions.push_back("((1.0E10+2.0E10)*3.010)");
+    //Some expressions to try that should work
+    testExpressions.push_back("1+2");
+    testExpressions.push_back("(1+2)*3");
+    testExpressions.push_back("((1+2)*3)");
+    testExpressions.push_back("1.0E10+2.0E10");
+    testExpressions.push_back("(1.0E10+2.0E10)*3.0E10");
+    testExpressions.push_back("((1.0E10+2.0E10)*3.0E10)");
+    //Some that should error out in some informative way
+    testExpressions.push_back("1+");
+    testExpressions.push_back("(1+2*3");
+    testExpr essions.push_back("(1+2)*3");
+    testExpressions.push_back("1.0E+2.0E10");
+    testExpressions.push_back("(1.0E10+2.0E)*3.0E10");
+    testExpressions.push_back("((1.0E10+2.0E10)*3.010)");
 }
-
+*/
 int main() {
-  Parser p;
-/*  for (unsigned i=0;i<testExpressions.size();i++) {
-    ExpressionTree t=p.scan(testExpressions[i]);
-    t.showRPN(cout);
-  }*/
-  ExpressionTree t = p.scan("1*3");
+    vector<string> testExpressions;
+    //testExpressions.push_back("1+2");
+    testExpressions.push_back("(3+4)*5");
+    testExpressions.push_back("((6+7)*8)");
+    testExpressions.push_back("1.0E10+2.0E10");
+    testExpressions.push_back("(1.0E10+2.0E10)*3.0E10");
+    testExpressions.push_back("((1.0E10+2.0E10)*3.0E10)");
+
+    Parser p;
+    ExpressionTree t;
+    for (int i = 0; i < testExpressions.size(); i++) {        
+        t = new ExpressionTree(p.scan(testExpressions[i]));        
+        t.showRPN(cout);
+        cout << endl;
+        //need to clear tree each time???? 
+    }
+  //ExpressionTree t = p.scan("1+");
   //t.show(cout);
   //cout << endl;
-  t.showRPN(cout);
+  //t.showRPN(cout);
   cout << endl;
   return 0;
 }
