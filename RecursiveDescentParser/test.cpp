@@ -6,7 +6,7 @@
 
 using namespace std;
 
-#define DEBUG true
+#define DEBUG false
 class Token {
 public:
     enum Type { UNSIGNED_INT, UNSIGNED_REAL, RELATIONAL_OP, LOGICAL_AND, LOGICAL_OR, 

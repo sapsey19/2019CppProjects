@@ -20,7 +20,7 @@ using namespace std;
 #define DEBUG false
 //Token types
 typedef enum { PLUSMINUS_OP, RELATIONAL_OP, ADDITIVE_OP, MULTIPLICATIVE_OP, UNARY_OP, 
-    UNSIGNED_INT, UNSIGNED_REAL, OPEN_PAREN, CLOSE_PAREN, EOL } TokenType;
+    UNSIGNED_INT, UNSIGNED_REAL, OPEN_PAREN, CLOSE_PAREN, OR, AND, NOT, EOL } TokenType;
 
 class Token {
 public:
@@ -35,8 +35,7 @@ public:
 class Tokenizer{
     string line;
     int pos;
-    vector<Token> tokenList;
-    vector<Token>::iterator it;
+    vector<Token> tokenList;  
 public:
     int getPosition() {
         return pos;
@@ -50,9 +49,10 @@ public:
     void tokenize(string line) {
         string token;
         smatch sm;
-        string remaining = line;
-        int count = 1;       
-        while(!remaining.empty()) {
+        string remaining = line;        
+        while(remaining.length() > 0) {
+            if(remaining[0] == ' ')
+                remaining = remaining.substr(1);
             if(regex_match(remaining, sm, regex("(\\+|-).*")))            
                 tokenList.emplace_back(ADDITIVE_OP, sm[1]);
             else if(regex_match(remaining, sm, regex("([0-9]+\\.[0-9]+([Ee][+-]?[0-9]+)?).*")))
@@ -61,27 +61,28 @@ public:
 		        tokenList.emplace_back(UNSIGNED_INT, sm[1]);            
             else if(regex_match(remaining, sm, regex("(<|<=|=|=>|>|<>).*")))
                  tokenList.emplace_back(RELATIONAL_OP, sm[1]);
-            //else if (regex_match(remaining, sm, regex("(or).*")))
-                //return Token(ADDITIVE_OP,sm[1]);
-            else if(regex_match(remaining,sm,regex("(\\*|/|div|mod|and).*")))
+            else if (regex_match(remaining, sm, regex("(or).*"))) 
+                tokenList.emplace_back(OR, sm[1]);
+            else if (regex_match(remaining, sm, regex("(not).*")))
+                tokenList.emplace_back(NOT, sm[1]);
+            else if(regex_match(remaining, sm, regex("(and).*")))
+                tokenList.emplace_back(AND, sm[1]);
+            else if(regex_match(remaining, sm, regex("(\\*|/|div|mod|and).*")))
                 tokenList.emplace_back(MULTIPLICATIVE_OP, sm[1]);
-            //if (regex_match(remaining,sm,regex("(not).*")))
-                //return Token(UNARY_OP,sm[1]);
-            else if(regex_match(remaining,sm,regex("(\\().*"))) 
-                tokenList.emplace_back(OPEN_PAREN,sm[1]);            
-            else if(regex_match(remaining,sm,regex("(\\)).*")))
-                tokenList.emplace_back(CLOSE_PAREN,sm[1]); 
+            else if(regex_match(remaining, sm, regex("(\\().*"))) 
+                tokenList.emplace_back(OPEN_PAREN, sm[1]);            
+            else if(regex_match(remaining, sm, regex("(\\)).*")))
+                tokenList.emplace_back(CLOSE_PAREN, sm[1]); 
             remaining = remaining.substr(sm[1].length());
-            count++;
-        }
-        it = tokenList.begin();
+        }      
     }
 
     //Function peek grabs next token, doesn't eat it.
     //Function next grabs next token and eats it.
     Token peek() {
-        if(it<tokenList.end())
-            return (*it);
+        if(pos<tokenList.size()) {
+            return tokenList[pos];
+        }
         else {
             Token t;
             t.type = EOL;
@@ -92,9 +93,9 @@ public:
 
     Token next() {
         Token t;
-        if(it < tokenList.end()) {
-            t = *it;
-            it++;
+        if(pos < tokenList.size()) {
+            t = tokenList[pos];
+            pos++;
         }
         else {
             t.type = EOL;
@@ -180,7 +181,7 @@ class Parser {
         while(multiplicativeExpression(*subtree)) {
             next = tokenizer.peek();
             if(DEBUG) cout << "additveExpression: " << next.value << endl;
-            if(!(next.type == ADDITIVE_OP))
+            if(!(next.type == ADDITIVE_OP || next.type == OR))
                 break;
             else {
                 next = tokenizer.next();
@@ -207,7 +208,7 @@ class Parser {
         while(unaryExpression(*subtree)) {
             next = tokenizer.peek();
             if(DEBUG) cout << "multiplicativeExpression: " << next.value << endl;
-            if(!(next.type == MULTIPLICATIVE_OP))
+            if(!(next.type == MULTIPLICATIVE_OP || next.type == AND))
                 break;
             else {
                 next = tokenizer.next();
@@ -230,7 +231,7 @@ class Parser {
     bool unaryExpression(ExpressionTree &tree) {
         Token next = tokenizer.peek();
         if(DEBUG) cout << "unaryExpression: " << next.value << endl;
-        if(next.type == UNARY_OP || next.type == PLUSMINUS_OP) {
+        if(next.type == PLUSMINUS_OP || next.type == NOT) {
             ExpressionTree *subtree = new ExpressionTree();
             next = tokenizer.next();
             if(unaryExpression(*subtree)) {
