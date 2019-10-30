@@ -23,19 +23,21 @@ typedef enum { PLUSMINUS_OP, RELATIONAL_OP, ADDITIVE_OP, MULTIPLICATIVE_OP, UNAR
     UNSIGNED_INT, UNSIGNED_REAL, OPEN_PAREN, CLOSE_PAREN, EOL } TokenType;
 
 class Token {
-    public:
+public:
     TokenType type;
     string value;
-    Token(TokenType newType=EOL,string newValue="") {
-      type=newType;
-      value=newValue;
+    Token(TokenType newType=EOL, string newValue="") {
+        type=newType;
+        value=newValue;
     }
 };
 
 class Tokenizer{
     string line;
     int pos;
-    public:
+    vector<Token> tokenList;
+    vector<Token>::iterator it;
+public:
     int getPosition() {
         return pos;
     }
@@ -45,41 +47,63 @@ class Tokenizer{
         pos=0;
     }
 
-    //Function peek grabs next token, doesn't eat it.
-    //Function next grabs next token and eats it.
-    Token peek() {
+    void tokenize(string line) {
+        string token;
         smatch sm;
-        string remaining = line.substr(pos);
-        //cout << "REMAINING: " << remaining << endl;        
-        if (regex_match(remaining,sm,regex("(\\+|-).*"))) {
-            //cout << "PLUSOP" << endl;
-            return Token(PLUSMINUS_OP,sm[1]);
-        }
-        if (regex_match(remaining,sm,regex("(<|<=|=|=>|>|<>).*")))
-          return Token(RELATIONAL_OP,sm[1]);
-        if (regex_match(remaining,sm,regex("(or).*")))
-          return Token(ADDITIVE_OP,sm[1]);
-        if (regex_match(remaining,sm,regex("(\\*|/|div|mod|and).*")))
-          return Token(MULTIPLICATIVE_OP,sm[1]);
-        if (regex_match(remaining,sm,regex("(not).*")))
-          return Token(UNARY_OP,sm[1]);
-        if (regex_match(remaining,sm,regex("([0-9]+).*")))
-		    return Token(UNSIGNED_INT,sm[1]);
-        if (regex_match(remaining,sm,regex("(\\().*")))
-          return Token(OPEN_PAREN,sm[1]);
-        if (regex_match(remaining,sm,regex("(\\)).*")))
-          return Token(CLOSE_PAREN,sm[1]);
+        string remaining = line;
+        int count = 1;       
+        while(!remaining.empty()) {
+            if(regex_match(remaining, sm, regex("(\\+|-).*")))            
+                tokenList.emplace_back(ADDITIVE_OP, sm[1]);
+            else if(regex_match(remaining, sm, regex("([0-9]+).*")))
+		        tokenList.emplace_back(UNSIGNED_INT, sm[1]);
+            else if(regex_match(remaining, sm, regex("(<|<=|=|=>|>|<>).*")))
+                 tokenList.emplace_back(RELATIONAL_OP, sm[1]);
+            //else if (regex_match(remaining, sm, regex("(or).*")))
+                //return Token(ADDITIVE_OP,sm[1]);
+            else if(regex_match(remaining,sm,regex("(\\*|/|div|mod|and).*")))
+                tokenList.emplace_back(MULTIPLICATIVE_OP, sm[1]);
+            //if (regex_match(remaining,sm,regex("(not).*")))
+                //return Token(UNARY_OP,sm[1]);
+            else if(regex_match(remaining,sm,regex("(\\().*"))) {
+                //cout << "Matched open paren" << endl;
+                tokenList.emplace_back(OPEN_PAREN,sm[1]);
+            }
+            else if(regex_match(remaining,sm,regex("(\\)).*")))
+                tokenList.emplace_back(CLOSE_PAREN,sm[1]);
         //TODO: complete type-matching for unsigned reals
 //        if (regex_match(remaining,sm,regex("[0-9]+")))
 //          return Token(UNSIGNED_REAL,sm.str());
-        return Token();
+
+            remaining = remaining.substr(sm[1].length());
+            count++;
+        }
+        it = tokenList.begin();
+    }
+
+    //Function peek grabs next token, doesn't eat it.
+    //Function next grabs next token and eats it.
+    Token peek() {
+        if(it<tokenList.end())
+            return (*it);
+        else {
+            Token t;
+            t.type = EOL;
+            t.value = "$";
+            return t;
+        }
     }
 
     Token next() {
         Token t;
-        t = peek();
-        pos+= t.value.size();
-        cout << "TOKEN: " << t.value << endl;
+        if(it < tokenList.end()) {
+            t = *it;
+            it++;
+        }
+        else {
+            t.type = EOL;
+            t.value = "$";
+        }
         return t;
     }
 };
@@ -107,7 +131,7 @@ public:
             left->showRPN(out);
         if (right!=nullptr)
             right->showRPN(out);
-        out << operation.value;
+        out << operation.value << " ";
     }
 
     void show(ostream &out) {
@@ -128,14 +152,14 @@ class Parser {
     string error;
     public:
 
-    bool expression(ExpressionTree &tree) {
-        //cout << "Expression" << endl;
+    bool expression(ExpressionTree &tree) {        
         ExpressionTree *subtree = new ExpressionTree();
         ExpressionTree *left = new ExpressionTree();
         Token last;
         Token next;
         while(additiveExpression(*subtree)) {
             next = tokenizer.peek();
+            cout << "expression: " << next.value << endl;
             if(!(next.type == RELATIONAL_OP))
                 break;
             else {
@@ -153,13 +177,13 @@ class Parser {
     }
 
     bool additiveExpression(ExpressionTree &tree) {
-        if(DEBUG) cout << "additveExpression" << endl;;
         ExpressionTree *subtree = new ExpressionTree();
         ExpressionTree *left = nullptr;
         Token last;
         Token next;
         while(multiplicativeExpression(*subtree)) {
             next = tokenizer.peek();
+            if(DEBUG) cout << "additveExpression: " << next.value << endl;
             if(!(next.type == ADDITIVE_OP))
                 break;
             else {
@@ -180,14 +204,13 @@ class Parser {
     }
 
     bool multiplicativeExpression(ExpressionTree &tree) {
-        if(DEBUG) cout << "multiplicativeExpression" << endl;
         ExpressionTree *subtree = new ExpressionTree();
         ExpressionTree *left = nullptr;
         Token last;
         Token next;
         while(unaryExpression(*subtree)) {
-            //cout << "mult unary while" << endl;
             next = tokenizer.peek();
+            if(DEBUG) cout << "multiplicativeExpression: " << next.value << endl;
             if(!(next.type == MULTIPLICATIVE_OP))
                 break;
             else {
@@ -209,8 +232,8 @@ class Parser {
     }
 
     bool unaryExpression(ExpressionTree &tree) {
-        if(DEBUG) cout << "unaryExpression" << endl;
         Token next = tokenizer.peek();
+        if(DEBUG) cout << "unaryExpression: " << next.value << endl;
         if(next.type == UNARY_OP || next.type == PLUSMINUS_OP) {
             ExpressionTree *subtree = new ExpressionTree();
             next = tokenizer.next();
@@ -229,17 +252,18 @@ class Parser {
     }
 
     bool primaryExpression(ExpressionTree &tree) {
-        if(DEBUG) cout << "primaryExpression" << endl;
         Token next = tokenizer.next();
+        if(DEBUG) cout << "primaryExpression: " << next.value << endl;
         if(next.type == UNSIGNED_INT) {
             tree = new ExpressionTree(next);
             return true;
         }
         else if(tokenizer.next().type == OPEN_PAREN) {
+            cout << "OPEN PAREN" << endl;
             ExpressionTree *subtree = new ExpressionTree();
             if(expression(*subtree)) {
                 tree = new ExpressionTree(subtree);
-                if(tokenizer.next().type != CLOSE_PAREN) {
+                if(tokenizer.peek().type != CLOSE_PAREN) {
                     error = "Error: Missing closing paren";
                     return false;
                 }
@@ -255,7 +279,9 @@ class Parser {
 
     ExpressionTree scan(string s) {
         ExpressionTree tree = new ExpressionTree();
+        tokenizer.tokenize(s);
         tokenizer.start(s);
+      
         if(expression(tree))
             return tree;        
         else
@@ -288,7 +314,7 @@ int main() {
     ExpressionTree t=p.scan(testExpressions[i]);
     t.showRPN(cout);
   }*/
-  ExpressionTree t = p.scan("1+2");
+  ExpressionTree t = p.scan("1*3");
   //t.show(cout);
   //cout << endl;
   t.showRPN(cout);
@@ -334,3 +360,4 @@ primary-expression:
    // funcid ( expression-list )
    // [ element-list ]
    ( expression ) */
+ 
