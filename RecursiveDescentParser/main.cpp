@@ -23,8 +23,12 @@ public:
 class Tokenizer{
     string line;
     int pos;
-    vector<Token> tokenList;  
+   
+    
 public:
+    bool failedMatch = false;
+    string failedToken;
+     vector<Token> tokenList;
     int getPosition() {
         return pos;
     }
@@ -33,12 +37,14 @@ public:
         tokenList.clear();
         line=newLine;
         pos=0;
+        failedMatch = false;
+        //failedToken = "";
     }
 
     void tokenize(string line) {
         string token;
         smatch sm;
-        string remaining = line;        
+        string remaining = line;
         while(remaining.length() > 0) {
             if(remaining[0] == ' ')
                 remaining = remaining.substr(1);
@@ -48,8 +54,8 @@ public:
                 tokenList.emplace_back(UNSIGNED_REAL, sm[1]);            
             else if(regex_match(remaining, sm, regex("([0-9]+).*")))
 		        tokenList.emplace_back(UNSIGNED_INT, sm[1]);            
-            else if(regex_match(remaining, sm, regex("(<|(<=)|=|(=>)|>|(<>)).*")))
-                 tokenList.emplace_back(RELATIONAL_OP, sm[1]);
+            else if(regex_match(remaining, sm, regex("((<=)|(>=)|(<>)|(=)|(>)|(<)).*"))) 
+                tokenList.emplace_back(RELATIONAL_OP, sm[1]);
             else if (regex_match(remaining, sm, regex("(or).*"))) 
                 tokenList.emplace_back(OR, sm[1]);
             else if (regex_match(remaining, sm, regex("(not).*")))
@@ -61,7 +67,12 @@ public:
             else if(regex_match(remaining, sm, regex("(\\().*"))) 
                 tokenList.emplace_back(OPEN_PAREN, sm[1]);            
             else if(regex_match(remaining, sm, regex("(\\)).*")))
-                tokenList.emplace_back(CLOSE_PAREN, sm[1]); 
+                tokenList.emplace_back(CLOSE_PAREN, sm[1]);
+            else {
+                //if could not match token
+                failedMatch = true;
+                break;
+            }
             remaining = remaining.substr(sm[1].length());
         }      
     }
@@ -73,7 +84,7 @@ public:
         else {
             Token t;
             t.type = EOL;
-            t.value = "$";
+            t.value = "EOL";
             return t;
         }
     }
@@ -92,7 +103,6 @@ public:
     }
 };
 
-//ExpressionTree should store members of the expression in a binary tree
 class ExpressionTree{
     ExpressionTree *left, *right;
     Token operation;
@@ -223,15 +233,14 @@ class Parser {
             next = tokenizer.next();
             if(unaryExpression(*subtree)) {
                 tree = new ExpressionTree(next, nullptr, subtree);
-                cout << "here: " << next.type << endl;
                 return true;
-            }           
+            }
                 
         }
         else if(primaryExpression(tree)) {
             return true;
         }
-        error = "Expected primary expression";
+        //error += "Expected primary expression";
         return false;
     }
 
@@ -247,11 +256,15 @@ class Parser {
             if(expression(*subtree)) {
                 tree = new ExpressionTree(subtree);
                 if(tokenizer.next().type != CLOSE_PAREN) {
-                    error = "Error: Missing closing parenthesis.";
+                    error = "Error: Missing closing parenthesis";
                     return false;
                 }
                 else return true;
             }
+        }
+        else if(next.type == EOL) {
+            error = "Error: Expected Integer or Real";
+            return false;
         }
     }
 
@@ -260,10 +273,12 @@ class Parser {
         tokenizer.start(s);
         tokenizer.tokenize(s);
       
-        if(expression(tree))
-            return tree;        
+        if(expression(tree) && error.length() < 1)
+            return tree;
+        if(tokenizer.failedMatch)
+            cerr << "Failed to match '" << s << "'";   
         else
-            cerr << error << ":" << tokenizer.getPosition() << endl;
+            cerr << "For expression '" << s << "' " << error << " at token number: " << tokenizer.getPosition()+1;
         return ExpressionTree();
     }
 };
@@ -274,11 +289,11 @@ int main() {
     testExpressions.push_back("(3+4)*5");
     testExpressions.push_back("((6 + 7) * 8)");
     testExpressions.push_back("1.0 < 2.0");
-    testExpressions.push_back("(5.0e23 + 6.0E12) >= 3.0E10");
-    testExpressions.push_back("((7.0E10 + 8.0e10) * 6.0e10)");
-    //testExpressions.push_back("(12.0 + 10.0) >= 22.0 and (13.0 + 14.0 = 28.0)");
+    testExpressions.push_back("(5.0e23 + 6.0E12) > 3.0E10");
+    testExpressions.push_back("((7.0E10 + 8.0e10) / 6.0e10)");
+    testExpressions.push_back("(12.0 + 10.0) >= 22.0 and (13.0 * 14.0 <> 28.0)");
+    testExpressions.push_back("not(1 = 2)");
 
-    //still need to work on error checking
     testExpressions.push_back("1+");
     testExpressions.push_back("(1+2*3");
     testExpressions.push_back("(1+2)*3");
@@ -291,7 +306,6 @@ int main() {
         ExpressionTree t = new ExpressionTree(p.scan(testExpressions[i]));        
         t.showRPN(cout);
         cout << endl;
-         
     }
     return 0;
 }
