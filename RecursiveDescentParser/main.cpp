@@ -1,15 +1,3 @@
-/*
-  Program: Recursive Descent Parser. Takes an expression like (1+2)*3 and prints the
-    Reverse Polish Notation (RPN) of the expression. Also known as Postfix traversal of the ExpressionTree.
-    For example, (1+2)*3 should print out as 1 2 + 3 ∗.
-    The regex matching in peek() works as far as I know .
-    At the bottom of the code there are some requirements that are supposed to be met for what the program can handle.
-
-    The biggest issue I'm having is understanding the ExpressionTree part. I get the regex matching and the parsing,
-    but storing everything in a binary tree gets confusing and hard to follow.
-
-*/
-
 #include <iostream>
 #include <vector>
 #include <string>
@@ -19,7 +7,7 @@ using namespace std;
 
 #define DEBUG false
 //Token types
-typedef enum { PLUSMINUS_OP, RELATIONAL_OP, ADDITIVE_OP, MULTIPLICATIVE_OP, UNARY_OP, 
+typedef enum { PLUSMINUS_OP, RELATIONAL_OP, ADDITIVE_OP, MULTIPLICATIVE_OP, 
     UNSIGNED_INT, UNSIGNED_REAL, OPEN_PAREN, CLOSE_PAREN, OR, AND, NOT, EOL } TokenType;
 
 class Token {
@@ -42,6 +30,7 @@ public:
     }
 
     void start(string newLine) {
+        tokenList.clear();
         line=newLine;
         pos=0;
     }
@@ -59,7 +48,7 @@ public:
                 tokenList.emplace_back(UNSIGNED_REAL, sm[1]);            
             else if(regex_match(remaining, sm, regex("([0-9]+).*")))
 		        tokenList.emplace_back(UNSIGNED_INT, sm[1]);            
-            else if(regex_match(remaining, sm, regex("(<|<=|=|=>|>|<>).*")))
+            else if(regex_match(remaining, sm, regex("(<|(<=)|=|(=>)|>|(<>)).*")))
                  tokenList.emplace_back(RELATIONAL_OP, sm[1]);
             else if (regex_match(remaining, sm, regex("(or).*"))) 
                 tokenList.emplace_back(OR, sm[1]);
@@ -77,8 +66,6 @@ public:
         }      
     }
 
-    //Function peek grabs next token, doesn't eat it.
-    //Function next grabs next token and eats it.
     Token peek() {
         if(pos<tokenList.size()) {
             return tokenList[pos];
@@ -99,7 +86,7 @@ public:
         }
         else {
             t.type = EOL;
-            t.value = "$";
+            t.value = "EOL";
         }
         return t;
     }
@@ -122,13 +109,13 @@ public:
         right = tree->right;
     }
 
-    void showRPN(ostream &out) {
-      //postfix traversal of the tree  
-        if (left!=nullptr)
+    void showRPN(ostream &out) {   
+        if (left!=nullptr) 
             left->showRPN(out);
         if (right!=nullptr)
             right->showRPN(out);
-        out << operation.value << " ";
+        if(operation.type != EOL)
+            out << operation.value << " ";
     }
 
     void show(ostream &out) {
@@ -251,7 +238,7 @@ class Parser {
     bool primaryExpression(ExpressionTree &tree) {
         if(DEBUG) cout << "primaryExpression" << endl;
         Token next = tokenizer.next();       
-        if(next.type == UNSIGNED_INT) {
+        if(next.type == UNSIGNED_INT || next.type == UNSIGNED_REAL) {
             tree = new ExpressionTree(next);
             return true;
         }
@@ -260,22 +247,18 @@ class Parser {
             if(expression(*subtree)) {
                 tree = new ExpressionTree(subtree);
                 if(tokenizer.next().type != CLOSE_PAREN) {
-                    error = "ERROR: Mismatched (";
+                    error = "Error: Missing closing parenthesis.";
                     return false;
                 }
                 else return true;
-            }
-            else {
-                error = "ERROR: Expected expression within ()";
-                return false;
             }
         }
     }
 
     ExpressionTree scan(string s) {
         ExpressionTree tree = new ExpressionTree();
-        tokenizer.tokenize(s);
         tokenizer.start(s);
+        tokenizer.tokenize(s);
       
         if(expression(tree))
             return tree;        
@@ -285,89 +268,30 @@ class Parser {
     }
 };
 
-/*
-void loadTest() {
-    //Some expressions to try that should work
+int main() {
+    vector<string> testExpressions;
     testExpressions.push_back("1+2");
-    testExpressions.push_back("(1+2)*3");
-    testExpressions.push_back("((1+2)*3)");
-    testExpressions.push_back("1.0E10+2.0E10");
-    testExpressions.push_back("(1.0E10+2.0E10)*3.0E10");
-    testExpressions.push_back("((1.0E10+2.0E10)*3.0E10)");
-    //Some that should error out in some informative way
+    testExpressions.push_back("(3+4)*5");
+    testExpressions.push_back("((6 + 7) * 8)");
+    testExpressions.push_back("1.0 < 2.0");
+    testExpressions.push_back("(5.0e23 + 6.0E12) >= 3.0E10");
+    testExpressions.push_back("((7.0E10 + 8.0e10) * 6.0e10)");
+    //testExpressions.push_back("(12.0 + 10.0) >= 22.0 and (13.0 + 14.0 = 28.0)");
+
+    //still need to work on error checking
     testExpressions.push_back("1+");
     testExpressions.push_back("(1+2*3");
-    testExpr essions.push_back("(1+2)*3");
+    testExpressions.push_back("(1+2)*3");
     testExpressions.push_back("1.0E+2.0E10");
     testExpressions.push_back("(1.0E10+2.0E)*3.0E10");
     testExpressions.push_back("((1.0E10+2.0E10)*3.010)");
-}
-*/
-int main() {
-    vector<string> testExpressions;
-    //testExpressions.push_back("1+2");
-    testExpressions.push_back("(3+4)*5");
-    testExpressions.push_back("((6+7)*8)");
-    testExpressions.push_back("1.0E10+2.0E10");
-    testExpressions.push_back("(1.0E10+2.0E10)*3.0E10");
-    testExpressions.push_back("((1.0E10+2.0E10)*3.0E10)");
 
     Parser p;
-    ExpressionTree t;
-    //for (int i = 0; i < testExpressions.size(); i++) {        
-        //t = new ExpressionTree(p.scan(testExpressions[i]));        
-        //t.showRPN(cout);
-        //cout << endl;
-        //need to clear tree each time???? 
-    //}
-    string line;
-    getline(cin, line);
-    t = p.scan(line);
-    t.showRPN(cout);
-  //ExpressionTree t = p.scan("1+");
-  //t.show(cout);
-  //cout << endl;
-  //t.showRPN(cout);
-    cout << endl;
+    for (int i = 0; i < testExpressions.size(); i++) {        
+        ExpressionTree t = new ExpressionTree(p.scan(testExpressions[i]));        
+        t.showRPN(cout);
+        cout << endl;
+         
+    }
     return 0;
 }
-
-/* Language Specification
-expression:
-   expression relational-op additive-expression
-   additive-expression
-
-relational-op: one of
-   <  <=  =  <>  =>  >
-
-additive-expression:
-   additive-expression additive-op multiplicative-expression
-   multiplicative-expression
-
-additive-op: one of
-   +  -  or
-
-multiplicative-expression:
-   multiplicative-expression multiplicative-op unary-expression
-   unary-expression
-
-multiplicative-op: one of
-   *  /  div  mod  and  // in
-
-unary-expression:
-   unary-op unary-expression
-   primary-expression
-
-unary-op:  one of
-   +  -  not
-
-primary-expression:
-   // variable
-   unsigned-integer
-   unsigned-real
-   // string
-   // nil
-   // funcid ( expression-list )
-   // [ element-list ]
-   ( expression ) */
- 
