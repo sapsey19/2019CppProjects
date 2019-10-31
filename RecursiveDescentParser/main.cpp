@@ -5,8 +5,6 @@
 
 using namespace std;
 
-#define DEBUG false
-//Token types
 typedef enum { PLUSMINUS_OP, RELATIONAL_OP, ADDITIVE_OP, MULTIPLICATIVE_OP, 
     UNSIGNED_INT, UNSIGNED_REAL, OPEN_PAREN, CLOSE_PAREN, OR, AND, NOT, EOL } TokenType;
 
@@ -23,12 +21,11 @@ public:
 class Tokenizer{
     string line;
     int pos;
-   
-    
+    vector<Token> tokenList;
 public:
     bool failedMatch = false;
     string failedToken;
-     vector<Token> tokenList;
+   
     int getPosition() {
         return pos;
     }
@@ -38,7 +35,6 @@ public:
         line=newLine;
         pos=0;
         failedMatch = false;
-        //failedToken = "";
     }
 
     void tokenize(string line) {
@@ -71,6 +67,7 @@ public:
             else {
                 //if could not match token
                 failedMatch = true;
+                failedToken = remaining;
                 break;
             }
             remaining = remaining.substr(sm[1].length());
@@ -144,7 +141,7 @@ public:
 class Parser {
     Tokenizer tokenizer;
     string error;
-    public:
+public:
 
     bool expression(ExpressionTree &tree) {        
         ExpressionTree *subtree = new ExpressionTree();
@@ -153,7 +150,6 @@ class Parser {
         Token next;
         while(additiveExpression(*subtree)) {
             next = tokenizer.peek();
-            if (DEBUG) cout << "expression: " << next.value << endl;
             if(!(next.type == RELATIONAL_OP))
                 break;
             else {
@@ -177,7 +173,6 @@ class Parser {
         Token next;
         while(multiplicativeExpression(*subtree)) {
             next = tokenizer.peek();
-            if(DEBUG) cout << "additveExpression: " << next.value << endl;
             if(!(next.type == ADDITIVE_OP || next.type == OR))
                 break;
             else {
@@ -204,7 +199,6 @@ class Parser {
         Token next;
         while(unaryExpression(*subtree)) {
             next = tokenizer.peek();
-            if(DEBUG) cout << "multiplicativeExpression: " << next.value << endl;
             if(!(next.type == MULTIPLICATIVE_OP || next.type == AND))
                 break;
             else {
@@ -227,7 +221,6 @@ class Parser {
 
     bool unaryExpression(ExpressionTree &tree) {
         Token next = tokenizer.peek();
-        if(DEBUG) cout << "unaryExpression: " << next.value << endl;
         if(next.type == PLUSMINUS_OP || next.type == NOT) {
             ExpressionTree *subtree = new ExpressionTree();
             next = tokenizer.next();
@@ -240,12 +233,12 @@ class Parser {
         else if(primaryExpression(tree)) {
             return true;
         }
-        //error += "Expected primary expression";
+        if(error.length() < 1)
+            error = "Expected primary expression";
         return false;
     }
 
     bool primaryExpression(ExpressionTree &tree) {
-        if(DEBUG) cout << "primaryExpression" << endl;
         Token next = tokenizer.next();       
         if(next.type == UNSIGNED_INT || next.type == UNSIGNED_REAL) {
             tree = new ExpressionTree(next);
@@ -263,7 +256,7 @@ class Parser {
             }
         }
         else if(next.type == EOL) {
-            error = "Error: Expected Integer or Real";
+            error = "Error: Expected integer or real number";
             return false;
         }
     }
@@ -276,15 +269,16 @@ class Parser {
         if(expression(tree) && error.length() < 1)
             return tree;
         if(tokenizer.failedMatch)
-            cerr << "Failed to match '" << s << "'";   
+            cerr << "Unknown token: '" << tokenizer.failedToken << "'";   
         else
-            cerr << "For expression '" << s << "' " << error << " at token number: " << tokenizer.getPosition()+1;
+            cerr << "For expression '" << s << "' " << error << " at token number: " << tokenizer.getPosition() + 1;
         return ExpressionTree();
     }
 };
 
-int main() {
+void test(Parser p) {
     vector<string> testExpressions;
+    //tests that should work
     testExpressions.push_back("1+2");
     testExpressions.push_back("(3+4)*5");
     testExpressions.push_back("((6 + 7) * 8)");
@@ -294,6 +288,7 @@ int main() {
     testExpressions.push_back("(12.0 + 10.0) >= 22.0 and (13.0 * 14.0 <> 28.0)");
     testExpressions.push_back("not(1 = 2)");
 
+    //tests that should error out
     testExpressions.push_back("1+");
     testExpressions.push_back("(1+2*3");
     testExpressions.push_back("(1+2)*3");
@@ -301,11 +296,30 @@ int main() {
     testExpressions.push_back("(1.0E10+2.0E)*3.0E10");
     testExpressions.push_back("((1.0E10+2.0E10)*3.010)");
 
-    Parser p;
     for (int i = 0; i < testExpressions.size(); i++) {        
         ExpressionTree t = new ExpressionTree(p.scan(testExpressions[i]));        
         t.showRPN(cout);
+        //cout << endl;
+        //t.show(cout);
         cout << endl;
     }
+}
+
+void userInput(Parser p) {
+    string exp;
+    getline(cin, exp);
+    ExpressionTree t = new ExpressionTree(p.scan(exp));
+    t.showRPN(cout);
+    cout << endl;
+}
+
+int main() {
+    Parser p;
+
+    //for running a bunch of pre-defined test expressions 
+    test(p);
+
+    //for taking user input for a single expresion
+    //userInput(p);
     return 0;
 }
