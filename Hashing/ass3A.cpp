@@ -2,38 +2,45 @@
 
 using namespace std;
 
-int *sorted = new int[n];
-
-void quickSort(int arr[], int low, int high) {
-    if (low < high) {
-        int pi = partition(arr, low, high);
-        quickSort(arr, low, pi - 1);
-        quickSort(arr, pi + 1, high);
-    }
-}
-
-int partition(int arr[], int low, int high) {
-    int pivot = arr[low];
+int partition(int arr[], int index[], int low, int high) {
+    int pivot = arr[index[0]];
     int i = low-1;
 
-    for (int j = low; j <= high - 1; j++) {
-        if(arr[j] < pivot) {
+    for (int j = low; j < high; j++) {
+        if(arr[index[j]] < pivot) {
             i++;
-            int temp = arr[i];
-            sorted[j]
+            int temp = index[j];
+            index[j] = index[i];
+            index[i] = temp;
         }
+    }
+
+    return i + 1;
+}
+
+void quickSort(int arr[], int index[], int low, int high) {
+    if (low < high) {
+        int pivot = partition(arr, index, low, high);        
+        quickSort(arr, index, low, pivot - 1);
+        quickSort(arr, index, pivot + 1, high);
     }
 }
 
-int main() {
+int main() {;
     int n;
-    cin >> n;
-    int *original = new int[n];
+    //cin >> n;
+    n = 4;
+    int arr [] {5, 3, 4, 1};
+    int index [] {0, 1, 2, 3};
+    
+    //for(int i = 0; i < n; i++)
+        //cout << arr[i];
 
-    for(int i = 0; i < n; i++)
-        cin >> original[i];
-
-    quickSort(original, 0, n);
+    quickSort(arr, index, 0, 3);
+    cout << endl;
+    for (int i = 0; i < n; i++)
+        cout << arr[index[i]] << " ";
+    cout << endl;
     return 0;
 }
 

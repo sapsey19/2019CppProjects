@@ -102,13 +102,13 @@ public:
 };
 
 string removePunc(string word) {
-     for (int i = 0, len = word.size(); i < len; i++) { 
-        if (ispunct(word[i])) { 
-            word.erase(i--, 1); 
-            len = word.size(); 
+    string temp = word;
+     for (int i = 0; i < temp.size(); i++) { 
+        if (ispunct(temp[i])) { 
+            temp.erase(i--, 1); 
         }
     }
-    return word;
+    return temp;
 }
 
 int main () {
@@ -116,17 +116,16 @@ int main () {
     
     ifstream in;
     ofstream out;
-    in.open("testinput.txt");
+    in.open("input.txt");
     string temp;
     string stripped;
-    while(!in.eof()) {
-        in >> temp;
+    while(in >> temp) {       
         transform(temp.begin(), temp.end(), temp.begin(), ::tolower);
-        stripped = removePunc(temp);
+        stripped = removePunc(temp);       
         list.createNode(stripped);
     }
 
-    list.print();
+    list.printOut();
     in.close();
     return 0;
 }
