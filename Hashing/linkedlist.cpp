@@ -116,7 +116,7 @@ int main () {
     
     ifstream in;
     ofstream out;
-    in.open("input.txt");
+    in.open("pride.txt");
     string temp;
     string stripped;
     while(in >> temp) {       

@@ -1,46 +1,92 @@
+/*
+    index-based quicksort
+    quickSort algorithm from: https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/tutorial/
+*/
+
 #include <iostream>
+#include <fstream>
+#include <stdlib.h>
 
 using namespace std;
 
-int partition(int arr[], int index[], int low, int high) {
-    int pivot = arr[index[0]];
-    int i = low-1;
+void swap(int *a, int *b);
+int partition(int arr[], int index[], int low, int high);
+void quickSort(int arr[], int index[], int low, int high);
+void generateNums(int n);
+void printArr(int arr[], int index[], int n);
 
-    for (int j = low; j < high; j++) {
-        if(arr[index[j]] < pivot) {
-            i++;
-            int temp = index[j];
-            index[j] = index[i];
-            index[i] = temp;
-        }
-    }
+int main() {
+    ifstream in;
+    in.open("randomNums.txt");      
 
-    return i + 1;
-}
-
-void quickSort(int arr[], int index[], int low, int high) {
-    if (low < high) {
-        int pivot = partition(arr, index, low, high);        
-        quickSort(arr, index, low, pivot - 1);
-        quickSort(arr, index, pivot + 1, high);
-    }
-}
-
-int main() {;
     int n;
-    //cin >> n;
-    n = 4;
-    int arr [] {5, 3, 4, 1};
-    int index [] {0, 1, 2, 3};
-    
-    //for(int i = 0; i < n; i++)
-        //cout << arr[i];
+    cin >> n;
+    int arr[n], index[n];
 
-    quickSort(arr, index, 0, 3);
-    cout << endl;
-    for (int i = 0; i < n; i++)
-        cout << arr[index[i]] << " ";
-    cout << endl;
+    generateNums(n);
+    int temp;
+    int i = 0;
+    while(in >> arr[i]) {        
+        index[i] = i;
+        i++;
+    }
+
+    quickSort(arr, index, 0, n - 1);
+    printArr(arr, index, n);
+    in.close();
     return 0;
 }
 
+void swap(int *a, int *b) {
+	int temp; 
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+int partition (int arr[], int index[], int low, int high) {
+    int i = low + 1;
+    int piv = arr[index[low]];
+    for(int j = i; j <= high ; j++) {
+        if(arr[index[j]] < piv) {
+            swap(index[i], index[j]);
+            i++;
+        }
+   }
+   swap(index[low], index[i-1]);
+   return i-1;
+}
+
+void quickSort(int arr[], int index[], int low, int high) {
+    if(low < high) {        
+        int piv = partition(arr, index, low, high);     
+        quickSort(arr, index, low, piv-1); 
+        quickSort(arr, index, piv+1, high); 
+   }
+}
+
+void generateNums(int n) {
+    ofstream randomNums;
+    randomNums.open("randomNums.txt");
+    int i = 0;
+    int random;
+    while(i < n) {
+        random = rand()/1000;
+        if(random > 0 && random <= 10000) {
+            randomNums << random << endl;
+            i++;
+        }
+    }
+    randomNums.close();
+}
+
+void printArr(int arr[], int index[], int n) {
+    ofstream out;
+    out.open("sortoutput.txt");
+    for(int i = 0; i < n; i++) {
+       if(i > 0 && i % 10 == 0)
+           out << endl;
+       out << arr[index[i]] << " ";
+    }
+    out.close();
+}
