@@ -6,6 +6,7 @@
 #include <iostream>
 #include <fstream>
 #include <stdlib.h>
+#include <chrono>
 
 using namespace std;
 
@@ -31,7 +32,11 @@ int main() {
         i++;
     }
 
+    auto t1 = std::chrono::high_resolution_clock::now();
     quickSort(arr, index, 0, n - 1);
+    auto t2 = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
+    cout << duration << endl;
     printArr(arr, index, n);
     in.close();
     return 0;
