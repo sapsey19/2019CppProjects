@@ -25,6 +25,7 @@ int main() {
     int arr[n], index[n];
 
     generateNums(n);
+    
     int temp;
     int i = 0;
     while(in >> arr[i]) {        
@@ -48,16 +49,24 @@ void swap(int *a, int *b) {
 	*b = temp;
 }
 
-int sort3(int &a, int &b, int &c) {
-    if(a <= b && b <= c)
-        return b;
-    if(b <= c && c <= a)
-        return c;
-    if(c <= a && a <= b)
-        return a;
+int sort3(int &a, int &b, int &c) {   
+    if (a > b) { 
+        if (b > c) 
+            return b; 
+        if (a > c) 
+            return c;        
+        return a; 
+    } 
+    else {        
+        if (a > c) 
+            return a; 
+        if (b > c) 
+            return c;       
+        return b; 
+    }  
 }
 
-int partition (int arr[], int index[], int low, int high) {
+int partition(int arr[], int index[], int low, int high) {
     int i = low + 1;
     //int piv = arr[index[low]];
     int piv = sort3(arr[index[low]], arr[index[high/2]], arr[index[high]]);
