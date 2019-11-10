@@ -3,6 +3,8 @@
 #include <string>
 #include <ctype.h>
 #include "token.h"
+#include <stdio.h>
+#include <cstring>
 
 using namespace std;
 static ifstream ifs;
