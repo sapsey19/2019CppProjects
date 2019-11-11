@@ -12,7 +12,9 @@
 #ifndef HASHTYPE_H
 #define HASHTYPE_H
 
-const int HASHTABLESIZE = 200;
+
+const int HASHTABLESIZE = 800;
+const int hashTableGoal = HASHTABLESIZE * .80;
 
 struct WordRec
 {

@@ -3,7 +3,6 @@
 #include <string>
 #include <ctype.h>
 #include "token.h"
-#include <stdio.h>
 #include <cstring>
 
 using namespace std;
@@ -25,9 +24,10 @@ char* NextToken()
 	static char token[60]; //array for temp storage
 	int i = 0;
 	
-	do
+	do {
 		ifs.get(ch);
-	while (ifs.good() && !isalpha(ch));
+	} while (ifs.good() && !isalpha(ch));
+
 	if (ifs.good())
 	{
 		do
@@ -43,6 +43,9 @@ char* NextToken()
 	{
 		ifs.close();
 		active = 0;
+	}
+	for(int j = 0; j < i; j++) {
+		newtoken[j] = tolower(newtoken[j]);
 	}
 	return newtoken;
 }

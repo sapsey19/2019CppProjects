@@ -5,6 +5,7 @@
 */
 
 #include "hashType.h"
+#include <string>
 
 void HashTableInitialise();
 HashType HashTableFind(HashType);
