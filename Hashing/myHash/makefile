@@ -1,10 +1,10 @@
 hash: main.o hashType.o hashTable.o token.o linkedlist.o
-	g++ main.o hashType.o hashTable.o token.o linkedlist.o -o hash
+	g++ main.o hashType.o hashTable.o token.o -o hash
 
-main.o: main.cpp hashType.h hashTable.h token.h linkedlist.cpp
+main.o: main.cpp hashType.h hashTable.h token.h linkedlist.h
 	g++ -c main.cpp
 
-HashTable.o: hashTable.cpp hashTable.h hashType.h
+HashTable.o: hashTable.cpp hashTable.h hashType.h linkedlist.h
 	g++ -c hashTable.cpp
 
 HashType.o: hashType.cpp hashType.h
@@ -13,7 +13,7 @@ HashType.o: hashType.cpp hashType.h
 token.o: token.h
 	g++ -c token.cpp
 
-linkedlist.o: linkedlist.h 
+linkedlist.o: linkedlist.h
 	g++ -c linkedlist.h
 	 
 clean:
