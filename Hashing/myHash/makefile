@@ -11,7 +11,7 @@ token.o: token.h
 	g++ -c token.cpp
 
 linkedlist.o: linkedlist.h
-	g++ -c linkedlist.h
+	g++ -c linkedlist.cpp
 	 
 clean:
-	rm hash main.o hashTable.o token.o
+	rm hash main.o hashTable.o token.o linkedlist.o

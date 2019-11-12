@@ -6,7 +6,7 @@
 using namespace std;
 int main() {	
 	char fname[30];
-	char *word;	
+	char *word;
 	cin >> fname;
 	if (openTokenFile(fname)) {
 		clock_t t = clock();

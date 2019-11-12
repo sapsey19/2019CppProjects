@@ -1,9 +1,7 @@
 #include "hashTable.h"
-#include "linkedlist.h"
+#include "linkedlist.cpp"
 
-using namespace std;
-
-List arr[HASHTABLESIZE];
+List arr[HASHTABLESIZE]; //array of linkedlist
 
 //This stores the word at hash location and deals with collisions
 void hashTableInsert(char *word) {	
