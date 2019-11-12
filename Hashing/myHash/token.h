@@ -7,5 +7,5 @@
 	It is up to the caller to clean up memory allocated for the token.
 */
 
-int OpenTokenFile(const char[]);
-char* NextToken();
+int openTokenFile(const char[]);
+char* nextToken();

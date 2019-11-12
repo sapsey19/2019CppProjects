@@ -1,30 +1,20 @@
-#include <iostream>
 #include "token.h"
 #include "hashTable.h"
-#include <string>
+#include <iostream>
 #include <time.h>
 
 using namespace std;
 int main() {	
-	char fname[30], *word;
-	WordRec* wrec, trec;
-	int nentries = 0;
-
+	char fname[30];
+	char *word;	
 	cin >> fname;
-	if (OpenTokenFile(fname)) {
-		//HashTableInitialise();
+	if (openTokenFile(fname)) {
 		clock_t t = clock();
-		while ((word=NextToken())) {
-			trec.word = word;
-			wrec = HashTableFind(&trec);
-			wrec = new WordRec;
-			*wrec = trec;
-			wrec->count = 1;
-			HashTableInsert(wrec);
-		}
+		while ((word=nextToken()))
+			hashTableInsert(word);
 		t = clock() - t;
 		cout << "Time: " << ((double)t)/CLOCKS_PER_SEC << " seconds"  << endl;
-		HashTableDump();
+		hashTableDump();
 	}		
 	return 0;
 }

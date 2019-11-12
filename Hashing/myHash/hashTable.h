@@ -4,10 +4,8 @@
 	as specified in HashType.h
 */
 
-#include "hashType.h"
-#include <string>
+const int HASHTABLESIZE = 800;
 
-void HashTableInitialise();
-HashType HashTableFind(HashType);
-void HashTableInsert(HashType);
-void HashTableDump();
+void hashTableInsert(char *word);
+void hashTableDump();
+int hashFunction(char* word);
