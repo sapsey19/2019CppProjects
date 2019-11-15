@@ -13,14 +13,14 @@ void List::createNode(string word) { //create new node, inserts at end of list
         size++;
     }
     else { 
-        if (findOccurances(word) == 0) {
+        if (findOccurances(word) == 0) { //if number of occurances is 0, add to list
             temp->count = 1;
             tail->next = temp;
             tail = temp;
             temp = nullptr;
             size++;
         }
-        else
+        else //else increase count of word
             increaseCount(word);
     }
 }
@@ -29,9 +29,10 @@ void List::print() {
     node *temp = new node;
     temp = head;
     while (temp != nullptr) {
-        cout << temp->word << ": " << temp->count << endl;
+        cout << temp->word << ": " << temp->count << " | ";
         temp = temp->next;
     }
+    cout << endl;
 }
 
 void List::printOut() {
@@ -44,15 +45,20 @@ void List::printOut() {
     fout << endl;
 }
 
-node List::findNode(string word) {
+void List::findWords(string word) {
     node *temp = new node;
     temp = head;
+    bool found = false;
     while (temp != nullptr) {
-        if (temp->word == word)
-            return *temp;
+        if (temp->word == word) {
+            cout << "'" << word << "'" << " occurs " << temp->count << " times." << endl;
+            found = true;
+            break;
+        }
         temp = temp->next;
     }
-    return *temp;
+    if(!found)
+        cout << "'" << word << "'" << " is not in hash table" << endl;
 }
 
 int List::findOccurances(string word) {

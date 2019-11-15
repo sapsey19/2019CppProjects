@@ -1,11 +1,12 @@
 /*
 	Interface file for HashTable
-	This is a generic hash table for storing the type HashType
-	as specified in HashType.h
+	This is a hash table for storing strings. 
 */
 
-const int HASHTABLESIZE = 800;
+const int HASHTABLESIZE = 400;
 
 void hashTableInsert(char *word);
 void hashTableDump();
 int hashFunction(char* word);
+void findWord(char *word);
+

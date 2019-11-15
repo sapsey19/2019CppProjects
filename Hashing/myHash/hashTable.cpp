@@ -1,5 +1,7 @@
 #include "hashTable.h"
 #include "linkedlist.cpp"
+#include <string>
+#include <cstring>
 
 List arr[HASHTABLESIZE]; //array of linkedlist
 
@@ -17,8 +19,13 @@ void hashTableDump() {
 	}
 }
 
+void findWord(char *word) {
+	int i = hashFunction(word);
+	arr[i].findWords(word);
+}
+
 int hashFunction(char *word) {
-	//hash function from: https://stackoverflow.com/questions/7666509/hash-function-for-string
+	//hash function from: https://stackoverflow.com/questions/7666509/hash-function-for-string 
 	unsigned long hash = 5381;
     int c;
 	char* str = word;
