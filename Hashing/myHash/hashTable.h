@@ -10,3 +10,4 @@ void hashTableDump();
 int hashFunction(char* word);
 void findWord(char *word);
 
+void sortTable();

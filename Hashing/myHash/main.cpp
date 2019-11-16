@@ -4,6 +4,7 @@
 #include <time.h>
 
 using namespace std;
+
 int main() {
 	int choice;
 	char fname[30];
@@ -12,6 +13,7 @@ int main() {
 	while (choice != 0) {
 		cout << "(1) Enter file name to hash" << endl;
 		cout << "(2) Find occurance of word in table" << endl;
+		cout << "(3) Sort hash table" << endl;
 		cout << "(0) Quit program" << endl;
 		cout << "Enter choice: ";
 		cin >> choice;
@@ -42,6 +44,9 @@ int main() {
 			cin >> temp;
 			cout << endl;
 			findWord(temp);
+			break;
+		case 3:
+			sortTable();
 			break;
 		case 0:
 			break;
