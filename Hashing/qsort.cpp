@@ -49,35 +49,94 @@ void swap(int *a, int *b) {
 	*b = temp;
 }
 
-int sort3(int &a, int &b, int &c) {   
-    if (a > b) { 
-        if (b > c) 
-            return b; 
-        if (a > c) 
-            return c;        
-        return a; 
-    } 
-    else {        
-        if (a > c) 
-            return a; 
-        if (b > c) 
-            return c;       
-        return b; 
-    }  
+// int sort3(int &a, int &b, int &c) {   
+//     if (a > b) { 
+//         if (b > c) 
+//             return b; 
+//         if (a > c) 
+//             return c;        
+//         return a; 
+//     } 
+//     else {        
+//         if (a > c) 
+//             return a; 
+//         if (b > c) 
+//             return c;       
+//         return b; 
+//     }  
+// }
+void sort3(int arr[], int indices[], int val1, int val2, int val3) {
+    
+    int x = indices[val1];
+    int y = indices[val2];
+    int z = indices[val3];
+    
+    int a = arr[indices[x]];
+    int b = arr[indices[y]];
+    int c = arr[indices[z]];
+    int temp;
+    
+    if (a < b) {
+        // a < b < c
+        if (b < c) {
+            ; // already sorted, do nothing
+        }
+        // a < c < b, switch y and z
+        else if ( a < c) {
+            temp = y;
+            y = z;
+            z = temp;
+        }
+        // c <= a < b, move all to right
+        else {
+            temp = y;
+            y = x;
+            x = z;
+            z = temp;
+        }
+    }
+    // a >= b
+    else {
+        // a >= b > c
+        if (b > c) {
+            ; // already sorted, do nothing
+        }
+        // b < c < a, move all left
+        else if (a > c) {
+            temp = y;
+            y = z;
+            z = x;
+            x = temp;
+        }
+        // b < a < c, switch x and y
+        else {
+            temp = x;
+            x = y;
+            y = temp;
+        }
+    }
+    
+    // update indices
+    indices[val1] = x;
+    indices[val2] = y;
+    indices[val3] = z;
 }
 
-int partition(int arr[], int index[], int low, int high) {
-    int i = low + 1;
-    //int piv = arr[index[low]];
-    int piv = sort3(arr[index[low]], arr[index[high/2]], arr[index[high]]);
-    for(int j = i; j <= high ; j++) {
-        if(arr[index[j]] < piv) {
-            swap(index[i], index[j]);
+
+int partition(int arr[], int indices[], int left, int right) {
+    sort3(arr, indices, left, right, (left+right)/2);
+    int pivot = arr[indices[right]];
+    
+    int i = left - 1;
+    
+    for (int j = left; j < right; j++) {
+        if (arr[indices[j]] < pivot) {
             i++;
+            swap(&indices[i], &indices[j]);
         }
-   }
-   swap(index[low], index[i-1]);
-   return i-1;
+    }
+    swap(&indices[i+1], &indices[right]);
+    return i+1;
 }
 
 void quickSort(int arr[], int index[], int low, int high) {
@@ -95,7 +154,7 @@ void generateNums(int n) {
     int random;
     while(i < n) {
         random = rand()/1000;
-        if(random > 0 && random <= 10000) {
+        if(random > 0 && random <= 1000) {
             randomNums << random << endl;
             i++;
         }

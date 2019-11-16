@@ -6,7 +6,7 @@
 #include <iostream>
 #include <fstream>
 #include <stdlib.h>
-#include <chrono>
+#include <time.h>
 
 using namespace std;
 
@@ -32,11 +32,10 @@ int main() {
         i++;
     }
 
-    auto t1 = std::chrono::high_resolution_clock::now();
-    quickSort(arr, index, 0, n - 1);
-    auto t2 = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
-    cout << duration << endl;
+    clock_t t = clock();
+	quickSort(arr, index, 0, n-1);
+	t = clock() - t;
+    cout << "Time: " << ((double)t) / CLOCKS_PER_SEC << " seconds" << endl;
     printArr(arr, index, n);
     in.close();
     return 0;
@@ -53,7 +52,7 @@ int partition (int arr[], int index[], int low, int high) {
     int i = low + 1;
     int piv = arr[index[low]];
     for(int j = i; j <= high ; j++) {
-        if(arr[index[j]] < piv) {
+        if(arr[index[j]] > piv) {
             swap(index[i], index[j]);
             i++;
         }
