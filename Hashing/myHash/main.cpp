@@ -46,6 +46,10 @@ int main() {
 			findWord(temp);
 			break;
 		case 3:
+			if (!readIn) {
+				cout << "Haven't hashed a file yet!" << endl;
+				break;
+			}
 			sortTable();
 			break;
 		case 0:

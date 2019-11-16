@@ -3,8 +3,7 @@
 #include <string>
 #include <cstring>
 #include <fstream>
-//#include "ass3A.cpp"
-#include <algorithm>
+#include "qsort.cpp"
 
 List arr[HASHTABLESIZE]; //array of linkedlist
 
@@ -47,6 +46,7 @@ void sortTable() {
 	in.open("output.txt");
 	int numArr[6260];
 	string strArr[6260];
+	int index[6260];
 	string trash;
 	int i = 0;
 	string temp;
@@ -57,16 +57,15 @@ void sortTable() {
 		temp.erase(temp.length()- 1, temp.length());
 		strArr[i] = temp;
 		numArr[i] = tempc;
+		index[i] = i;
 		i++;
 	}
 	in.close();
 
-	
-	sort(numArr, numArr + 6260);
+	quickSort(numArr, index, 0, 6260 - 1);
 	ofstream out;
-	out.open("arrout.txt");
-	for(int j = 0; j < 10000; j++) {
-		out << strArr[j] << " " << numArr[j] << endl;
-	}
-	out.close();
+    out.open("sortedoutput.txt");
+    for(int j = 0; j < 150; j++)
+       out << strArr[index[j]] << ": " << numArr[index[j]] << endl;    
+    out.close();
 }

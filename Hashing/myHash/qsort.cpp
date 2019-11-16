@@ -16,31 +16,31 @@ void quickSort(int arr[], int index[], int low, int high);
 void generateNums(int n);
 void printArr(int arr[], int index[], int n);
 
-int main() {
-    ifstream in;
-    in.open("randomNums.txt");      
+// int main() {
+//     ifstream in;
+//     in.open("randomNums.txt");      
 
-    int n;
-    cin >> n;
-    int arr[n], index[n];
+//     int n;
+//     cin >> n;
+//     int arr[n], index[n];
 
-    generateNums(n);
-    int temp;
-    int i = 0;
-    while(in >> arr[i]) {        
-        index[i] = i;
-        i++;
-    }
-
-    auto t1 = std::chrono::high_resolution_clock::now();
-    quickSort(arr, index, 0, n - 1);
-    auto t2 = std::chrono::high_resolution_clock::now();
-    auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
-    cout << duration << endl;
-    printArr(arr, index, n);
-    in.close();
-    return 0;
-}
+//     generateNums(n);
+    
+//     int temp;
+//     int i = 0;
+//     while(in >> arr[i]) {        
+//         index[i] = i;
+//         i++;
+//     }
+//     auto t1 = std::chrono::high_resolution_clock::now();
+//     quickSort(arr, index, 0, n - 1);
+//     auto t2 = std::chrono::high_resolution_clock::now();
+//     auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
+//     cout << duration << endl;
+//     printArr(arr, index, n);
+//     in.close();
+//     return 0;
+// }
 
 void swap(int *a, int *b) {
 	int temp; 
@@ -49,11 +49,29 @@ void swap(int *a, int *b) {
 	*b = temp;
 }
 
-int partition (int arr[], int index[], int low, int high) {
+int sort3(int &a, int &b, int &c) {   
+    if (a > b) { 
+        if (b > c) 
+            return b; 
+        if (a > c) 
+            return c;        
+        return a; 
+    } 
+    else {        
+        if (a > c) 
+            return a; 
+        if (b > c) 
+            return c;       
+        return b; 
+    }  
+}
+
+int partition(int arr[], int index[], int low, int high) {
     int i = low + 1;
     int piv = arr[index[low]];
+    //int piv = sort3(arr[index[low]], arr[index[high/2]], arr[index[high]]);
     for(int j = i; j <= high ; j++) {
-        if(arr[index[j]] > piv) {
+        if(arr[index[j]] > piv) { //switched sign to sort by descending order
             swap(index[i], index[j]);
             i++;
         }
