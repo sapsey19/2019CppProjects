@@ -6,7 +6,7 @@
 	
 */
 
-const int HASHTABLESIZE = 400;
+const int TABLE_SIZE = 400;
 
 void hashTableInsert(char *word);
 void hashTableDump();

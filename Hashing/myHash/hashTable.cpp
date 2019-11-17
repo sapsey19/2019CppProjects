@@ -5,12 +5,7 @@
 #include <fstream>
 #include "qsort.cpp"
 
-List arr[HASHTABLESIZE]; //array of linkedlist
-
-struct nodeType {
-	string word;
-	int count;
-};
+List arr[TABLE_SIZE]; //array of linkedlist
 
 //This stores the word at hash location and deals with collisions
 void hashTableInsert(char *word) {	
@@ -21,7 +16,7 @@ void hashTableInsert(char *word) {
 //Displays the contents of a hash table.
 void hashTableDump() {	
 	int i;	
-	for (i = 0; i < HASHTABLESIZE; i++) {
+	for (i = 0; i < TABLE_SIZE; i++) {
 		arr[i].printOut();
 	}
 }
@@ -38,7 +33,7 @@ int hashFunction(char *word) {
 	char* str = word;
     while (c = *str++)
         hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
-	return hash%HASHTABLESIZE;
+	return hash % TABLE_SIZE;
 }
 
 void sortTable() {

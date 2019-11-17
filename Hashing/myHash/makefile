@@ -14,4 +14,4 @@ linkedlist.o: linkedlist.h
 	g++ -c linkedlist.cpp
 	 
 clean:
-	rm hash main.o hashTable.o token.o linkedlist.o
+	rm hash main.o hashTable.o token.o linkedlist.o output.txt sortedoutput.txt

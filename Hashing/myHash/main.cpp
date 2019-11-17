@@ -51,6 +51,7 @@ int main() {
 				break;
 			}
 			sortTable();
+			cout << "Finished sorting hash table." << endl;
 			break;
 		case 0:
 			break;
