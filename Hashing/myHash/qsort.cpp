@@ -12,7 +12,7 @@ using namespace std;
 void swap(int *a, int *b);
 int partition(int arr[], int index[], int low, int high);
 void quickSort(int arr[], int index[], int low, int high);
-void generateNums(int n);
+void generateNums(int arr[], int index[], int n);
 void printArr(int arr[], int index[], int n);
 
 // int main() {
@@ -23,23 +23,11 @@ void printArr(int arr[], int index[], int n);
 //     cin >> n;
 //     int arr[n], index[n];
 
-//     clock_t h = clock();
-//     generateNums(n);
-//     h = clock() - h;
-//     cout << "Number generation time: " << ((double)h) / CLOCKS_PER_SEC << " seconds" << endl;
-//     int temp;
-//     int i = 0;
-//     clock_t r = clock();
-//     while(in >> arr[i]) {        
-//         index[i] = i;
-//         i++;
-//     }
-//     r = clock() - r;
-//      cout << "Read in time: " << ((double)r) / CLOCKS_PER_SEC << " seconds" << endl;
+//     generateNums(arr, index, n);
 
 //     clock_t t = clock();
-// 	   quickSort(arr, index, 0, n-1);
-// 	   t = clock() - t;
+// 	quickSort(arr, index, 0, n-1);
+// 	t = clock() - t;
 //     cout << "Sort time: " << ((double)t) / CLOCKS_PER_SEC << " seconds" << endl;
 //     printArr(arr, index, n);
 //     in.close();
@@ -54,12 +42,12 @@ void partition(int arr[], int index[], int low, int high, int &i, int &j) {
     int v = arr[index[high]]; 
   
     while (true) { 
-        while (arr[index[++i]] > v); //was < v 
+        while (arr[index[++i]] > v); //changed sign to sort by decreasing order 
   
-        while (v > arr[index[--j]]) //was < arr[index]
+        while (v > arr[index[--j]]) //changed sign to sort by decreasing order
             if (j == low) break; 
 
-        if (i >= j) break; //was >=
+        if (i >= j) break;
 
         swap(index[i], index[j]); 
   
@@ -103,17 +91,15 @@ void swap(int *a, int *b) {
 	*b = temp;
 }
 
-void generateNums(int n) {
-    ofstream randomNums;
-    randomNums.open("randomNums.txt");
+void generateNums(int arr[], int index[], int n) {
     int i = 0;
     int random;
     while(i < n) {
         random = rand() % 10000;        
-        randomNums << random << endl;
+        arr[i] = random;
+        index[i] = i;
         i++;
     }
-    randomNums.close();
 }
 
 void printArr(int arr[], int index[], int n) {

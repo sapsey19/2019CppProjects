@@ -35,7 +35,9 @@ public:
         head = nullptr;
         tail = nullptr;
     }
-    ~List() {}
+    ~List() {
+        fout.close();
+    }
 
     void createNode(string word);
     void print();
