@@ -1,81 +1,107 @@
+/*
+    Improved quickSort algorithm, using 3-way partitioning
+    Algorithm from: https://www.geeksforgeeks.org/3-way-quicksort-dutch-national-flag/
+*/
+
 #include <iostream>
 #include <fstream>
-#include <chrono>
+#include <time.h>
 
 using namespace std;
 
-void partition(int a[], int index[], int l, int r, int &i, int &j) 
-{ 
-    i = l-1, j = r; 
-    int p = l-1, q = r; 
-    int v = a[index[r]]; 
+void swap(int *a, int *b);
+int partition(int arr[], int index[], int low, int high);
+void quickSort(int arr[], int index[], int low, int high);
+void generateNums(int n);
+void printArr(int arr[], int index[], int n);
+
+int main() {
+    ifstream in;
+    in.open("randomNums.txt");      
+
+    int n;
+    cin >> n;
+    int arr[n], index[n];
+
+    clock_t h = clock();
+    generateNums(n);
+    h = clock() - h;
+    cout << "Number generation time: " << ((double)h) / CLOCKS_PER_SEC << " seconds" << endl;
+    int temp;
+    int i = 0;
+    clock_t r = clock();
+    while(in >> arr[i]) {        
+        index[i] = i;
+        i++;
+    }
+    r = clock() - r;
+     cout << "Read in time: " << ((double)r) / CLOCKS_PER_SEC << " seconds" << endl;
+
+    clock_t t = clock();
+	quickSort(arr, index, 0, n-1);
+	t = clock() - t;
+    cout << "Sort time: " << ((double)t) / CLOCKS_PER_SEC << " seconds" << endl;
+    printArr(arr, index, n);
+    in.close();
+    return 0;
+}
+
+void partition(int arr[], int index[], int low, int high, int &i, int &j) { 
+    i = low - 1;
+    j = high; 
+    int p = low-1;
+    int q = high; 
+    int v = arr[index[high]]; 
   
-    while (true) 
-    { 
-        // From left, find the first element greater than 
-        // or equal to v. This loop will definitely terminate 
-        // as v is last element 
-        while (a[index[++i]] < v); 
+    while (true) { 
+        while (arr[index[++i]] < v); 
   
-        // From right, find the first element smaller than or 
-        // equal to v 
-        while (v < a[index[--j]]) 
-            if (j == l) 
-                break; 
-  
-        // If i and j cross, then we are done 
+        while (v < arr[index[--j]]) 
+            if (j == low) break; 
+
         if (i >= j) break; 
-  
-        // Swap, so that smaller goes on left greater goes on right 
+
         swap(index[i], index[j]); 
   
-        // Move all same left occurrence of pivot to beginning of 
-        // array and keep count using p 
-        if (a[index[i]] == v) 
-        { 
+        if (arr[index[i]] == v) { 
             p++; 
             swap(index[p], index[i]); 
         } 
   
-        // Move all same right occurrence of pivot to end of array 
-        // and keep count using q 
-        if (a[index[j]] == v) 
-        { 
+        if (arr[index[j]] == v) { 
             q--; 
             swap(index[j], index[q]); 
         } 
-    } 
+    }  
+    swap(index[i], index[high]); 
   
-    // Move pivot element to its correct index 
-    swap(index[i], index[r]); 
-  
-    // Move all left same occurrences from beginning 
-    // to adjacent to arr[i] 
     j = i-1; 
-    for (int k = l; k < p; k++, j--) 
+    for (int k = low; k < p; k++, j--) 
         swap(index[k], index[j]); 
-  
-    // Move all right same occurrences from end 
-    // to adjacent to arr[i] 
+
     i = i+1; 
-    for (int k = r-1; k > q; k--, i++) 
+    for (int k = high-1; k > q; k--, i++) 
         swap(index[i], index[k]); 
 } 
   
 // 3-way partition based quick sort 
-void quicksort(int a[], int index[], int l, int r) 
-{ 
-    if (r <= l) return; 
-  
+void quickSort(int arr[], int index[], int low, int high) { 
+    if (high <= low) return;   
     int i, j; 
+
+    // i and j are passed as reference 
+    partition(arr, index, low, high, i, j); 
   
-    // Note that i and j are passed as reference 
-    partition(a, index, l, r, i, j); 
-  
-    // Recur 
-    quicksort(a, index, l, j); 
-    quicksort(a, index, i, r); 
+    quickSort(arr, index, low, j); 
+    quickSort(arr, index, i, high); 
 } 
+
+void swap(int *a, int *b) {
+	int temp; 
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
 
 void generateNums(int n) {
     ofstream randomNums;
@@ -83,42 +109,20 @@ void generateNums(int n) {
     int i = 0;
     int random;
     while(i < n) {
-        random = rand()/1000;
-        if(random > 0 && random <= 1000) {
-            randomNums << random << endl;
-            i++;
-        }
+        random = rand() % 10000;        
+        randomNums << random << endl;
+        i++;
     }
     randomNums.close();
 }
 
-int main() {
-    ifstream in;
-    in.open("randomNums.txt");
+void printArr(int arr[], int index[], int n) {
     ofstream out;
     out.open("sortoutput.txt");
-    int n;
-    cin >> n;
-    int arr[n];
-    int index[n];
-    generateNums(n);
-
-    int i = 0;
-    while(in >> arr[i]) {
-        index[i] = i;   
-        i++;
-    }
-    in.close();
-    
-    clock_t t = clock();
-	quicksort(arr, index, 0, n-1);
-	t = clock() - t;
-    for(i = 0; i < n;  i++) {
-        if(i > 0 && i % 10 == 0)
-            out << endl;
-        out << arr[index[i]] << " ";
+    for(int i = 0; i < n; i++) {
+       if(i > 0 && i % 10 == 0)
+           out << endl;
+       out << arr[index[i]] << " ";
     }
     out.close();
-    cout << "Time: " << ((double)t) / CLOCKS_PER_SEC << " seconds" << endl;
-    return 0;
 }

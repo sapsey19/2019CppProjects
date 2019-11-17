@@ -1,12 +1,11 @@
 /*
-    index-based quicksort
-    quickSort algorithm from: https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/tutorial/
+    Improved quickSort algorithm, using 3-way partitioning
+    Algorithm from: https://www.geeksforgeeks.org/3-way-quicksort-dutch-national-flag/
 */
 
 #include <iostream>
 #include <fstream>
-#include <stdlib.h>
-#include <chrono>
+#include <time.h>
 
 using namespace std;
 
@@ -24,23 +23,78 @@ void printArr(int arr[], int index[], int n);
 //     cin >> n;
 //     int arr[n], index[n];
 
+//     clock_t h = clock();
 //     generateNums(n);
-    
+//     h = clock() - h;
+//     cout << "Number generation time: " << ((double)h) / CLOCKS_PER_SEC << " seconds" << endl;
 //     int temp;
 //     int i = 0;
+//     clock_t r = clock();
 //     while(in >> arr[i]) {        
 //         index[i] = i;
 //         i++;
 //     }
-//     auto t1 = std::chrono::high_resolution_clock::now();
-//     quickSort(arr, index, 0, n - 1);
-//     auto t2 = std::chrono::high_resolution_clock::now();
-//     auto duration = std::chrono::duration_cast<std::chrono::microseconds>( t2 - t1 ).count();
-//     cout << duration << endl;
+//     r = clock() - r;
+//      cout << "Read in time: " << ((double)r) / CLOCKS_PER_SEC << " seconds" << endl;
+
+//     clock_t t = clock();
+// 	   quickSort(arr, index, 0, n-1);
+// 	   t = clock() - t;
+//     cout << "Sort time: " << ((double)t) / CLOCKS_PER_SEC << " seconds" << endl;
 //     printArr(arr, index, n);
 //     in.close();
 //     return 0;
 // }
+
+void partition(int arr[], int index[], int low, int high, int &i, int &j) { 
+    i = low - 1;
+    j = high; 
+    int p = low-1;
+    int q = high; 
+    int v = arr[index[high]]; 
+  
+    while (true) { 
+        while (arr[index[++i]] > v); //was < v 
+  
+        while (v > arr[index[--j]]) //was < arr[index]
+            if (j == low) break; 
+
+        if (i >= j) break; //was >=
+
+        swap(index[i], index[j]); 
+  
+        if (arr[index[i]] == v) { 
+            p++; 
+            swap(index[p], index[i]); 
+        } 
+  
+        if (arr[index[j]] == v) { 
+            q--; 
+            swap(index[j], index[q]); 
+        } 
+    }  
+    swap(index[i], index[high]); 
+  
+    j = i-1; 
+    for (int k = low; k < p; k++, j--) 
+        swap(index[k], index[j]); 
+
+    i = i+1; 
+    for (int k = high-1; k > q; k--, i++) 
+        swap(index[i], index[k]); 
+} 
+  
+// 3-way partition based quick sort 
+void quickSort(int arr[], int index[], int low, int high) { 
+    if (high <= low) return;   
+    int i, j; 
+
+    // i and j are passed as reference 
+    partition(arr, index, low, high, i, j); 
+  
+    quickSort(arr, index, low, j); 
+    quickSort(arr, index, i, high); 
+} 
 
 void swap(int *a, int *b) {
 	int temp; 
@@ -49,56 +103,15 @@ void swap(int *a, int *b) {
 	*b = temp;
 }
 
-int sort3(int &a, int &b, int &c) {   
-    if (a > b) { 
-        if (b > c) 
-            return b; 
-        if (a > c) 
-            return c;        
-        return a; 
-    } 
-    else {        
-        if (a > c) 
-            return a; 
-        if (b > c) 
-            return c;       
-        return b; 
-    }  
-}
-
-int partition(int arr[], int index[], int low, int high) {
-    int i = low + 1;
-    int piv = arr[index[low]];
-    //int piv = sort3(arr[index[low]], arr[index[high/2]], arr[index[high]]);
-    for(int j = i; j <= high ; j++) {
-        if(arr[index[j]] > piv) { //switched sign to sort by descending order
-            swap(index[i], index[j]);
-            i++;
-        }
-   }
-   swap(index[low], index[i-1]);
-   return i-1;
-}
-
-void quickSort(int arr[], int index[], int low, int high) {
-    if(low < high) {        
-        int piv = partition(arr, index, low, high);     
-        quickSort(arr, index, low, piv-1); 
-        quickSort(arr, index, piv+1, high); 
-   }
-}
-
 void generateNums(int n) {
     ofstream randomNums;
     randomNums.open("randomNums.txt");
     int i = 0;
     int random;
     while(i < n) {
-        random = rand()/1000;
-        if(random > 0 && random <= 10000) {
-            randomNums << random << endl;
-            i++;
-        }
+        random = rand() % 10000;        
+        randomNums << random << endl;
+        i++;
     }
     randomNums.close();
 }

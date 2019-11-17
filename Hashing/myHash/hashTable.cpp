@@ -50,13 +50,13 @@ void sortTable() {
 	string trash;
 	int i = 0;
 	string temp;
-	int tempc;
+	int tempcount;
 	while(in >> temp) {
-		in >> tempc;
+		in >> tempcount;
 		in >> trash;
-		temp.erase(temp.length()- 1, temp.length());
+		temp.erase(temp.length()- 1, temp.length()); //erase the : after each word
 		strArr[i] = temp;
-		numArr[i] = tempc;
+		numArr[i] = tempcount;
 		index[i] = i;
 		i++;
 	}

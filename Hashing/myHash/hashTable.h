@@ -1,6 +1,9 @@
 /*
-	Interface file for HashTable
-	This is a hash table for storing strings. 
+	Interface for hashTable.cpp
+	Stores strings using chaining collision resolution
+	HASHTABLESIZE can be whatever size the user wants, but generally the smaller it is 
+		the less efficient the hashTable is. -> a HASHTABLESIZE of 1 results in a linked list
+	
 */
 
 const int HASHTABLESIZE = 400;

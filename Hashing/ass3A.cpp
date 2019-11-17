@@ -24,18 +24,24 @@ int main() {
     cin >> n;
     int arr[n], index[n];
 
+    clock_t h = clock();
     generateNums(n);
+    h = clock() - h;
+    cout << "Number generation time: " << ((double)h) / CLOCKS_PER_SEC << " seconds" << endl;
     int temp;
     int i = 0;
+    clock_t r = clock();
     while(in >> arr[i]) {        
         index[i] = i;
         i++;
     }
+    r = clock() - r;
+     cout << "Read in time: " << ((double)r) / CLOCKS_PER_SEC << " seconds" << endl;
 
     clock_t t = clock();
 	quickSort(arr, index, 0, n-1);
 	t = clock() - t;
-    cout << "Time: " << ((double)t) / CLOCKS_PER_SEC << " seconds" << endl;
+    cout << "Sort time: " << ((double)t) / CLOCKS_PER_SEC << " seconds" << endl;
     printArr(arr, index, n);
     in.close();
     return 0;
