@@ -40,7 +40,7 @@ public:
     }
 
     void createNode(string word);
-    void print();
+    bool isEmpty();
     void printOut();
     void findWords(string word);
     int findOccurances(string word);

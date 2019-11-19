@@ -3,26 +3,33 @@
 #include "qsort.cpp"
 #include <cstring>
 #include <fstream>
+#include <array>
 
-List arr[TABLE_SIZE]; //array of linkedlist
+List hashTable[TABLE_SIZE]; //array of linkedlist
+int emptyCount = 0;
 
 //This stores the word at hash location and deals with collisions
 void hashTableInsert(char *word) {	
 	int i = hashFunction(word);	
-	arr[i].createNode(word);
+	hashTable[i].createNode(word);
 }
 
 //Displays the contents of a hash table.
 void hashTableDump() {	
-	int i;	
+	int i;
 	for (i = 0; i < TABLE_SIZE; i++) {
-		arr[i].printOut();
+		//won't print out empty slots
+		if(hashTable[i].isEmpty())
+			emptyCount++;
+		else
+			hashTable[i].printOut();
 	}
+	cout << "Occupancy rate: " <<  100 * ((double)(TABLE_SIZE - emptyCount)/(double)TABLE_SIZE) <<  "%" << endl;
 }
 
 void findWord(char *word) {
 	int i = hashFunction(word);
-	arr[i].findWords(word);
+	hashTable[i].findWords(word);
 }
 
 int hashFunction(char *word) {

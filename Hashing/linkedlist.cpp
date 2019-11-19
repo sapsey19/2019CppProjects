@@ -25,14 +25,12 @@ void List::createNode(string word) { //create new node, inserts at end of list
     }
 }
 
-void List::print() {
+bool List::isEmpty() {
     node *temp = new node;
     temp = head;
-    while (temp != nullptr) {
-        cout << temp->word << ": " << temp->count << " | ";
-        temp = temp->next;
-    }
-    cout << endl;
+    if(temp == nullptr)
+        return true;
+    return false;
 }
 
 void List::printOut() {

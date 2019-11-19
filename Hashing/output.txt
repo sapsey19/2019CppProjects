@@ -1,0 +1,3590 @@
+playing: 6 | 
+extracts: 2 | 
+summoned: 5 | 
+toward: 4 | demand: 3 | 
+choosing: 1 | 
+decent: 3 | 
+chaise: 11 | astonishment: 30 | grew: 6 | 
+denny: 12 | 
+airs: 1 | quantity: 1 | 
+comparatively: 3 | 
+ill: 75 | 
+reply: 26 | variety: 7 | 
+regard: 49 | accusing: 1 | 
+avowed: 3 | informs: 1 | 
+ensue: 1 | 
+always: 119 | 
+resist: 4 | invention: 1 | 
+apparent: 3 | accuracy: 1 | essentials: 2 | 
+fingers: 3 | 
+jewel: 1 | 
+following: 23 | selected: 3 | 
+calling: 15 | 
+anew: 1 | 
+suffers: 1 | 
+whist: 5 | 
+wet: 2 | alter: 1 | 
+preceding: 4 | eyeing: 1 | 
+explicit: 2 | 
+lydia: 171 | offered: 9 | 
+earl: 2 | 
+having: 96 | enjoy: 8 | failed: 3 | 
+paid: 19 | 
+occurs: 1 | attendance: 5 | 
+earliest: 6 | 
+abominable: 6 | wonders: 3 | 
+courses: 3 | copied: 1 | valueless: 1 | 
+slow: 2 | 
+estate: 20 | seated: 15 | 
+admit: 6 | unqualified: 1 | 
+pain: 28 | 
+white: 3 | 
+representation: 4 | 
+pair: 2 | incurred: 1 | 
+soliciting: 2 | 
+change: 24 | 
+tremblings: 1 | 
+pleasant: 21 | lakes: 6 | river: 6 | 
+become: 9 | conjugal: 2 | 
+repugnant: 1 | 
+ease: 17 | censuring: 1 | abominably: 4 | leaning: 1 | reflected: 3 | 
+aware: 14 | 
+uncommonly: 9 | 
+opposite: 11 | appearances: 1 | neglected: 2 | 
+satisfactory: 7 | 
+like: 77 | instance: 7 | 
+constantly: 3 | route: 3 | 
+weight: 6 | positions: 1 | 
+cease: 2 | 
+lowness: 1 | confederacy: 1 | 
+godfather: 1 | lagged: 2 | 
+disbelieving: 1 | inn: 7 | 
+pause: 18 | comprised: 2 | 
+handsome: 37 | awoke: 1 | obey: 1 | 
+bless: 3 | 
+easy: 24 | 
+spare: 7 | wisdom: 1 | 
+preside: 1 | doubting: 2 | 
+entail: 8 | 
+complaisance: 5 | misfortunes: 4 | 
+anything: 80 | circle: 7 | advantageous: 2 | parent: 1 | 
+destroyed: 2 | dazzling: 1 | 
+compassion: 14 | preserve: 4 | 
+scrupulous: 1 | 
+vingt: 1 | 
+comfortless: 1 | spars: 1 | 
+spoke: 43 | added: 71 | assumed: 1 | groundwork: 1 | 
+intricate: 2 | lovely: 3 | 
+cottagers: 1 | 
+began: 59 | aloud: 11 | break: 2 | 
+information: 27 | 
+pretty: 24 | nay: 10 | assiduous: 1 | 
+resented: 3 | 
+familiarity: 2 | 
+comply: 3 | 
+pleasantly: 4 | run: 11 | presence: 6 | 
+expedient: 2 | nightcap: 1 | 
+first: 145 | letter: 116 | 
+front: 5 | probabilities: 1 | 
+wanted: 24 | mischance: 1 | 
+treatment: 5 | appetite: 2 | 
+likeness: 3 | 
+inclination: 22 | 
+rejoicing: 4 | reluctant: 2 | teeth: 1 | 
+suiting: 1 | heiress: 1 | licence: 2 | 
+sources: 3 | 
+who: 284 | voice: 22 | 
+desert: 1 | 
+express: 24 | 
+fell: 2 | allowable: 1 | 
+marked: 14 | 
+rashness: 1 | 
+why: 53 | bound: 1 | 
+undertaken: 1 | 
+loved: 10 | night: 35 | guided: 2 | minute: 9 | disgrace: 11 | pale: 4 | 
+felt: 100 | happiness: 72 | 
+chiefly: 10 | 
+indelicacy: 2 | 
+servants: 13 | 
+ordination: 1 | 
+disinterestedness: 1 | 
+wide: 3 | cautioning: 2 | 
+unwillingness: 3 | nephews: 2 | intrigues: 1 | comprise: 1 | 
+worthless: 2 | odious: 3 | 
+market: 2 | 
+twelvemonth: 7 | 
+effort: 5 | 
+lover: 5 | 
+loves: 2 | 
+carpets: 1 | final: 1 | 
+transition: 1 | 
+handsomely: 2 | 
+win: 1 | deliberately: 2 | 
+disposal: 2 | 
+recede: 1 | 
+garden: 12 | encourage: 6 | 
+elevated: 2 | disappointments: 1 | 
+plainer: 1 | 
+wit: 6 | services: 1 | contradicted: 1 | 
+angrily: 1 | pocket: 3 | 
+line: 8 | attributed: 5 | 
+study: 7 | 
+ridiculous: 4 | unaware: 1 | extensive: 4 | abode: 8 | lessened: 1 | 
+accomplished: 12 | 
+revenging: 1 | 
+lodges: 2 | 
+illiberal: 1 | 
+condescends: 1 | slacken: 1 | 
+glance: 7 | 
+within: 34 | sudden: 8 | 
+laurel: 1 | 
+indirect: 2 | rocks: 1 | 
+conscientiously: 1 | faultless: 1 | 
+hills: 3 | 
+black: 1 | 
+alterations: 1 | safest: 1 | pollution: 1 | 
+retired: 3 | force: 8 | 
+carriages: 6 | troublesome: 1 | 
+deranged: 1 | 
+vent: 2 | 
+educated: 3 | bustle: 1 | infliction: 1 | 
+compliment: 26 | 
+complete: 8 | delicious: 1 | complaining: 1 | 
+permanent: 1 | 
+total: 3 | 
+teach: 5 | 
+readiness: 4 | pang: 1 | agony: 1 | scheming: 1 | 
+assembled: 6 | redress: 1 | 
+tender: 4 | ultimately: 1 | 
+wife: 47 | gaieties: 2 | 
+advise: 8 | 
+inexpressible: 1 | 
+unfit: 2 | 
+filled: 1 | 
+strangely: 1 | 
+sharpened: 2 | shan: 3 | 
+epithet: 1 | 
+rencontre: 1 | 
+resistance: 2 | efforts: 2 | 
+congratulation: 1 | 
+conviction: 16 | boisterously: 1 | allayed: 1 | safety: 1 | 
+impudent: 1 | 
+net: 1 | pretension: 1 | respected: 3 | diverted: 3 | 
+clue: 1 | inexpressibly: 1 | 
+new: 23 | gift: 1 | 
+explanation: 8 | moments: 11 | 
+restraint: 5 | 
+bordered: 2 | 
+existence: 3 | visitor: 11 | recommending: 2 | intervene: 1 | 
+delights: 2 | 
+formality: 3 | annesley: 3 | 
+lips: 9 | 
+endeavour: 21 | wishing: 14 | 
+darcy: 418 | 
+gates: 2 | 
+favourite: 22 | unjustifiable: 2 | 
+occurred: 14 | calculation: 1 | 
+inmates: 1 | delivering: 1 | peaches: 1 | 
+vicious: 1 | 
+informed: 12 | finds: 1 | enjoyments: 1 | 
+associating: 1 | 
+raptures: 7 | 
+hitherto: 2 | 
+pounds: 24 | inadequate: 1 | 
+papa: 5 | 
+narrowest: 1 | frighted: 1 | 
+tickets: 3 | 
+sleep: 4 | equivocal: 1 | 
+scarcity: 1 | discomposed: 2 | steward: 5 | pretensions: 5 | 
+recommended: 9 | 
+commended: 2 | deemed: 1 | 
+ignorance: 7 | enemies: 1 | frost: 1 | 
+frighten: 1 | 
+its: 105 | 
+disposed: 15 | disappoint: 2 | mount: 2 | 
+circulating: 1 | preparation: 1 | 
+lucky: 6 | 
+lovers: 4 | 
+finer: 5 | 
+truest: 1 | elevating: 1 | discussed: 3 | 
+ear: 1 | dared: 13 | 
+bounty: 1 | beloved: 2 | 
+eat: 5 | 
+servant: 18 | 
+impelled: 1 | 
+bred: 4 | 
+crayons: 1 | 
+stubbornness: 1 | 
+grievously: 1 | 
+visits: 5 | anne: 5 | 
+peculiarities: 1 | pleasantry: 2 | 
+towards: 67 | demands: 1 | 
+allusion: 4 | 
+leisure: 13 | 
+open: 17 | 
+unpleasant: 8 | 
+years: 35 | willfully: 1 | 
+lambton: 10 | 
+continuing: 2 | 
+sized: 1 | 
+silly: 12 | circulation: 2 | 
+expectations: 7 | 
+withdrawing: 1 | 
+arranging: 2 | 
+toilette: 2 | glass: 2 | 
+lately: 12 | 
+dawson: 1 | 
+luckily: 4 | 
+very: 487 | unforgiving: 2 | scolded: 1 | spanish: 1 | 
+grow: 4 | humanity: 2 | elevation: 1 | 
+children: 25 | objectionable: 3 | bidding: 3 | 
+distance: 16 | pretended: 2 | 
+shed: 1 | 
+park: 22 | 
+disapprobation: 7 | 
+nowhere: 1 | sport: 4 | meantime: 1 | officiousness: 1 | 
+bingley: 306 | woman: 60 | 
+woe: 1 | 
+remain: 10 | list: 3 | diligence: 1 | sportive: 1 | 
+banish: 3 | message: 3 | 
+observing: 12 | part: 60 | ruined: 2 | explore: 1 | thence: 1 | 
+affording: 2 | passions: 1 | 
+counteracted: 2 | 
+inconsiderable: 1 | 
+shorten: 1 | 
+won: 5 | governess: 8 | construing: 1 | 
+kinder: 2 | shameless: 1 | 
+shorter: 1 | shew: 1 | 
+comprehends: 1 | 
+affairs: 7 | reduced: 4 | 
+begin: 13 | 
+acquaintances: 11 | matters: 8 | rated: 2 | 
+attraction: 3 | 
+giddiness: 1 | 
+distinguish: 2 | 
+prettyish: 1 | 
+cherished: 4 | 
+interpretation: 1 | 
+dressed: 6 | 
+interfere: 1 | 
+lead: 6 | handsomest: 4 | fortitude: 1 | brittle: 1 | 
+pass: 16 | material: 9 | doubled: 1 | 
+past: 10 | 
+solitude: 3 | 
+quickly: 4 | 
+cousins: 11 | journey: 21 | 
+duets: 1 | parade: 2 | 
+drawings: 1 | 
+james: 6 | revealed: 2 | 
+dresses: 1 | perfect: 17 | incredible: 3 | 
+widow: 3 | 
+unlucky: 10 | console: 9 | 
+heavier: 1 | 
+larger: 6 | 
+concerning: 5 | 
+beneath: 5 | 
+edw: 1 | shades: 1 | 
+lieutenant: 1 | plainly: 6 | 
+describing: 2 | infamous: 4 | 
+sisters: 76 | path: 4 | 
+graciousness: 1 | 
+clear: 9 | 
+window: 16 | unworthy: 4 | wild: 11 | 
+strangers: 4 | elopement: 9 | spots: 2 | 
+grace: 1 | 
+sensation: 3 | 
+disrespect: 2 | birmingham: 1 | 
+savage: 1 | theirs: 2 | vulgarity: 1 | 
+will: 415 | seminaries: 1 | resentful: 2 | assurances: 8 | 
+prompted: 1 | 
+figures: 1 | 
+joining: 5 | 
+vague: 2 | 
+bromley: 1 | 
+crushing: 1 | apologies: 2 | verily: 1 | 
+strange: 10 | 
+waited: 7 | learnt: 14 | rich: 12 | 
+live: 21 | noble: 11 | 
+scenes: 3 | 
+discharge: 2 | 
+splendour: 1 | extractions: 1 | 
+measures: 3 | 
+gloom: 3 | 
+graciously: 1 | governed: 2 | 
+expressed: 26 | 
+whenever: 22 | waiter: 3 | 
+improbable: 7 | 
+sprained: 1 | presumption: 3 | 
+pleaded: 1 | 
+eminent: 1 | 
+scrutiny: 1 | frivolous: 3 | 
+careless: 2 | duel: 1 | 
+reconciliation: 2 | fashions: 2 | inclinations: 1 | 
+until: 3 | 
+indolent: 1 | 
+inmate: 1 | comparisons: 1 | 
+process: 1 | 
+elegant: 14 | 
+entertained: 7 | accompany: 3 | 
+ride: 3 | uncommon: 5 | 
+supported: 4 | puzzled: 1 | 
+claimed: 3 | 
+acknowledged: 20 | guessed: 3 | learning: 1 | overruled: 1 | 
+monotonous: 1 | 
+coughing: 1 | youths: 1 | 
+excuse: 16 | portrait: 1 | mouth: 1 | 
+highflown: 1 | 
+face: 27 | penitent: 1 | 
+victory: 1 | valid: 1 | 
+conscience: 5 | wind: 1 | 
+wine: 3 | atonement: 2 | 
+quartered: 3 | bridge: 3 | lasted: 3 | 
+women: 20 | existed: 3 | 
+cases: 6 | trimming: 1 | 
+wink: 2 | 
+unfortunate: 6 | 
+highest: 9 | 
+fact: 14 | subsisted: 2 | 
+regained: 1 | 
+whispering: 3 | estimated: 1 | 
+pool: 1 | studied: 2 | chin: 1 | pronouncing: 1 | 
+complain: 4 | 
+condemn: 3 | 
+benefit: 5 | bestowed: 8 | 
+courage: 12 | refuge: 1 | 
+poor: 38 | 
+resent: 4 | 
+contrary: 10 | 
+consequential: 1 | 
+divide: 3 | 
+older: 2 | 
+cried: 91 | protesting: 4 | continuance: 3 | 
+studier: 1 | meadows: 1 | ante: 1 | 
+recent: 5 | studies: 2 | 
+ridge: 1 | 
+satisfied: 34 | 
+advanced: 5 | 
+inconveniences: 2 | 
+blame: 16 | 
+thoughtless: 3 | 
+whither: 2 | annexed: 1 | 
+pope: 1 | friendlier: 1 | 
+conclude: 5 | insulting: 1 | 
+features: 8 | repeatedly: 9 | 
+fortune: 39 | content: 1 | 
+advances: 1 | 
+contrast: 3 | visible: 5 | 
+develop: 1 | superiority: 1 | chatsworth: 1 | 
+sad: 4 | 
+envied: 2 | intercourse: 6 | 
+although: 1 | gratifying: 6 | consequences: 1 | 
+forms: 2 | treasured: 1 | 
+excellence: 2 | mortification: 6 | 
+token: 1 | 
+sitting: 21 | forgive: 10 | throwing: 2 | allusions: 2 | 
+collins: 180 | 
+consolatory: 1 | 
+disregarded: 1 | 
+assured: 28 | 
+sat: 38 | 
+venture: 5 | commendations: 1 | 
+saw: 103 | couples: 1 | professed: 4 | 
+survive: 2 | overbearing: 1 | 
+say: 160 | glory: 1 | 
+purse: 1 | 
+confiding: 2 | 
+dishonesty: 1 | outstrip: 1 | 
+excellency: 1 | fitzwilliam: 37 | 
+georgiana: 15 | latest: 1 | 
+nor: 73 | 
+adieu: 5 | accurate: 1 | 
+not: 1429 | unfolded: 5 | manage: 3 | abroad: 4 | 
+etiquette: 2 | 
+left: 65 | adapted: 3 | accident: 6 | expenses: 3 | 
+married: 61 | now: 209 | 
+haste: 9 | scandalous: 3 | 
+unwelcome: 4 | 
+detect: 1 | 
+draughts: 2 | nearest: 5 | 
+pompous: 3 | 
+valuable: 9 | 
+encouraged: 8 | 
+displeased: 4 | newcastle: 4 | 
+domestic: 7 | 
+consequence: 32 | watering: 1 | 
+meanness: 1 | 
+quadrille: 4 | 
+bestow: 7 | farther: 15 | 
+stretch: 2 | unfeeling: 3 | 
+excited: 10 | coarseness: 2 | 
+sweet: 7 | 
+hasty: 5 | 
+secretly: 3 | 
+entering: 9 | gratification: 1 | 
+enter: 12 | anecdotes: 1 | 
+doors: 8 | 
+lessening: 1 | landlord: 2 | 
+employment: 6 | 
+kindly: 7 | 
+retained: 2 | 
+port: 1 | shortly: 12 | 
+wonder: 34 | 
+denominated: 1 | 
+insinuating: 1 | doubtingly: 1 | 
+lodge: 8 | contradict: 2 | 
+intruding: 2 | 
+forbid: 4 | 
+visit: 51 | 
+accused: 2 | befriended: 1 | 
+sister: 218 | bottle: 2 | 
+critical: 1 | 
+imagined: 5 | offence: 2 | attendants: 1 | 
+awful: 2 | 
+thirdly: 2 | 
+grain: 1 | 
+undoubted: 1 | mankind: 1 | 
+softness: 1 | 
+girl: 38 | 
+distinction: 5 | 
+waking: 1 | 
+where: 89 | 
+vigour: 1 | 
+successfully: 1 | 
+post: 5 | 
+surpassing: 1 | deservedly: 1 | shared: 4 | 
+accustomed: 2 | 
+attacked: 1 | 
+happening: 2 | 
+persisted: 2 | 
+village: 6 | momentary: 3 | 
+strictest: 1 | conclusion: 8 | 
+depressed: 2 | 
+slept: 1 | wise: 5 | 
+remark: 3 | oxford: 1 | 
+wish: 97 | spirit: 9 | dinners: 2 | carelessness: 2 | 
+acquired: 2 | 
+brow: 1 | dictated: 1 | 
+lying: 1 | 
+fault: 7 | 
+scarcely: 45 | 
+replete: 1 | sea: 1 | 
+arose: 5 | 
+involuntary: 1 | 
+impressed: 1 | 
+see: 149 | disclosure: 1 | glove: 1 | 
+somewhat: 8 | lifted: 2 | benches: 1 | 
+dictates: 1 | immoral: 1 | ungraciousness: 1 | 
+mention: 30 | boasted: 2 | 
+unvarying: 1 | 
+vain: 20 | punch: 1 | 
+exceeded: 2 | shoe: 1 | 
+housekeeper: 16 | 
+interpose: 1 | 
+chamber: 2 | 
+with: 1053 | set: 31 | profuse: 1 | fail: 6 | incivility: 3 | 
+bathing: 2 | 
+engagements: 12 | 
+intently: 2 | 
+sex: 7 | 
+dull: 4 | accents: 2 | covies: 1 | 
+shop: 6 | fair: 22 | merited: 2 | indelicate: 1 | subjoin: 1 | 
+alteration: 7 | 
+presents: 3 | 
+trouble: 21 | research: 1 | 
+proudest: 1 | supplied: 2 | discompose: 1 | 
+wits: 1 | super: 1 | 
+formerly: 7 | 
+show: 7 | 
+county: 6 | lasting: 2 | 
+comparison: 13 | cheerfully: 2 | 
+leading: 5 | symptoms: 2 | painfully: 2 | 
+indecision: 1 | exaggerate: 1 | 
+pour: 1 | 
+itself: 9 | endeavouring: 5 | laughing: 11 | expressly: 1 | 
+almost: 59 | weak: 7 | gayer: 1 | exigence: 1 | 
+resigned: 6 | 
+splendid: 4 | appeal: 2 | custom: 2 | 
+opinion: 68 | confusion: 11 | repulsed: 1 | 
+match: 24 | 
+gratify: 2 | 
+wear: 1 | heartfelt: 1 | 
+vindication: 2 | 
+beyond: 36 | appear: 30 | 
+field: 3 | 
+deliberated: 1 | 
+boldly: 1 | 
+end: 29 | tears: 10 | 
+capable: 18 | 
+impertinence: 8 | sprang: 1 | 
+bottom: 1 | 
+rather: 55 | 
+economically: 1 | 
+muslin: 3 | 
+female: 8 | 
+existing: 2 | peculiarity: 1 | unacknowledged: 1 | 
+unprincipled: 1 | 
+involved: 3 | 
+confidential: 1 | 
+lastly: 1 | 
+tease: 2 | 
+sheets: 1 | weakest: 1 | 
+exhibit: 1 | 
+entertainment: 6 | promote: 4 | complimenting: 1 | flutter: 3 | 
+jenkinson: 9 | harriet: 2 | 
+excused: 2 | 
+satirical: 1 | threatened: 1 | 
+embargo: 1 | 
+villainous: 1 | involves: 1 | ineffectual: 1 | 
+shopping: 1 | 
+about: 122 | give: 123 | daily: 3 | 
+certain: 55 | eyes: 52 | benefited: 4 | 
+mouths: 2 | portraits: 2 | excuses: 2 | 
+source: 6 | 
+limits: 1 | 
+connected: 14 | prospects: 4 | forth: 4 | 
+blinds: 1 | transpired: 1 | 
+wrong: 15 | 
+obliged: 29 | 
+turning: 13 | played: 1 | 
+she: 1710 | 
+cousin: 49 | begun: 2 | throughout: 3 | censured: 2 | 
+figure: 8 | 
+openness: 3 | refreshment: 5 | 
+above: 21 | 
+returning: 12 | 
+obstacles: 2 | 
+kindred: 1 | 
+family: 152 | 
+sharing: 2 | grand: 2 | forty: 1 | 
+selecting: 1 | 
+fall: 9 | 
+assembly: 9 | 
+copse: 4 | 
+twice: 14 | shy: 2 | impenetrably: 1 | 
+allude: 1 | 
+players: 2 | expedite: 1 | 
+ridicule: 5 | extended: 3 | 
+smile: 29 | acrimony: 1 | 
+frankness: 4 | 
+sweetest: 3 | suffered: 8 | ensued: 2 | 
+charged: 1 | 
+admiration: 25 | ring: 5 | injurious: 2 | 
+sound: 8 | injunction: 1 | 
+recognized: 1 | 
+difficulty: 8 | 
+morris: 1 | hardly: 46 | 
+pemberley: 53 | indispensably: 1 | 
+agonies: 1 | singled: 2 | 
+empty: 1 | 
+girls: 45 | fame: 1 | 
+sufferer: 1 | 
+faced: 1 | 
+expects: 1 | 
+instinctively: 2 | 
+sir: 78 | consists: 1 | dupe: 1 | reasoning: 1 | 
+swell: 1 | examine: 2 | protection: 2 | 
+sit: 15 | driven: 5 | 
+hours: 27 | hursts: 1 | 
+among: 25 | 
+lend: 1 | hackney: 3 | 
+six: 10 | 
+retirement: 2 | 
+designedly: 1 | 
+mien: 1 | 
+length: 32 | precious: 2 | faces: 3 | 
+lines: 9 | opened: 17 | harshly: 1 | 
+struck: 14 | writing: 13 | 
+views: 11 | collect: 2 | 
+precipitance: 2 | overpowering: 1 | 
+furnished: 1 | 
+solid: 1 | 
+house: 107 | week: 29 | maternal: 2 | 
+humility: 5 | recollect: 6 | 
+cough: 2 | 
+sphere: 2 | 
+intervals: 3 | prudential: 1 | 
+weep: 1 | 
+exhausted: 1 | 
+implicitness: 1 | 
+stockings: 1 | 
+duration: 2 | 
+occasionally: 12 | 
+farmhouse: 1 | 
+ere: 2 | 
+conveyed: 2 | 
+concealed: 7 | 
+uppermost: 1 | 
+involuntarily: 2 | 
+falls: 2 | simple: 1 | 
+caution: 3 | 
+personage: 1 | 
+sooner: 13 | strictly: 1 | 
+disinterested: 3 | 
+rudeness: 2 | springing: 2 | err: 3 | exerted: 2 | 
+consideration: 14 | 
+quitted: 9 | 
+colder: 1 | 
+missing: 1 | 
+value: 9 | 
+attorney: 3 | simply: 1 | differences: 1 | 
+importuned: 1 | 
+turn: 27 | 
+carried: 8 | providing: 1 | 
+certainly: 72 | dance: 32 | apologise: 5 | impartial: 3 | 
+propensities: 1 | 
+cucumber: 1 | fidgets: 1 | 
+novels: 1 | suspect: 4 | 
+dearest: 17 | forwards: 1 | 
+indeed: 95 | gaped: 1 | chestnuts: 1 | 
+shut: 5 | master: 28 | fidgety: 1 | 
+instituted: 1 | 
+dishonourable: 1 | 
+exclamations: 3 | unsuccessfully: 1 | 
+consulted: 2 | esq: 1 | 
+entertain: 5 | refuse: 9 | cluster: 1 | amidst: 4 | 
+solaced: 1 | imaginations: 1 | 
+intelligible: 4 | 
+words: 30 | defended: 1 | annum: 2 | 
+preparations: 2 | despair: 1 | 
+meditations: 1 | 
+forming: 4 | constrained: 1 | 
+wilful: 3 | denoted: 2 | 
+reflect: 5 | discovering: 1 | 
+impertinent: 6 | 
+persisting: 1 | 
+airing: 1 | void: 1 | 
+etc: 13 | improprieties: 1 | 
+progress: 5 | 
+noticed: 8 | christmas: 6 | confinement: 1 | 
+prided: 1 | sly: 3 | 
+measure: 5 | 
+nearer: 5 | 
+shift: 1 | 
+womanly: 1 | september: 1 | 
+situation: 38 | successful: 3 | 
+plantation: 1 | 
+refute: 1 | 
+utmost: 10 | 
+parlour: 11 | cheering: 2 | 
+gratified: 14 | 
+various: 9 | 
+nervous: 4 | ceremonies: 1 | 
+dispense: 1 | 
+personal: 2 | repining: 1 | birds: 2 | 
+forget: 17 | integrity: 3 | 
+implied: 1 | paltry: 2 | likelihood: 5 | 
+rightful: 1 | colds: 1 | tongues: 1 | 
+degrees: 1 | 
+strongest: 1 | 
+utter: 6 | 
+properly: 8 | grasp: 1 | 
+innocent: 2 | imparted: 1 | 
+detection: 2 | 
+conference: 4 | disquiet: 1 | 
+wrote: 21 | ensuing: 1 | suffering: 2 | 
+thankfully: 1 | iniquitous: 1 | 
+rise: 2 | implies: 1 | 
+duty: 15 | amaze: 1 | desirous: 7 | hysterics: 1 | 
+public: 12 | 
+passed: 61 | lawfully: 1 | 
+clerk: 1 | risk: 5 | scarce: 1 | jestingly: 1 | 
+usual: 34 | careful: 4 | sanguine: 2 | 
+neighbour: 8 | 
+believing: 12 | 
+fare: 2 | 
+privilege: 3 | inured: 1 | 
+delightful: 19 | 
+oakham: 1 | 
+amusements: 3 | misrepresented: 2 | 
+scolding: 2 | irreproachable: 1 | 
+acquaintance: 52 | 
+annoyed: 1 | farm: 2 | improved: 6 | 
+flattering: 4 | 
+makes: 7 | actions: 6 | 
+vary: 3 | 
+emotion: 5 | 
+laughingly: 2 | 
+coloured: 6 | 
+attending: 9 | 
+broad: 1 | irritated: 1 | 
+uncontrolled: 1 | 
+subsisting: 2 | 
+instructions: 3 | improves: 2 | 
+defer: 3 | wonderful: 3 | 
+less: 77 | could: 526 | elated: 1 | untouched: 1 | 
+lest: 8 | paying: 4 | february: 1 | 
+south: 1 | 
+contain: 6 | fearing: 3 | 
+morrow: 20 | observe: 10 | 
+easily: 27 | 
+son: 22 | 
+laugh: 18 | 
+father: 135 | 
+read: 41 | distinguished: 6 | blots: 1 | justification: 1 | 
+pronounced: 10 | 
+vast: 2 | pressed: 3 | 
+establish: 2 | proudly: 1 | undervalued: 1 | 
+act: 9 | question: 23 | 
+yesterday: 13 | animal: 1 | containing: 2 | 
+predict: 1 | 
+real: 31 | brain: 2 | 
+unworthily: 1 | repressed: 2 | gaining: 3 | 
+attention: 68 | meryton: 57 | remove: 2 | fast: 8 | mercenary: 5 | 
+officious: 3 | 
+uglier: 1 | reap: 1 | 
+carter: 4 | below: 5 | discourse: 7 | darting: 1 | 
+compassionate: 2 | 
+destined: 4 | 
+add: 12 | release: 1 | monosyllable: 1 | guinea: 1 | 
+bear: 25 | irrevocably: 1 | 
+favour: 22 | invited: 11 | 
+beholding: 3 | 
+death: 8 | pretence: 1 | resounding: 1 | anyhow: 1 | 
+unguarded: 4 | repinings: 1 | 
+reserved: 7 | proposal: 10 | fate: 2 | missish: 1 | 
+avoiding: 2 | 
+jewels: 1 | 
+concerns: 8 | 
+prettiest: 1 | trial: 2 | attachments: 1 | blemish: 1 | 
+grave: 9 | designs: 4 | sagacity: 1 | 
+reverting: 1 | mild: 1 | palings: 1 | disclaim: 1 | 
+mile: 6 | 
+talent: 2 | 
+allowances: 1 | 
+unabashed: 1 | 
+overhear: 1 | 
+eligible: 7 | 
+reserves: 3 | 
+superciliousness: 1 | 
+robinson: 3 | innocence: 1 | 
+applying: 3 | 
+absent: 4 | commonest: 1 | 
+sickly: 4 | appointment: 1 | 
+authoritative: 2 | 
+fervent: 1 | 
+moved: 9 | 
+well: 224 | 
+unhappiness: 2 | 
+assented: 2 | 
+headquarters: 1 | approved: 3 | 
+cannot: 112 | false: 12 | 
+feature: 2 | 
+breathless: 2 | unusual: 1 | 
+openly: 8 | 
+himself: 127 | 
+present: 68 | 
+eye: 15 | genius: 2 | recall: 2 | willingly: 3 | 
+curtailed: 1 | 
+charlotte: 85 | 
+fond: 16 | 
+represent: 3 | verses: 1 | 
+reserve: 7 | reproach: 8 | immovable: 2 | 
+approve: 5 | wisely: 4 | 
+dictatorial: 1 | falsely: 1 | 
+overspreading: 1 | 
+hide: 2 | 
+follow: 11 | 
+husband: 50 | lace: 1 | estimation: 5 | landing: 1 | 
+vexing: 1 | detest: 3 | 
+unsuspicious: 1 | blown: 1 | 
+income: 11 | alluded: 6 | 
+michaelmas: 2 | nectarines: 1 | 
+writer: 3 | briefly: 4 | 
+writes: 1 | 
+coldly: 2 | authorized: 1 | topic: 1 | 
+mind: 57 | suspected: 9 | offering: 3 | 
+mine: 15 | 
+peculiarly: 3 | grossest: 1 | 
+coquetry: 1 | 
+communicativeness: 1 | 
+studying: 4 | nasty: 1 | 
+parted: 14 | food: 1 | smilingly: 2 | 
+fatigued: 4 | hastening: 2 | voluntarily: 6 | elderly: 1 | 
+wedding: 14 | 
+hopeless: 7 | 
+friendship: 9 | expose: 7 | 
+inquire: 10 | chimney: 1 | congratulations: 12 | 
+estimable: 2 | courted: 2 | 
+commendable: 1 | 
+fool: 3 | 
+especially: 22 | proficient: 1 | 
+order: 7 | 
+age: 15 | 
+enormity: 1 | 
+sleepless: 1 | foot: 1 | 
+surpass: 1 | minded: 2 | 
+several: 23 | forgets: 1 | 
+angelic: 1 | simpers: 1 | 
+bracelets: 1 | 
+went: 67 | 
+chief: 15 | ago: 26 | sequel: 1 | 
+proved: 17 | pretending: 3 | 
+running: 10 | inquiry: 10 | overlook: 3 | 
+certainty: 8 | derived: 1 | witnessing: 1 | 
+inhabitants: 3 | regulated: 1 | 
+offense: 3 | 
+world: 66 | rapid: 3 | reel: 2 | 
+clever: 7 | 
+lady: 191 | 
+disgust: 5 | veneration: 1 | 
+candour: 3 | patron: 3 | 
+quick: 10 | 
+unintelligible: 1 | explicitly: 1 | 
+preaching: 3 | senses: 4 | superlatively: 1 | 
+been: 515 | derives: 1 | 
+than: 282 | nearly: 8 | argument: 5 | frailty: 1 | 
+slighted: 3 | proposed: 5 | 
+defects: 5 | hated: 4 | 
+participation: 1 | 
+tried: 16 | 
+that: 1579 | 
+imprudence: 9 | 
+accosted: 2 | unmoved: 1 | 
+shine: 1 | veracity: 2 | correspond: 1 | extorted: 1 | 
+fixed: 22 | allowed: 26 | 
+wearied: 1 | patched: 1 | 
+failing: 2 | intend: 3 | decease: 3 | 
+seemed: 66 | 
+hates: 2 | variation: 2 | 
+charmingly: 2 | 
+tries: 1 | 
+knowledge: 20 | 
+persevering: 1 | 
+piling: 1 | 
+reached: 18 | contrivance: 4 | language: 5 | 
+heedless: 1 | 
+better: 92 | insufferable: 1 | 
+wondered: 8 | 
+conjecture: 7 | 
+complaisant: 1 | 
+restless: 1 | 
+aid: 1 | 
+high: 17 | mutual: 5 | ungovernable: 1 | 
+really: 88 | ours: 2 | 
+behaviour: 55 | sum: 5 | clamorous: 1 | oppressively: 1 | 
+smiled: 18 | cheapside: 2 | gross: 2 | 
+requesting: 2 | 
+arrange: 1 | 
+shrug: 1 | 
+insufferably: 1 | 
+nerves: 4 | fluently: 1 | 
+air: 30 | earlier: 3 | 
+jot: 1 | court: 4 | assisting: 2 | captivated: 1 | 
+complexion: 7 | 
+fourth: 2 | pressingly: 1 | congenial: 1 | 
+cambric: 1 | 
+joy: 12 | gratulation: 2 | confident: 3 | moderation: 2 | 
+gaming: 1 | 
+materially: 5 | addressing: 3 | melancholy: 5 | connivance: 1 | testimony: 2 | 
+property: 8 | smiles: 10 | detestable: 1 | 
+suspense: 6 | 
+withdrawn: 3 | alluding: 1 | 
+ensure: 2 | bestowing: 1 | 
+form: 13 | disdain: 6 | 
+partial: 10 | unknowingly: 1 | 
+acceding: 1 | 
+quiet: 8 | decked: 1 | 
+begs: 1 | 
+suspend: 1 | 
+simpleton: 4 | ashamed: 16 | serenity: 3 | mistrust: 1 | 
+concerto: 1 | interval: 4 | 
+assist: 7 | 
+guidance: 2 | 
+encouraging: 4 | 
+conversation: 61 | pulvis: 1 | 
+attentive: 10 | deter: 1 | 
+renewal: 7 | 
+profligacy: 1 | 
+popularity: 1 | lower: 4 | 
+possibility: 13 | unconcern: 3 | 
+application: 12 | mixing: 1 | 
+uttered: 5 | 
+affirmative: 2 | 
+goodwill: 2 | 
+requested: 2 | charles: 7 | 
+were: 565 | 
+coarse: 1 | 
+luckless: 1 | 
+acutely: 4 | indignity: 2 | 
+disagreement: 1 | 
+hunsford: 25 | honest: 1 | 
+scotch: 2 | repress: 1 | 
+known: 58 | group: 2 | dejection: 3 | transport: 1 | 
+rejected: 4 | lowest: 1 | 
+impossible: 44 | 
+requester: 1 | 
+forgot: 5 | revival: 1 | 
+upon: 76 | knows: 9 | augmented: 1 | 
+curiosity: 23 | deficient: 5 | obligations: 3 | 
+corroborated: 1 | 
+odd: 5 | unalterable: 1 | 
+principal: 14 | 
+decline: 2 | 
+follows: 8 | comfortable: 12 | unallied: 1 | rein: 1 | 
+rationally: 3 | 
+privately: 3 | 
+totally: 8 | communications: 1 | 
+driving: 4 | singling: 1 | grove: 3 | rightly: 2 | culprit: 1 | 
+miss: 283 | sighed: 1 | 
+them: 435 | 
+then: 175 | explaining: 3 | fervently: 1 | 
+incur: 1 | 
+laid: 8 | 
+unreserved: 3 | celebrated: 2 | 
+elder: 12 | 
+unnecessarily: 1 | 
+yielded: 2 | 
+all: 625 | complimented: 3 | 
+they: 601 | particulars: 20 | comfortably: 2 | 
+shire: 12 | west: 1 | 
+continue: 9 | 
+instantly: 31 | 
+forsters: 1 | 
+parcels: 2 | 
+despicable: 1 | 
+claim: 5 | 
+received: 61 | wisest: 6 | illustrious: 1 | 
+hesitating: 1 | 
+facts: 1 | 
+contempt: 12 | constant: 12 | gaudy: 1 | admittance: 1 | 
+broke: 2 | 
+july: 1 | revolving: 1 | 
+benevolence: 3 | foul: 1 | regretted: 1 | 
+whole: 79 | 
+tallest: 1 | patience: 9 | 
+young: 130 | objects: 7 | 
+sportsmen: 1 | 
+four: 35 | liverpool: 1 | 
+grown: 5 | 
+flowing: 1 | accounted: 2 | 
+despicably: 1 | 
+mean: 34 | uproar: 1 | 
+expected: 43 | 
+trepidation: 1 | 
+jokes: 1 | 
+strenuously: 2 | 
+watchful: 1 | 
+meat: 4 | 
+pursued: 2 | 
+george: 8 | 
+heavens: 1 | previously: 2 | 
+hypocritical: 2 | off: 62 | evils: 8 | gets: 1 | 
+harboured: 1 | condole: 2 | 
+original: 4 | 
+complacency: 5 | industriously: 1 | 
+gracechurch: 9 | 
+husbands: 4 | 
+fewer: 1 | lock: 1 | gretna: 2 | 
+putting: 5 | 
+furniture: 10 | insolent: 5 | 
+loveliest: 1 | 
+imputed: 4 | hesitation: 3 | 
+somehow: 2 | manoeuvre: 1 | fastened: 1 | 
+and: 3585 | 
+clock: 6 | 
+parties: 12 | policy: 1 | 
+hill: 10 | 
+renewed: 6 | june: 3 | arisen: 5 | 
+kissed: 2 | wavering: 1 | 
+receipt: 2 | child: 14 | partly: 2 | 
+healthfulness: 1 | conquered: 1 | springs: 1 | 
+civil: 18 | virtue: 10 | 
+unknown: 8 | 
+sick: 6 | inflicted: 1 | 
+sneering: 1 | 
+avenue: 1 | stopping: 3 | 
+creatures: 3 | magnitude: 1 | 
+defined: 2 | prejudiced: 1 | 
+any: 269 | worse: 13 | sides: 5 | faithfully: 1 | 
+ugly: 2 | 
+undetermined: 1 | 
+suspecting: 2 | brings: 1 | discontentedness: 1 | 
+distant: 5 | entered: 36 | bell: 6 | vows: 1 | sanction: 1 | 
+delayed: 6 | 
+far: 58 | protest: 1 | 
+clergyman: 8 | 
+fat: 1 | 
+rely: 1 | 
+persists: 1 | revived: 3 | 
+prejudices: 2 | nowadays: 1 | 
+worst: 7 | 
+polished: 2 | promising: 4 | 
+wiser: 1 | 
+consisted: 2 | 
+side: 54 | 
+dictating: 1 | 
+neighbourhoods: 1 | 
+housemaids: 1 | 
+detail: 1 | 
+dancing: 21 | obstinacy: 2 | misrepresentation: 1 | 
+invitation: 34 | detain: 2 | 
+meanly: 3 | 
+diffuseness: 1 | 
+answer: 65 | imprudent: 11 | slightly: 4 | 
+disgraceful: 5 | 
+rings: 1 | 
+worth: 15 | 
+petticoat: 3 | 
+inducements: 1 | 
+understand: 30 | confide: 1 | 
+friends: 55 | thin: 5 | striking: 3 | 
+meditating: 3 | 
+finding: 13 | 
+this: 448 | fitted: 6 | awakened: 4 | 
+hospitality: 3 | 
+china: 1 | 
+latter: 22 | suddenness: 1 | acquainting: 1 | 
+satin: 2 | 
+hint: 12 | 
+breathing: 1 | persuasions: 1 | 
+apt: 1 | 
+entailed: 6 | 
+warded: 1 | 
+stupider: 1 | reproofs: 2 | 
+amongst: 12 | excel: 2 | eclat: 1 | concealment: 2 | 
+mayoralty: 1 | bridegroom: 1 | 
+affability: 4 | confidante: 2 | 
+metcalf: 1 | sounds: 1 | 
+pools: 1 | 
+diversified: 1 | building: 3 | 
+birth: 5 | vexations: 1 | 
+taught: 8 | opportunities: 1 | doubtless: 2 | 
+clapham: 4 | 
+land: 1 | 
+lane: 10 | licentiousness: 1 | 
+bent: 3 | 
+starting: 1 | reasonable: 14 | 
+remarks: 8 | imperfection: 1 | 
+christening: 1 | meditation: 1 | 
+somewhere: 4 | 
+conciliatory: 1 | 
+model: 2 | 
+yours: 23 | decorums: 1 | 
+meet: 31 | slave: 2 | 
+prevailed: 15 | 
+early: 28 | 
+awaited: 1 | 
+discovered: 7 | apprehended: 1 | 
+uncivil: 5 | walks: 3 | 
+considerable: 9 | 
+hired: 1 | 
+struggle: 1 | negligent: 1 | 
+gentlest: 1 | 
+complaint: 1 | exchanged: 1 | 
+reasonably: 4 | 
+acutest: 1 | 
+fruit: 1 | 
+conceive: 3 | pursuit: 6 | 
+generously: 1 | 
+disinclined: 1 | 
+project: 1 | 
+are: 340 | engaging: 6 | 
+shocked: 8 | 
+astonished: 14 | 
+varied: 3 | catch: 4 | 
+warmly: 8 | 
+spirits: 39 | conversing: 3 | 
+irish: 1 | olive: 3 | considerably: 3 | feather: 1 | 
+arm: 4 | pavement: 1 | 
+utterly: 1 | 
+thoughtful: 1 | 
+sigh: 2 | 
+perusing: 1 | philosopher: 1 | 
+sakes: 2 | company: 22 | art: 3 | 
+undeceive: 1 | 
+sign: 2 | 
+habits: 3 | actuated: 1 | 
+occur: 4 | 
+position: 1 | 
+bowing: 1 | 
+consternation: 1 | 
+softened: 6 | 
+roused: 6 | confessed: 4 | 
+livings: 1 | undertaking: 1 | 
+visiting: 5 | 
+peace: 7 | heartedness: 1 | 
+curtsey: 3 | rested: 1 | 
+intimidate: 1 | 
+superior: 18 | officers: 31 | youth: 9 | slyness: 2 | pyramids: 1 | 
+few: 71 | awkwardness: 3 | 
+missent: 2 | 
+pledged: 2 | 
+ask: 32 | approbation: 7 | 
+assemblies: 2 | needlework: 1 | forcing: 1 | 
+sheet: 3 | 
+whence: 2 | 
+deficiency: 2 | purposely: 6 | unexampled: 1 | 
+opposition: 3 | ruining: 1 | 
+overthrown: 3 | 
+old: 13 | greatest: 20 | besides: 12 | 
+liberality: 2 | 
+owing: 4 | crying: 2 | 
+fatigue: 4 | perturbed: 1 | 
+just: 73 | hauteur: 2 | concluding: 1 | quarrelling: 1 | 
+monday: 9 | benefits: 1 | 
+laconic: 1 | 
+receive: 28 | severity: 1 | forbade: 1 | 
+avoided: 1 | 
+intruder: 1 | fearless: 1 | unshaken: 1 | christian: 2 | 
+whose: 59 | 
+finishing: 1 | 
+hire: 1 | 
+ate: 3 | turnpike: 1 | 
+outstripped: 1 | 
+education: 11 | 
+courtier: 1 | turnpikes: 1 | 
+pretense: 1 | ablution: 1 | wavered: 1 | 
+pointedly: 1 | sharers: 1 | 
+conducted: 2 | volatility: 1 | 
+forced: 20 | spoilt: 2 | intermediate: 1 | 
+saloon: 2 | 
+adept: 1 | 
+cheerfulness: 7 | referred: 1 | bewildered: 1 | trembled: 1 | 
+crammed: 1 | curricle: 2 | 
+considerations: 1 | 
+hundred: 6 | amounting: 1 | 
+sinking: 3 | moral: 3 | 
+mirth: 2 | 
+stretched: 1 | 
+violated: 1 | 
+questioned: 3 | acted: 6 | 
+rational: 10 | diffused: 1 | 
+possibilities: 1 | 
+discretion: 5 | hinted: 1 | recital: 3 | 
+unexpected: 8 | 
+discover: 8 | dissipation: 1 | 
+three: 61 | commanded: 2 | 
+rejecting: 2 | 
+ingenuity: 2 | 
+healthful: 1 | rapacity: 1 | 
+doubt: 37 | conscious: 3 | 
+keenest: 3 | 
+one: 273 | london: 55 | cunning: 1 | godson: 2 | 
+thwarted: 1 | forwarding: 1 | 
+absolutely: 18 | environs: 1 | 
+disclose: 1 | 
+thither: 9 | tricks: 1 | 
+rendered: 11 | affectionate: 17 | liable: 2 | 
+threw: 9 | 
+idea: 49 | offended: 9 | 
+wait: 17 | 
+rest: 40 | irritable: 2 | 
+compare: 1 | gain: 2 | 
+lucases: 14 | judging: 3 | 
+united: 7 | taste: 13 | 
+appeared: 31 | philosophic: 1 | 
+crossed: 5 | 
+occurrences: 4 | 
+best: 41 | respect: 30 | divert: 1 | 
+friendless: 1 | 
+animating: 1 | 
+beautiful: 15 | 
+afflicted: 1 | legally: 1 | 
+sports: 1 | 
+boundary: 2 | 
+passing: 11 | 
+principle: 5 | cambridge: 1 | 
+overjoyed: 1 | 
+created: 5 | 
+similar: 5 | 
+head: 32 | forlorn: 1 | 
+rejection: 2 | 
+last: 120 | acknowledge: 8 | quarter: 9 | 
+tax: 2 | accede: 1 | 
+counterbalance: 1 | 
+endured: 4 | 
+charming: 20 | 
+heal: 1 | imperturbably: 1 | 
+parting: 7 | 
+beforehand: 1 | class: 2 | 
+mother: 137 | hotels: 1 | 
+hear: 71 | dishes: 1 | 
+imaginary: 5 | exclaiming: 4 | 
+fit: 4 | 
+honoured: 9 | 
+growing: 3 | awe: 3 | 
+late: 19 | bets: 1 | 
+allow: 31 | fix: 3 | 
+argued: 1 | cruelly: 3 | 
+petulance: 1 | cheap: 1 | 
+between: 63 | irksome: 2 | 
+postscript: 3 | 
+mince: 1 | trembling: 1 | 
+formidable: 4 | cheat: 1 | 
+compass: 1 | cautiousness: 1 | 
+disagreeable: 14 | animation: 4 | campful: 1 | 
+belongs: 2 | 
+regardless: 2 | 
+called: 41 | mornings: 2 | passion: 2 | 
+fashion: 7 | 
+adoration: 1 | 
+topics: 1 | consistent: 3 | distressed: 13 | 
+borrow: 2 | diversion: 3 | treasure: 2 | 
+going: 57 | proportion: 4 | delivered: 4 | drily: 2 | 
+dullest: 1 | 
+unconnected: 4 | 
+nice: 5 | construed: 1 | 
+blowsy: 1 | vexatious: 2 | repugnance: 1 | 
+joined: 28 | obeisance: 1 | 
+stared: 5 | whispered: 1 | 
+disappointed: 12 | brightest: 2 | disagreeably: 1 | 
+forward: 27 | owned: 3 | 
+plague: 3 | 
+ornaments: 2 | lingering: 1 | contrasted: 1 | 
+treat: 5 | 
+ragout: 1 | 
+warmest: 2 | 
+excellent: 20 | approaching: 12 | thanking: 4 | losing: 1 | 
+bingleys: 5 | 
+making: 38 | understood: 13 | belief: 15 | contracted: 3 | abruptness: 2 | 
+owner: 4 | 
+epsom: 3 | 
+reject: 4 | 
+extremely: 15 | walk: 51 | phaeton: 4 | 
+long: 115 | quite: 96 | habit: 7 | alternate: 1 | eastbourne: 1 | 
+assents: 1 | satisfying: 1 | 
+successively: 1 | 
+minds: 4 | 
+assent: 1 | 
+entrance: 13 | keeps: 3 | 
+prompt: 1 | 
+deprived: 3 | race: 1 | 
+earth: 1 | 
+doorway: 1 | 
+check: 4 | seeking: 7 | 
+aye: 6 | 
+brown: 1 | 
+phillip: 1 | avoidance: 1 | 
+newcomers: 1 | 
+believe: 87 | sufferings: 2 | 
+bashful: 1 | 
+striving: 2 | 
+drink: 7 | reprehensible: 3 | april: 1 | 
+back: 41 | sing: 5 | impressing: 1 | 
+positive: 3 | 
+sink: 3 | 
+goes: 2 | accepting: 4 | secrecy: 10 | ardent: 1 | 
+idleness: 2 | 
+rejoice: 7 | deaden: 1 | 
+game: 7 | 
+warmth: 8 | answers: 1 | 
+detailed: 1 | 
+look: 57 | 
+favourable: 12 | usually: 8 | lodgings: 5 | carefully: 3 | 
+untitled: 1 | 
+admire: 18 | repeated: 21 | tea: 13 | 
+headache: 2 | returns: 2 | 
+mend: 5 | happen: 12 | 
+default: 1 | 
+prudent: 4 | backed: 1 | 
+shillings: 1 | 
+indecorum: 1 | 
+ten: 33 | remains: 5 | parental: 1 | 
+detached: 3 | lawn: 5 | foundations: 1 | trifled: 1 | 
+plan: 13 | favourably: 2 | 
+escaped: 5 | 
+impression: 7 | 
+universities: 1 | prodigiously: 3 | 
+perform: 4 | 
+second: 25 | entreated: 2 | descending: 2 | 
+separate: 6 | 
+play: 18 | welfare: 5 | conjectured: 2 | 
+asked: 40 | 
+want: 44 | 
+observances: 1 | 
+insensible: 4 | 
+profligate: 1 | 
+pleased: 39 | omitted: 1 | 
+displayed: 3 | 
+device: 1 | unpleasantly: 1 | 
+risen: 1 | undone: 1 | 
+conjectures: 4 | 
+scarlet: 2 | dreading: 1 | calculate: 1 | rises: 1 | 
+acquainted: 24 | amazing: 2 | faults: 4 | junior: 1 | 
+messages: 1 | 
+divided: 4 | estates: 4 | poverty: 2 | 
+handed: 3 | mischievously: 1 | 
+pleases: 2 | desertion: 1 | faulty: 3 | 
+eloping: 1 | 
+attempt: 21 | approached: 6 | unseldom: 1 | 
+humour: 25 | imagination: 4 | mentioning: 7 | 
+placed: 9 | brothers: 2 | masterly: 1 | importing: 1 | 
+digressions: 1 | 
+surmises: 1 | 
+partner: 17 | discernible: 1 | 
+employed: 8 | nothing: 177 | ground: 11 | 
+quieted: 2 | 
+unshackled: 1 | penance: 1 | 
+wickham: 194 | 
+indulgence: 6 | shrubbery: 4 | 
+places: 5 | 
+trees: 5 | 
+thus: 27 | exceptional: 1 | 
+matter: 29 | emphatically: 1 | 
+quieter: 1 | alternative: 3 | fairly: 2 | 
+instrument: 11 | imaginable: 2 | filial: 2 | exercising: 2 | 
+forgave: 1 | 
+dictate: 1 | 
+whether: 54 | ample: 2 | finally: 7 | 
+lord: 12 | 
+residence: 4 | 
+degenerate: 1 | 
+susceptibility: 1 | 
+assert: 5 | 
+courting: 1 | 
+composition: 1 | 
+our: 74 | idle: 8 | scorned: 1 | 
+for: 1060 | rage: 2 | 
+out: 135 | 
+the: 4331 | eight: 9 | 
+amply: 2 | 
+over: 91 | generation: 1 | 
+indicated: 1 | 
+despising: 2 | 
+condescended: 5 | warrant: 1 | 
+accidental: 3 | unluckily: 3 | 
+defied: 1 | militia: 6 | 
+parts: 5 | duped: 1 | 
+pains: 4 | 
+paint: 1 | 
+improvement: 9 | clergy: 1 | 
+cover: 1 | necessity: 11 | probable: 12 | 
+party: 57 | uniform: 1 | embracing: 2 | 
+conversed: 1 | 
+lose: 11 | 
+reconciling: 1 | bags: 1 | closure: 1 | 
+borne: 5 | happiest: 10 | congratulatory: 1 | 
+thanked: 7 | rector: 3 | friday: 1 | 
+myself: 94 | 
+amazed: 5 | 
+friendly: 7 | phillipses: 2 | worthy: 3 | stumbling: 1 | brevity: 1 | withstood: 1 | 
+close: 9 | rebuke: 1 | 
+explanatory: 1 | 
+speeches: 3 | pecuniary: 2 | 
+thanks: 14 | fellow: 9 | loss: 17 | mere: 5 | directing: 2 | northward: 1 | 
+lost: 29 | punctuality: 2 | 
+gentleman: 39 | probably: 24 | overspread: 3 | unasked: 1 | 
+entreaty: 8 | 
+loser: 1 | 
+confirm: 1 | 
+echo: 1 | 
+transports: 2 | 
+amazes: 1 | 
+examined: 4 | 
+misfortune: 9 | 
+completed: 2 | 
+understanding: 21 | road: 14 | compose: 3 | unjustly: 2 | drinking: 1 | ward: 1 | 
+winding: 1 | tis: 3 | 
+willed: 1 | 
+spiritless: 2 | 
+owe: 5 | 
+polite: 5 | matrimonial: 1 | 
+soothed: 1 | 
+warm: 6 | 
+warn: 4 | 
+retail: 1 | 
+steady: 12 | efficacy: 1 | 
+catherine: 126 | retain: 1 | 
+own: 183 | 
+proclaim: 1 | selfishness: 1 | 
+ingenious: 2 | beginning: 12 | 
+mortified: 5 | 
+rail: 1 | cruelty: 4 | 
+direction: 10 | 
+rain: 4 | suggest: 2 | 
+temporary: 1 | 
+victim: 1 | 
+pull: 1 | 
+boasting: 1 | eleven: 1 | 
+mess: 1 | ceaseless: 1 | 
+common: 19 | 
+fronted: 2 | austerity: 1 | mortifies: 1 | 
+rained: 1 | suggested: 5 | 
+naturally: 12 | loud: 2 | 
+kitty: 71 | settled: 48 | exultation: 1 | 
+hearing: 24 | ankles: 2 | gowns: 2 | 
+dread: 4 | 
+perfections: 2 | 
+throw: 8 | 
+contemplation: 4 | 
+capacity: 1 | 
+composedly: 3 | arrangements: 1 | 
+consult: 3 | abominate: 2 | 
+obstinate: 4 | 
+collinses: 5 | 
+corruption: 1 | 
+alleviate: 1 | 
+societies: 1 | needlessly: 1 | watched: 7 | 
+pleasure: 92 | city: 1 | 
+worked: 4 | 
+knowing: 27 | seat: 6 | 
+synonymously: 1 | 
+plentiful: 1 | 
+gouldings: 2 | 
+playful: 2 | bewailed: 1 | 
+love: 92 | guide: 2 | 
+dismay: 1 | watches: 1 | 
+weather: 6 | naturedly: 1 | 
+gate: 6 | 
+correct: 2 | 
+followed: 25 | 
+feels: 4 | higher: 4 | 
+gentlemanlike: 8 | opening: 13 | ourselves: 8 | 
+yourself: 50 | 
+searching: 1 | 
+rooted: 1 | 
+struggling: 1 | accent: 4 | 
+bequeathed: 1 | eating: 2 | 
+single: 12 | dialogue: 2 | drive: 4 | solicitation: 1 | 
+middle: 3 | impressive: 1 | 
+dwell: 2 | 
+vulgar: 2 | 
+pretend: 7 | rode: 2 | intermarriage: 1 | 
+attacks: 3 | reflecting: 1 | 
+held: 5 | 
+unwillingly: 4 | 
+frequently: 23 | 
+dwelt: 5 | 
+attended: 24 | 
+succeeding: 4 | 
+creature: 14 | 
+appertain: 1 | lewis: 3 | 
+reproof: 4 | muffin: 1 | 
+grandeur: 4 | overthrow: 1 | sentences: 1 | 
+help: 41 | disputes: 1 | distress: 16 | 
+fastidious: 2 | hesitated: 3 | 
+giving: 25 | inconvenience: 6 | execution: 4 | ramsgate: 3 | 
+unstudied: 1 | 
+nieces: 9 | gentlemen: 38 | bad: 15 | provocations: 1 | 
+surmise: 2 | accounts: 3 | languor: 1 | 
+gone: 62 | bowed: 3 | happier: 3 | 
+petrified: 1 | 
+perverseness: 6 | 
+body: 2 | 
+sixpence: 1 | 
+rectory: 1 | 
+ball: 36 | wave: 1 | repine: 4 | 
+hanging: 1 | balm: 1 | 
+folded: 1 | widely: 4 | 
+uncle: 69 | executed: 1 | 
+introduced: 9 | 
+venturing: 1 | dutifully: 2 | 
+reflection: 10 | gave: 54 | inevitable: 3 | 
+office: 6 | 
+chatty: 1 | 
+inferior: 5 | 
+foreseen: 2 | 
+else: 43 | fun: 8 | wood: 5 | 
+fancied: 7 | nine: 2 | changed: 8 | ostentatious: 1 | 
+staying: 10 | effusion: 2 | omen: 1 | 
+tiresome: 2 | accept: 17 | indulge: 5 | temptations: 2 | 
+good: 201 | edged: 2 | 
+event: 22 | affected: 19 | habitual: 1 | 
+generally: 16 | partiality: 13 | cordially: 3 | encounter: 3 | exposure: 1 | 
+hackneyed: 1 | errand: 1 | 
+doubtful: 2 | 
+conceited: 6 | answering: 3 | neighbours: 11 | 
+inevitably: 1 | 
+changes: 1 | 
+offer: 28 | increase: 6 | 
+faithful: 3 | abruptly: 2 | 
+circumstances: 28 | 
+quietly: 8 | misleading: 1 | sacrificed: 1 | 
+draw: 6 | uncertainty: 1 | cradles: 1 | 
+made: 126 | comes: 16 | shrink: 1 | 
+fifth: 1 | 
+speaking: 33 | importance: 27 | overlooked: 3 | reckon: 1 | instructing: 1 | 
+perceive: 7 | 
+hunting: 1 | 
+telling: 7 | observations: 3 | 
+inconsistency: 2 | inflict: 2 | 
+subjects: 10 | 
+filling: 1 | 
+neices: 1 | 
+seek: 8 | rang: 1 | 
+small: 23 | gratitude: 24 | 
+seem: 16 | blessed: 4 | fifty: 6 | preservation: 2 | 
+seen: 76 | thought: 112 | timed: 1 | 
+rank: 12 | acceptable: 6 | flirtation: 2 | 
+richard: 1 | 
+sees: 6 | exposed: 2 | nettled: 1 | 
+thing: 42 | too: 142 | captivating: 2 | kindest: 1 | 
+across: 5 | top: 1 | 
+exceeding: 1 | 
+rant: 1 | 
+think: 211 | advancement: 1 | 
+counterpart: 1 | obsequious: 1 | 
+volume: 2 | cleared: 2 | 
+times: 20 | 
+bewitching: 1 | 
+phillips: 31 | quarreled: 1 | inexhaustible: 1 | 
+perfectly: 47 | grouped: 1 | 
+distribute: 1 | 
+instead: 21 | 
+treated: 7 | provide: 4 | 
+tolerable: 16 | instruction: 2 | indisposed: 2 | 
+querulous: 1 | 
+enough: 106 | downstairs: 6 | clearer: 1 | 
+sermons: 3 | finances: 1 | 
+retreated: 1 | 
+respectable: 14 | performance: 6 | 
+seeing: 60 | regiment: 22 | 
+pure: 2 | 
+cherish: 1 | 
+moment: 70 | restrain: 2 | scotland: 8 | 
+inquired: 8 | simpered: 1 | 
+size: 4 | rivers: 1 | 
+shade: 2 | premeditation: 1 | 
+tolerably: 13 | scene: 16 | infinite: 2 | 
+william: 46 | 
+captivation: 1 | larder: 1 | pathetic: 1 | debts: 10 | 
+tormenting: 1 | 
+dozen: 2 | 
+protested: 8 | 
+word: 48 | ways: 3 | 
+wore: 2 | weighed: 2 | 
+proceeding: 6 | schemes: 7 | agreement: 3 | pointing: 5 | chaperon: 1 | 
+bed: 5 | work: 21 | 
+merits: 1 | 
+sneer: 1 | management: 4 | missed: 3 | 
+beg: 17 | worn: 2 | parading: 1 | 
+flirting: 2 | repined: 1 | 
+believed: 37 | substance: 3 | 
+human: 6 | severest: 1 | 
+reporting: 1 | 
+prejudice: 6 | stretching: 1 | 
+vexed: 8 | 
+remarkable: 7 | inhumanity: 1 | 
+neglecting: 2 | 
+enhance: 1 | prohibited: 1 | 
+endure: 1 | 
+ornament: 1 | ecstasy: 2 | 
+authorising: 1 | 
+balls: 8 | 
+started: 4 | believes: 1 | gaze: 1 | 
+depend: 23 | blameless: 1 | 
+hertfordshire: 41 | derbyshire: 24 | asperity: 1 | 
+saying: 35 | privileged: 3 | 
+able: 54 | 
+interested: 8 | 
+deserted: 1 | 
+dreaded: 7 | 
+remarkably: 10 | 
+firmly: 1 | hardened: 1 | 
+induced: 2 | 
+legacy: 1 | killed: 4 | 
+longbourn: 88 | coincide: 1 | 
+maintaining: 1 | 
+answered: 34 | omit: 1 | eclipsed: 1 | glimpse: 2 | dimensions: 1 | lightness: 1 | 
+since: 59 | happy: 83 | blaming: 3 | 
+every: 198 | portion: 3 | impurities: 1 | 
+disguise: 4 | blamed: 1 | 
+numerous: 2 | payment: 1 | 
+joints: 1 | 
+bringing: 12 | 
+affect: 4 | flying: 2 | required: 10 | permission: 6 | 
+drew: 19 | dishonorable: 1 | 
+here: 69 | 
+try: 12 | 
+abuse: 2 | 
+impassable: 1 | 
+freedom: 4 | arriving: 1 | 
+credit: 27 | 
+eloquent: 2 | incessantly: 2 | 
+butler: 1 | 
+honourable: 6 | 
+expence: 1 | 
+yes: 76 | 
+yet: 73 | hers: 8 | 
+honour: 42 | judgement: 11 | ductility: 1 | 
+petition: 1 | 
+highly: 28 | mutually: 1 | reminding: 1 | 
+violently: 6 | 
+excepting: 3 | 
+infancy: 2 | prepossessed: 1 | 
+arrival: 30 | 
+bare: 1 | 
+third: 7 | 
+unaccountable: 2 | 
+becomes: 4 | fugitives: 1 | 
+remember: 22 | stupidity: 4 | 
+seven: 3 | dearly: 3 | 
+resuming: 1 | 
+maid: 3 | 
+sallied: 1 | 
+sentiment: 8 | 
+closed: 6 | 
+conditional: 1 | distraction: 1 | 
+nearness: 1 | spacious: 1 | 
+conditionally: 2 | fingering: 1 | 
+tenant: 1 | 
+reader: 3 | 
+starve: 1 | guilt: 3 | 
+should: 248 | justice: 15 | immediate: 12 | practised: 1 | 
+closer: 1 | 
+humbled: 4 | 
+closet: 1 | 
+murmurs: 1 | 
+employments: 4 | 
+acting: 3 | 
+happily: 5 | exception: 1 | enlarging: 1 | forbore: 1 | 
+advised: 3 | packed: 1 | 
+qualities: 6 | universal: 3 | repeat: 5 | 
+reliance: 3 | steadiness: 1 | 
+unattended: 1 | 
+talked: 38 | violation: 2 | 
+practises: 2 | 
+surrounding: 2 | deigned: 3 | comparing: 2 | 
+disliked: 4 | bass: 1 | bold: 2 | 
+coincided: 1 | 
+malice: 2 | 
+near: 38 | 
+different: 36 | 
+neat: 1 | 
+uncertain: 2 | triumph: 10 | forever: 3 | bought: 5 | 
+introduction: 11 | 
+poetry: 2 | talker: 1 | 
+rate: 5 | favoured: 1 | wearisome: 1 | 
+assurance: 15 | convenience: 3 | 
+suited: 3 | 
+bid: 1 | smoothly: 1 | 
+dislikes: 1 | trusting: 2 | 
+dishonest: 1 | 
+pay: 11 | 
+attendant: 1 | 
+smart: 2 | bath: 1 | 
+differ: 1 | witticisms: 1 | 
+triumphantly: 2 | embarrassed: 7 | secrets: 1 | 
+impudence: 3 | 
+fidget: 1 | 
+stronger: 6 | 
+unhappy: 13 | 
+make: 167 | youngest: 13 | action: 2 | 
+bit: 3 | 
+refinements: 1 | premeditated: 1 | 
+losses: 1 | 
+uncles: 3 | 
+often: 89 | 
+ought: 45 | 
+preservative: 2 | 
+prosperity: 3 | 
+self: 24 | 
+eluded: 1 | thirteen: 1 | 
+esteemed: 7 | hastened: 4 | trim: 1 | 
+unaffected: 5 | mode: 5 | stands: 2 | hoping: 4 | 
+addressed: 17 | 
+sell: 1 | 
+departed: 2 | 
+flatter: 10 | inferences: 1 | 
+burning: 1 | 
+requiring: 5 | 
+ordinary: 3 | begins: 4 | 
+permit: 1 | concluded: 10 | admirable: 3 | 
+colouring: 3 | 
+ankle: 1 | gown: 7 | chamberlayne: 1 | 
+coaxed: 1 | 
+stairs: 18 | addresses: 6 | 
+fancying: 4 | male: 1 | retrospective: 1 | 
+formal: 9 | warned: 1 | 
+quest: 7 | 
+heinous: 1 | 
+affectation: 3 | sings: 1 | 
+humble: 9 | saucy: 1 | 
+tide: 2 | foxhounds: 1 | calmness: 4 | 
+steadily: 3 | changing: 3 | 
+captain: 4 | 
+meeting: 22 | 
+ascertain: 2 | consistency: 1 | 
+syllables: 1 | unpardonable: 4 | 
+miserable: 6 | indignant: 2 | 
+temper: 24 | arrived: 15 | fortunately: 2 | congratulated: 2 | 
+commendation: 8 | 
+wandering: 3 | indefinite: 1 | steadfast: 1 | 
+preferment: 3 | shock: 2 | 
+venting: 1 | 
+convey: 2 | fellows: 2 | clearly: 3 | northwards: 1 | 
+yawning: 1 | evade: 1 | 
+everywhere: 2 | propriety: 8 | envelope: 3 | 
+hack: 1 | ascended: 3 | 
+still: 72 | examining: 4 | predominate: 1 | 
+misery: 14 | 
+other: 211 | two: 135 | cooking: 1 | manifold: 1 | 
+easiness: 3 | inherit: 1 | 
+shake: 2 | 
+joyfully: 1 | narrowly: 2 | 
+negatived: 1 | acquit: 2 | refrain: 3 | 
+miserably: 1 | 
+affections: 4 | stating: 3 | 
+foolish: 8 | 
+room: 150 | 
+imitation: 1 | justify: 6 | attached: 11 | plead: 2 | independent: 2 | availed: 1 | 
+orders: 7 | atone: 2 | 
+declined: 6 | money: 27 | 
+represented: 7 | 
+send: 24 | presented: 2 | review: 3 | counted: 1 | 
+book: 18 | glancing: 4 | 
+instability: 1 | 
+testifying: 1 | died: 3 | 
+firmness: 1 | 
+raised: 6 | 
+corner: 1 | secluded: 1 | 
+otherwise: 16 | curious: 5 | 
+direct: 7 | 
+allurements: 1 | 
+civilities: 7 | 
+trace: 4 | 
+brilliancy: 2 | 
+sent: 20 | arrested: 2 | overcame: 3 | 
+challenge: 1 | 
+laughter: 2 | need: 19 | apartment: 4 | 
+gallantry: 8 | politeness: 17 | 
+invaluable: 3 | breaking: 2 | richly: 1 | 
+shall: 162 | include: 1 | meetings: 2 | 
+whichever: 2 | modesty: 6 | persuaded: 25 | 
+assistance: 13 | discuss: 2 | 
+kindness: 29 | flat: 1 | delay: 6 | bribery: 1 | 
+station: 2 | tanned: 1 | 
+pen: 3 | entailing: 1 | 
+urgent: 3 | snug: 1 | 
+per: 3 | 
+coffee: 7 | 
+resolving: 7 | stuffy: 1 | remonstrance: 1 | 
+endeavoured: 10 | 
+practice: 5 | price: 2 | mortifications: 1 | 
+roses: 1 | 
+many: 119 | eliza: 22 | 
+trade: 4 | 
+incautiously: 1 | 
+shoes: 1 | 
+taken: 31 | thoughtfulness: 2 | 
+thoroughly: 2 | 
+thousand: 34 | shame: 10 | 
+dressing: 9 | 
+takes: 6 | 
+disservice: 1 | 
+enjoying: 4 | impetuous: 1 | aunts: 1 | 
+offensive: 2 | suppress: 2 | 
+converting: 1 | 
+alliance: 3 | 
+suitableness: 3 | excite: 3 | 
+purport: 2 | 
+overhearings: 1 | proving: 1 | 
+intimacy: 10 | 
+publish: 1 | 
+canvassed: 2 | 
+stepping: 1 | 
+repetition: 3 | 
+pride: 48 | 
+happened: 24 | errors: 3 | salad: 1 | welcoming: 1 | 
+returned: 45 | additional: 2 | 
+acknowledgment: 3 | defect: 4 | deception: 2 | ardently: 2 | connubial: 1 | 
+sept: 1 | 
+formed: 16 | gracious: 8 | repentance: 1 | disdained: 3 | 
+purpose: 18 | capital: 4 | 
+conceals: 1 | adopt: 3 | retort: 1 | 
+accomplishments: 5 | persist: 2 | completion: 1 | 
+silently: 3 | 
+irritation: 3 | 
+officer: 8 | malicious: 2 | enforced: 1 | 
+exercise: 6 | thorough: 3 | bore: 9 | envying: 1 | 
+accompanying: 2 | eloquence: 1 | 
+former: 38 | avarice: 1 | 
+excessively: 11 | 
+correspondent: 2 | 
+born: 4 | impartiality: 1 | 
+prefaced: 1 | soothe: 1 | dated: 2 | 
+disengaged: 2 | animated: 2 | disobliging: 1 | 
+account: 38 | discrimination: 1 | butcher: 1 | 
+even: 82 | adventure: 2 | 
+though: 226 | 
+spending: 5 | 
+merit: 7 | gay: 2 | spurned: 1 | 
+ever: 130 | 
+archbishop: 1 | 
+spiteful: 1 | 
+dislike: 23 | seclusion: 1 | 
+overtaken: 1 | 
+eccentric: 1 | insincere: 2 | 
+persuade: 18 | bequest: 1 | rose: 7 | 
+error: 6 | 
+performed: 6 | tells: 1 | 
+predominance: 1 | 
+proprietor: 3 | blush: 4 | 
+willingness: 3 | 
+bow: 11 | 
+winter: 15 | morality: 1 | disgusting: 1 | box: 1 | 
+boy: 4 | 
+distrusted: 1 | 
+miserly: 1 | 
+counteract: 1 | 
+related: 16 | forgetting: 2 | attentively: 3 | 
+netherfield: 73 | comfort: 31 | assistant: 1 | destructive: 1 | performer: 2 | infatuation: 1 | 
+amuse: 5 | artfully: 1 | burnt: 1 | 
+written: 19 | heartening: 1 | 
+health: 18 | warehouses: 2 | 
+confirms: 1 | 
+according: 8 | cross: 4 | 
+active: 4 | 
+drop: 3 | 
+relates: 3 | alarms: 1 | 
+shape: 2 | 
+january: 2 | 
+checking: 2 | 
+disturbed: 2 | 
+speech: 12 | tired: 4 | upbraided: 1 | tempers: 1 | 
+convert: 1 | curtains: 1 | affable: 1 | 
+strongly: 8 | comprehension: 1 | haggerston: 2 | 
+mark: 4 | 
+discontented: 2 | 
+both: 71 | coming: 61 | 
+merely: 33 | contents: 9 | flew: 2 | fortunes: 1 | 
+pin: 1 | 
+amends: 5 | 
+liked: 27 | 
+you: 1358 | persevered: 1 | 
+tires: 1 | 
+mary: 39 | dress: 5 | 
+conjunction: 1 | selves: 1 | 
+competition: 3 | 
+saturday: 17 | convince: 4 | hedge: 1 | 
+willing: 6 | 
+horrible: 1 | 
+likes: 9 | agreeable: 45 | instances: 4 | 
+restrained: 1 | 
+rapturously: 1 | 
+full: 19 | aroused: 1 | 
+hair: 3 | nicely: 1 | 
+surprise: 37 | impose: 2 | stirs: 1 | belonging: 1 | 
+leaving: 18 | unsocial: 1 | 
+triumphing: 1 | 
+haunt: 1 | attics: 1 | 
+horse: 3 | barouche: 1 | 
+defence: 2 | mechanically: 1 | 
+alarming: 5 | 
+singular: 2 | 
+repeating: 6 | distressing: 6 | mildness: 2 | chair: 6 | formation: 1 | 
+circumspection: 2 | essential: 2 | cogent: 1 | 
+confess: 16 | rivals: 1 | moderate: 2 | 
+alighted: 1 | 
+brought: 37 | interrupting: 2 | 
+agreeably: 3 | respecting: 3 | appointed: 1 | 
+neighbourhood: 29 | 
+designing: 1 | ashworth: 1 | 
+year: 29 | procuring: 3 | 
+speedy: 2 | 
+reputation: 3 | supplying: 1 | 
+their: 442 | 
+rejoiced: 9 | 
+emotions: 1 | prudence: 4 | exceed: 2 | 
+handwriting: 1 | 
+couple: 8 | 
+weakness: 5 | 
+share: 14 | 
+determining: 2 | propitious: 1 | abilities: 6 | train: 1 | 
+forgetfulness: 1 | 
+conduct: 23 | 
+choice: 15 | coppice: 1 | vigorously: 1 | 
+degree: 23 | trait: 1 | 
+befall: 2 | sharp: 2 | 
+weeks: 18 | invite: 6 | houses: 4 | 
+haughty: 3 | histories: 1 | 
+chagrin: 1 | 
+till: 93 | 
+employ: 2 | abrupt: 1 | 
+supercilious: 1 | unreserve: 1 | lamentations: 3 | 
+get: 52 | gained: 11 | evil: 14 | waived: 1 | 
+interruption: 10 | unprofitable: 1 | 
+witness: 3 | 
+uneasiness: 7 | fairest: 1 | relating: 5 | 
+twelve: 4 | mixed: 2 | neither: 38 | tuesday: 12 | fullest: 1 | 
+communicated: 3 | 
+morning: 79 | 
+brother: 79 | presently: 2 | characterise: 1 | 
+companions: 7 | 
+never: 220 | build: 1 | burying: 1 | 
+coolly: 4 | 
+destitute: 1 | 
+contrariety: 1 | woods: 7 | 
+nursing: 1 | hints: 4 | 
+time: 203 | crowd: 1 | descended: 3 | 
+overcome: 10 | 
+woody: 2 | 
+heighten: 1 | bowl: 1 | 
+henceforth: 1 | 
+affection: 58 | reports: 1 | 
+built: 3 | 
+crown: 1 | 
+restoration: 3 | regulation: 1 | 
+half: 70 | bows: 2 | 
+answerable: 2 | 
+indistinctly: 1 | 
+moreover: 11 | perturbation: 2 | 
+considered: 23 | unlike: 4 | 
+hall: 13 | uselessly: 1 | 
+faint: 1 | 
+keeping: 4 | 
+relation: 11 | 
+mischief: 3 | relished: 1 | 
+incensed: 2 | weighty: 1 | 
+unkindness: 1 | 
+therefore: 75 | stiles: 1 | 
+uneasy: 8 | eagerness: 8 | 
+sedate: 1 | hermitage: 1 | 
+backgammon: 2 | hatred: 1 | 
+a: 1954 | coughs: 1 | 
+tranquillity: 5 | b: 1 | 
+ceased: 6 | e: 1 | 
+courtesy: 2 | f: 5 | 
+succeeds: 1 | 
+dine: 16 | burst: 3 | 
+i: 2070 | 
+perpetual: 1 | impulses: 1 | 
+moralize: 1 | 
+dreadfully: 2 | 
+m: 2 | 
+seniority: 1 | oppose: 3 | 
+sorry: 34 | o: 5 | earnestly: 11 | 
+restored: 2 | covered: 2 | p: 1 | 
+possible: 56 | abatement: 1 | 
+s: 650 | posterity: 1 | 
+t: 12 | passage: 2 | imperfectly: 1 | 
+insists: 1 | beauteous: 1 | 
+staggered: 1 | repent: 1 | chanced: 1 | 
+recovered: 6 | w: 2 | 
+deepest: 2 | 
+but: 1002 | thereby: 2 | 
+expectation: 19 | 
+signal: 2 | 
+declare: 8 | true: 26 | buy: 4 | affront: 4 | gallery: 5 | swelled: 1 | 
+influence: 14 | signify: 3 | 
+intimation: 1 | 
+being: 175 | possibly: 8 | chances: 1 | 
+mortal: 2 | 
+desired: 6 | frightened: 7 | scale: 1 | 
+wander: 1 | 
+shelves: 1 | reanimated: 1 | 
+hand: 25 | wounding: 2 | appeased: 1 | 
+exclamation: 2 | temptation: 7 | boys: 3 | 
+hang: 1 | 
+ungracious: 3 | emptiness: 1 | 
+alas: 2 | 
+thereupon: 2 | indiscreet: 1 | 
+yielding: 3 | 
+unfelt: 2 | 
+sleeves: 1 | 
+elizabeth: 635 | 
+decided: 11 | hearers: 1 | 
+physicians: 1 | perseverance: 3 | 
+incumbent: 4 | caused: 1 | 
+confirmed: 3 | gig: 1 | 
+looks: 12 | 
+penetration: 2 | 
+stirring: 1 | 
+large: 23 | satisfy: 11 | double: 2 | 
+paining: 1 | palatable: 1 | 
+expense: 6 | 
+fancy: 19 | 
+imagine: 27 | successor: 1 | 
+breakfast: 26 | comparative: 3 | refusing: 7 | 
+shook: 11 | easter: 3 | causes: 5 | instantaneous: 1 | 
+library: 23 | ennight: 1 | described: 5 | residing: 1 | petitioned: 1 | 
+angel: 3 | gentle: 5 | retailing: 1 | 
+anger: 13 | shoot: 3 | 
+cutting: 1 | 
+safe: 8 | doubly: 1 | 
+england: 5 | method: 5 | equipage: 1 | 
+familiarly: 2 | overflowing: 1 | 
+tumult: 3 | eyelashes: 1 | 
+palliation: 1 | 
+obtained: 4 | 
+object: 48 | feared: 11 | 
+devoting: 1 | 
+composed: 3 | 
+savours: 1 | 
+useful: 6 | 
+dissolved: 1 | 
+flowed: 1 | pleasantness: 3 | transactions: 2 | 
+fight: 2 | 
+more: 326 | promised: 21 | nobody: 17 | quit: 10 | 
+including: 2 | 
+removing: 3 | 
+sheltered: 2 | 
+unappeasable: 1 | maintain: 1 | roads: 1 | 
+impolitic: 1 | commissioned: 1 | 
+becoming: 3 | niece: 22 | 
+introduce: 11 | shops: 1 | partridges: 1 | 
+informality: 1 | nicest: 1 | judgment: 2 | 
+merry: 3 | 
+standing: 13 | discovery: 7 | 
+despised: 3 | 
+promises: 3 | amazement: 10 | 
+civilly: 3 | 
+solicitude: 8 | 
+discerning: 1 | 
+society: 33 | 
+fuss: 1 | 
+ensign: 1 | feverish: 2 | intimidated: 1 | 
+unlikely: 4 | 
+defend: 3 | 
+despises: 1 | powers: 6 | yawned: 1 | 
+pieces: 2 | testified: 2 | 
+forcibly: 4 | 
+business: 45 | 
+search: 2 | interruptions: 1 | 
+screen: 2 | bye: 5 | 
+regular: 3 | 
+unpretending: 1 | 
+precision: 1 | 
+individually: 1 | 
+tenderly: 2 | 
+however: 134 | inns: 1 | irretrievable: 1 | 
+fears: 9 | 
+most: 188 | dirt: 2 | engagement: 20 | 
+country: 41 | folios: 1 | prior: 2 | 
+affords: 1 | 
+refrained: 1 | gamester: 1 | 
+reception: 9 | 
+effusions: 2 | 
+sally: 1 | 
+engage: 5 | singing: 3 | 
+procure: 1 | partake: 2 | 
+distinguishing: 2 | 
+paused: 3 | conveying: 1 | respective: 1 | 
+desirable: 11 | louder: 1 | 
+bordering: 3 | 
+diffident: 1 | levelled: 1 | 
+deceiving: 2 | newest: 1 | 
+hard: 12 | combated: 1 | admission: 1 | 
+table: 35 | dish: 5 | terrific: 1 | 
+ramble: 2 | grieving: 1 | exclaim: 1 | windings: 1 | 
+upper: 2 | indulged: 2 | 
+remained: 23 | 
+month: 9 | 
+short: 43 | harm: 4 | wilderness: 1 | 
+said: 401 | pauses: 2 | earthly: 1 | 
+delighted: 23 | 
+harp: 1 | 
+coat: 4 | listen: 12 | result: 5 | unnaturally: 1 | 
+relations: 24 | 
+fallen: 3 | coachman: 2 | 
+charm: 6 | 
+abused: 2 | 
+people: 50 | encamped: 1 | 
+natural: 22 | 
+there: 355 | flow: 4 | 
+realities: 1 | 
+concealing: 1 | 
+assuring: 4 | 
+attributing: 1 | apparel: 1 | 
+exaggeration: 1 | 
+corps: 6 | 
+established: 7 | endeared: 1 | gentleness: 4 | 
+solidity: 2 | resume: 1 | 
+disadvantage: 5 | 
+attribute: 4 | relative: 3 | 
+holding: 2 | 
+admired: 12 | confined: 5 | 
+housekeeping: 3 | rites: 1 | luck: 4 | 
+handsomer: 3 | exquisite: 1 | leads: 3 | 
+revealing: 1 | 
+contrived: 3 | dead: 5 | harmony: 1 | 
+hold: 7 | scarborough: 1 | 
+contrariwise: 1 | 
+afforded: 5 | 
+tear: 2 | admirer: 3 | 
+likewise: 17 | listening: 10 | admires: 2 | 
+deal: 34 | cheerful: 7 | comprehended: 3 | 
+indebted: 8 | 
+studious: 1 | insulted: 1 | 
+these: 69 | 
+heretofore: 1 | 
+dear: 158 | 
+delightfully: 4 | 
+under: 33 | allowance: 2 | 
+move: 3 | revolution: 1 | 
+lad: 1 | casual: 1 | 
+hate: 9 | economy: 5 | 
+comforted: 1 | lottery: 3 | situated: 4 | 
+ordered: 8 | 
+survey: 1 | 
+heaven: 12 | therein: 1 | 
+revive: 1 | 
+ducks: 1 | 
+sake: 23 | 
+sufficiently: 5 | subsist: 1 | 
+lifetime: 1 | 
+home: 66 | 
+god: 4 | 
+law: 17 | shifting: 1 | cake: 1 | 
+events: 5 | 
+something: 71 | lay: 6 | 
+owed: 6 | 
+mounting: 1 | 
+impropriety: 5 | 
+deceitful: 2 | edge: 2 | 
+sometimes: 35 | childhood: 1 | originated: 2 | 
+debt: 4 | 
+pictured: 1 | 
+put: 31 | improvements: 1 | 
+got: 25 | influencing: 1 | 
+screens: 1 | 
+succeeded: 7 | objecting: 3 | vacancy: 1 | 
+owes: 2 | 
+aunt: 84 | dissemble: 1 | 
+eldest: 20 | smirks: 1 | 
+without: 170 | borrowed: 1 | 
+scold: 1 | 
+resigning: 1 | 
+pictures: 1 | 
+appearance: 33 | possess: 5 | praised: 2 | 
+gentlewoman: 1 | 
+songs: 1 | 
+disgusted: 3 | 
+others: 53 | 
+energetic: 1 | alarmed: 8 | stately: 3 | gracefully: 1 | 
+provoking: 3 | happens: 4 | proportions: 1 | 
+depart: 4 | reynolds: 10 | compensation: 1 | 
+except: 22 | offenses: 3 | undiminished: 1 | panting: 1 | 
+grapes: 1 | 
+gardiner: 97 | call: 28 | 
+fearful: 5 | calm: 5 | obtain: 3 | 
+praises: 2 | 
+listened: 21 | 
+acquiescence: 2 | 
+provoked: 3 | venison: 1 | 
+professions: 6 | 
+have: 842 | collecting: 2 | 
+recommendation: 4 | performers: 1 | comforts: 4 | 
+thankfulness: 1 | 
+unsubdued: 1 | 
+either: 59 | 
+loose: 1 | 
+intimate: 13 | 
+objection: 15 | miller: 1 | relied: 1 | 
+same: 69 | listener: 3 | 
+relief: 13 | 
+attempted: 4 | mingled: 1 | 
+decisions: 1 | witty: 1 | 
+natured: 11 | 
+came: 90 | mistake: 8 | 
+amused: 6 | seriously: 13 | sameness: 1 | 
+news: 32 | 
+honestly: 4 | subjection: 1 | 
+spared: 8 | 
+professing: 1 | bosom: 1 | expeditiously: 2 | unblemished: 1 | 
+violent: 10 | camp: 3 | 
+fetch: 3 | swallowed: 1 | 
+intended: 21 | countenance: 30 | 
+regrets: 3 | 
+regulars: 2 | 
+essence: 1 | 
+shown: 6 | backward: 1 | 
+doubts: 2 | 
+into: 142 | strike: 5 | calmly: 1 | apace: 1 | lamented: 1 | 
+remarked: 1 | 
+collection: 4 | shows: 4 | loveliness: 2 | outlived: 1 | 
+completely: 7 | 
+silent: 26 | 
+sang: 1 | injuries: 1 | 
+sincerity: 4 | shaken: 3 | 
+prepared: 10 | satisfactions: 1 | 
+hope: 121 | 
+church: 11 | 
+anybody: 25 | bitterest: 1 | 
+justified: 5 | 
+forgiven: 1 | 
+maintained: 2 | 
+consented: 2 | 
+gathered: 2 | steadfastly: 3 | 
+deep: 7 | regarded: 3 | 
+next: 71 | meaning: 14 | dispose: 1 | 
+presided: 1 | 
+affair: 18 | 
+recommend: 12 | 
+before: 227 | 
+troop: 1 | investigation: 1 | pouring: 1 | 
+led: 18 | 
+gravity: 4 | artful: 1 | 
+unbecoming: 1 | 
+ostentation: 1 | profession: 7 | cassino: 1 | 
+offend: 3 | puffed: 1 | acquire: 1 | racked: 1 | 
+amiable: 36 | 
+arrangement: 8 | plenty: 1 | 
+rendering: 1 | 
+actually: 12 | speculation: 1 | 
+hurrying: 3 | 
+notice: 21 | vices: 1 | implacable: 1 | endurable: 1 | 
+fetched: 1 | custody: 1 | 
+let: 75 | 
+insignificant: 1 | 
+powdering: 1 | 
+regulate: 1 | 
+excess: 2 | 
+invent: 1 | 
+once: 57 | 
+motion: 1 | 
+curtseyed: 1 | 
+continual: 3 | unprotected: 1 | settlement: 2 | 
+haye: 1 | 
+defy: 4 | 
+loudly: 2 | 
+termination: 2 | 
+place: 75 | beatings: 1 | 
+mantelpiece: 3 | concurrence: 2 | journeys: 1 | 
+sustained: 1 | 
+another: 58 | settle: 7 | 
+lessen: 4 | panegyric: 2 | scope: 1 | constancy: 1 | 
+necessary: 31 | remembering: 2 | 
+chapter: 61 | gardiners: 6 | calls: 1 | 
+ascertaining: 1 | 
+flirt: 4 | 
+defense: 1 | 
+untinctured: 1 | 
+trifling: 5 | similarity: 2 | detaching: 1 | 
+billiard: 1 | contributed: 1 | 
+important: 10 | imposing: 1 | 
+remainder: 1 | impulse: 3 | purchased: 3 | 
+betrayed: 4 | 
+cause: 19 | 
+compromised: 1 | 
+healthy: 1 | 
+obsequiousness: 1 | offending: 3 | 
+silliest: 1 | regret: 19 | 
+can: 213 | 
+accusations: 3 | multitude: 1 | 
+grieved: 12 | declaration: 5 | purchases: 2 | 
+guess: 5 | 
+guest: 5 | circulated: 1 | 
+boxes: 1 | torment: 1 | special: 2 | 
+seconding: 1 | 
+north: 6 | regimentals: 3 | stratagems: 1 | 
+stoutly: 1 | voluntary: 3 | operated: 1 | 
+misunderstand: 3 | resemblance: 7 | 
+chose: 16 | slowly: 4 | 
+strangeness: 1 | jumped: 1 | 
+general: 51 | cordial: 3 | approach: 7 | disadvantages: 2 | 
+steps: 5 | unreasonable: 7 | 
+mortifying: 6 | wilfully: 3 | recommendations: 1 | 
+during: 27 | 
+afterwards: 32 | agitated: 5 | expences: 1 | 
+entreaties: 4 | 
+ones: 6 | 
+contains: 1 | 
+persuasion: 8 | 
+relationship: 12 | 
+period: 15 | pressing: 5 | 
+score: 4 | 
+suspicion: 9 | repaid: 2 | 
+daughters: 50 | 
+ended: 4 | 
+condescendingly: 1 | 
+card: 9 | 
+care: 35 | bitterness: 5 | unreasonably: 1 | 
+agree: 6 | 
+mansion: 2 | abhorrent: 1 | scorn: 1 | 
+counting: 1 | 
+orderly: 1 | 
+engrossed: 5 | tendency: 3 | 
+hating: 1 | 
+fashionable: 1 | genteel: 3 | 
+determine: 13 | 
+beneficence: 1 | articles: 2 | philosophy: 5 | 
+reconciled: 2 | 
+hurry: 11 | acute: 2 | roasted: 1 | lie: 1 | 
+jealousy: 4 | 
+dismissed: 3 | biting: 1 | 
+increased: 11 | 
+circuit: 1 | 
+carved: 1 | 
+adding: 5 | letting: 5 | sash: 1 | 
+angry: 17 | 
+jumbled: 1 | rushed: 1 | 
+case: 32 | 
+offers: 5 | increases: 1 | 
+grievances: 2 | anguish: 2 | 
+nothingness: 1 | 
+continued: 51 | instant: 6 | 
+observed: 27 | deportment: 1 | escaping: 1 | 
+visitors: 14 | sole: 4 | 
+censure: 5 | vouch: 3 | 
+hurst: 33 | hour: 38 | 
+bennets: 10 | bitterly: 2 | fluttered: 1 | 
+impatiently: 5 | 
+cold: 18 | tongue: 3 | 
+gallant: 1 | cast: 2 | cleanse: 1 | 
+resentment: 17 | nonsensical: 3 | 
+retains: 1 | 
+yield: 4 | effectual: 1 | 
+proverb: 1 | observer: 2 | nuptials: 3 | 
+ah: 5 | vanish: 1 | 
+anticipate: 1 | 
+development: 2 | 
+receiving: 20 | 
+forster: 39 | 
+am: 324 | 
+an: 361 | 
+madam: 21 | projected: 1 | 
+lighted: 1 | 
+announced: 3 | 
+as: 1180 | 
+at: 788 | disrespectful: 1 | trying: 6 | 
+tempered: 5 | diffuse: 1 | 
+defiance: 3 | 
+clump: 1 | 
+clarke: 1 | inches: 1 | cultivation: 1 | 
+discredit: 2 | 
+some: 211 | 
+hurts: 1 | lofty: 1 | exerting: 1 | 
+goulding: 1 | 
+clothes: 13 | 
+guests: 1 | 
+come: 93 | 
+bonnet: 3 | descent: 3 | honours: 2 | alike: 2 | trout: 1 | capers: 1 | 
+be: 1241 | owns: 1 | 
+induce: 3 | busily: 3 | 
+behind: 14 | 
+condescension: 7 | jilt: 1 | conciliate: 1 | 
+oddly: 1 | submit: 3 | 
+circles: 1 | parents: 7 | ventured: 7 | acknowledging: 1 | 
+bewitched: 1 | 
+fighting: 1 | 
+tell: 71 | 
+unaffectedly: 2 | 
+emergence: 1 | 
+intimately: 2 | 
+describe: 7 | 
+disclosed: 1 | 
+by: 636 | vanity: 18 | constitution: 1 | matlock: 2 | 
+nods: 1 | 
+song: 5 | 
+because: 62 | artificial: 1 | 
+profess: 1 | 
+devoted: 3 | determination: 3 | 
+seldom: 9 | 
+exertion: 9 | 
+sedateness: 1 | 
+inspire: 1 | produce: 5 | 
+sons: 2 | 
+incredulity: 3 | 
+disturb: 1 | 
+unprepared: 1 | 
+save: 3 | 
+lobby: 1 | 
+dying: 3 | agitations: 1 | 
+plain: 11 | motive: 17 | peevish: 2 | 
+revered: 1 | extravagant: 4 | 
+noise: 3 | unavailing: 2 | 
+forbearing: 1 | feelingly: 1 | 
+whisper: 10 | 
+guardian: 1 | 
+pitiful: 2 | tranquilly: 1 | 
+ponies: 3 | 
+enumerating: 5 | consoled: 2 | 
+light: 18 | preserved: 4 | 
+name: 33 | circumstance: 19 | stay: 37 | withheld: 4 | stiffly: 1 | 
+anxiety: 19 | superintended: 1 | 
+headed: 1 | 
+addition: 8 | 
+use: 15 | refreshing: 2 | 
+injuring: 1 | produced: 11 | inspired: 2 | 
+soon: 216 | also: 34 | intelligent: 4 | 
+de: 39 | 
+noisy: 3 | 
+tend: 1 | hence: 1 | 
+pray: 26 | dirty: 4 | cook: 1 | 
+cool: 3 | 
+uniting: 1 | 
+occasion: 38 | eligibility: 1 | tribute: 1 | repulsive: 1 | 
+do: 347 | 
+drawn: 8 | 
+previous: 3 | inspires: 1 | 
+interest: 26 | delicacy: 11 | using: 1 | 
+altogether: 8 | significant: 3 | 
+glad: 37 | rooms: 9 | 
+diffidence: 5 | 
+tens: 1 | 
+gaiety: 2 | tent: 1 | lanes: 1 | 
+mature: 1 | 
+misused: 1 | 
+miraculous: 2 | stream: 4 | 
+breach: 3 | 
+enumeration: 1 | 
+deny: 8 | 
+dining: 18 | dropt: 2 | 
+learn: 10 | getting: 7 | jumping: 1 | 
+perhaps: 76 | 
+repelled: 1 | 
+appeals: 1 | 
+incapable: 8 | appearing: 6 | 
+survived: 1 | 
+beneficial: 1 | 
+calico: 1 | papers: 1 | 
+wasting: 1 | examination: 3 | blameable: 1 | 
+seduction: 1 | 
+showing: 4 | 
+imitations: 1 | 
+already: 28 | 
+sorrow: 4 | 
+raising: 3 | 
+lease: 1 | precipitate: 2 | 
+reach: 8 | justly: 3 | 
+taller: 1 | example: 5 | occurring: 2 | sloping: 1 | 
+applied: 12 | 
+friend: 112 | precisely: 1 | 
+exactly: 30 | 
+heirs: 1 | atoned: 1 | 
+colour: 12 | aspire: 1 | 
+upbraiding: 1 | 
+mistook: 1 | perforce: 1 | 
+opinions: 8 | alienated: 1 | pitied: 3 | 
+crossing: 2 | antagonist: 1 | 
+least: 65 | stupid: 4 | 
+only: 216 | loo: 2 | repressing: 1 | 
+compliance: 1 | laity: 1 | 
+porridge: 1 | repaired: 3 | 
+thank: 19 | applies: 1 | storing: 1 | dissuaded: 1 | 
+decidedly: 4 | lot: 2 | 
+low: 8 | 
+covering: 2 | restoring: 1 | 
+arguments: 5 | 
+personages: 1 | 
+says: 15 | 
+sore: 1 | prevailing: 2 | 
+ridiculing: 1 | 
+private: 11 | 
+sincerely: 9 | 
+mamma: 11 | cessation: 1 | 
+proceedings: 1 | insisted: 1 | 
+discomposure: 3 | wealth: 3 | 
+expostulation: 1 | illiterate: 1 | 
+insupportable: 3 | sort: 38 | misunderstood: 4 | 
+qualification: 1 | 
+largest: 1 | joking: 1 | 
+military: 1 | 
+lesson: 2 | 
+ready: 20 | seasonable: 1 | 
+go: 104 | depreciate: 1 | 
+sisterly: 3 | 
+resentments: 1 | 
+summer: 19 | stem: 1 | 
+gravely: 4 | reverie: 1 | unfavourable: 2 | condolence: 1 | 
+tempted: 7 | monthly: 1 | 
+step: 16 | contented: 4 | 
+attempting: 4 | mingling: 1 | serve: 2 | 
+bodies: 1 | 
+announce: 4 | 
+satisfaction: 27 | objected: 1 | 
+entreating: 1 | 
+intentionally: 2 | 
+pleasantest: 1 | 
+gratefully: 3 | 
+disheartened: 1 | 
+dined: 8 | superintendence: 1 | 
+he: 1336 | meditate: 2 | 
+ideas: 13 | unfavourably: 1 | 
+secure: 13 | 
+walked: 44 | further: 21 | prey: 2 | 
+viewing: 3 | negligence: 1 | 
+unassuming: 3 | degradation: 1 | adequate: 1 | 
+regretting: 2 | 
+luckiest: 1 | 
+exist: 1 | 
+speaks: 3 | prevents: 1 | 
+term: 1 | sending: 1 | 
+presume: 2 | cost: 4 | encroaching: 1 | 
+requisite: 1 | dines: 1 | advertised: 1 | 
+equally: 20 | 
+insipidity: 1 | walker: 3 | plans: 3 | 
+notion: 7 | plant: 1 | winking: 2 | 
+unsettled: 3 | 
+adopted: 1 | 
+readily: 17 | purses: 1 | 
+leave: 62 | quitting: 8 | 
+recollections: 8 | unfolding: 1 | glen: 1 | 
+enable: 1 | perseveringly: 1 | undergone: 2 | 
+barbarous: 1 | 
+unacquainted: 1 | 
+saved: 3 | 
+inherited: 1 | stage: 1 | 
+walking: 26 | chicken: 1 | 
+if: 350 | street: 19 | perceived: 12 | pausing: 2 | 
+wears: 1 | vanished: 2 | 
+resisted: 1 | 
+admitted: 9 | publicly: 3 | weakened: 1 | 
+smallest: 11 | instructed: 1 | 
+stables: 1 | 
+in: 1880 | 
+solely: 4 | weary: 2 | forbearance: 6 | authorised: 2 | 
+surrounded: 1 | 
+is: 860 | immediately: 60 | relinquish: 1 | charity: 1 | 
+it: 1535 | sends: 1 | 
+gulf: 1 | 
+perpetually: 3 | 
+board: 1 | test: 1 | 
+liveliest: 3 | 
+establishment: 6 | impatient: 8 | 
+colonel: 66 | indignation: 8 | endeavours: 7 | 
+fixing: 2 | allowing: 8 | 
+withdrew: 5 | 
+behaved: 8 | 
+dinner: 35 | 
+joyful: 2 | narrow: 2 | 
+teasing: 7 | soul: 2 | liberal: 5 | involve: 2 | 
+solemn: 5 | 
+soup: 2 | 
+spoken: 16 | 
+danger: 19 | disappointing: 3 | claims: 6 | sour: 1 | 
+tete: 8 | reading: 14 | hereabouts: 2 | detested: 1 | 
+everyone: 6 | 
+gaily: 2 | behaves: 2 | dropped: 3 | 
+propose: 3 | griefs: 1 | 
+detected: 2 | 
+servility: 1 | devoid: 1 | 
+ached: 1 | contained: 7 | shrewish: 1 | 
+books: 14 | 
+housemaid: 2 | discreditable: 1 | 
+apothecary: 2 | drove: 11 | 
+darling: 1 | 
+greater: 25 | interference: 13 | 
+march: 2 | 
+rising: 7 | 
+soldiers: 1 | 
+wretched: 10 | 
+evenings: 4 | belong: 3 | stateliness: 1 | recognizing: 1 | 
+rude: 3 | 
+informing: 2 | 
+frisks: 1 | 
+discharging: 2 | 
+staid: 2 | 
+solicit: 1 | rescue: 1 | 
+aspect: 6 | incessant: 1 | 
+boast: 11 | awkward: 10 | 
+questions: 16 | 
+appears: 3 | 
+vogue: 1 | november: 5 | 
+coherent: 1 | 
+younger: 30 | felicity: 18 | music: 12 | 
+had: 1176 | prevented: 23 | inattention: 2 | equalled: 1 | 
+attend: 5 | 
+marrying: 23 | tortured: 1 | 
+pitiable: 3 | stir: 1 | 
+compared: 4 | 
+companion: 16 | 
+asking: 14 | deeper: 3 | 
+ham: 1 | 
+appease: 1 | sleeping: 1 | 
+chosen: 8 | 
+afford: 7 | 
+speaker: 1 | 
+has: 222 | 
+hat: 2 | la: 3 | unchanged: 1 | 
+anticipated: 4 | liveliness: 4 | 
+strength: 6 | 
+unless: 20 | throat: 1 | 
+purchase: 6 | shooting: 1 | 
+daughter: 84 | wednesday: 9 | complained: 1 | 
+none: 19 | agitation: 6 | ll: 1 | 
+cruel: 4 | hurried: 10 | 
+occupied: 6 | implacability: 1 | cows: 1 | 
+seconded: 1 | 
+intimates: 1 | 
+reappear: 1 | 
+individual: 2 | 
+oftener: 3 | 
+cautious: 4 | 
+insensibility: 5 | denying: 1 | 
+seeming: 3 | unfold: 1 | 
+absurd: 5 | 
+serious: 24 | 
+occupies: 1 | 
+press: 4 | dawdled: 1 | 
+ma: 7 | removal: 7 | 
+gradual: 1 | 
+possessed: 1 | alive: 2 | 
+me: 448 | anyone: 24 | together: 64 | extreme: 4 | 
+curiosities: 1 | 
+embarrassment: 10 | 
+theatre: 1 | 
+afflicting: 1 | 
+congratulate: 7 | 
+irregularity: 1 | 
+hearted: 1 | 
+proportionate: 1 | 
+mr: 786 | 
+possesses: 1 | 
+emphasis: 1 | noon: 2 | consigned: 1 | 
+expressively: 2 | 
+recovering: 5 | 
+revolted: 1 | elope: 1 | 
+my: 719 | 
+dignity: 5 | favourites: 2 | 
+overpowered: 3 | 
+anywhere: 1 | farthing: 1 | 
+footman: 1 | 
+peculiar: 5 | 
+deserving: 2 | 
+piqued: 1 | travelling: 6 | resource: 1 | 
+service: 7 | pies: 1 | overtook: 1 | 
+opposed: 5 | 
+tastes: 1 | instruct: 1 | 
+british: 1 | abide: 1 | 
+plate: 1 | 
+unwell: 2 | wretchedness: 2 | fields: 1 | 
+sixth: 1 | 
+continually: 6 | history: 4 | necessarily: 3 | conditions: 1 | 
+whilst: 4 | 
+no: 490 | 
+selfish: 7 | 
+motives: 7 | affliction: 1 | creditors: 2 | 
+piquet: 1 | objections: 11 | 
+alacrity: 5 | symptom: 4 | 
+executors: 1 | 
+amusing: 4 | 
+conscientious: 1 | 
+blessing: 4 | 
+improve: 3 | 
+thankful: 8 | proportioned: 1 | 
+acquaint: 2 | 
+incomprehensible: 2 | derive: 2 | unmarked: 1 | 
+inconsistencies: 2 | broken: 7 | captivate: 1 | 
+minuteness: 1 | 
+directions: 7 | extenuating: 1 | 
+of: 3609 | activity: 4 | tedious: 1 | 
+liking: 2 | 
+oh: 96 | command: 7 | brains: 1 | 
+suggesting: 1 | ensigncy: 1 | 
+kingdom: 4 | union: 4 | 
+exclusion: 1 | unfrequently: 1 | 
+intrude: 2 | innocently: 1 | 
+accompanied: 6 | 
+on: 715 | stamp: 1 | 
+staircase: 2 | 
+transient: 1 | 
+or: 300 | meditated: 2 | 
+laudable: 1 | 
+engaged: 38 | 
+consoling: 3 | infamy: 4 | 
+converse: 4 | 
+meets: 2 | cry: 1 | 
+survivor: 1 | overset: 1 | 
+philips: 1 | 
+tidings: 3 | 
+sermon: 2 | 
+scheme: 18 | 
+her: 2225 | demanding: 1 | silenced: 1 | 
+stand: 10 | goodness: 10 | 
+pigs: 1 | 
+invariable: 1 | brighton: 24 | 
+ruin: 5 | 
+consign: 1 | realised: 1 | 
+trusted: 7 | accounting: 3 | 
+report: 17 | 
+trespass: 2 | 
+playfulness: 2 | october: 1 | 
+archness: 1 | talks: 1 | 
+asserting: 1 | welcomed: 7 | suggestion: 1 | 
+somebody: 7 | tempt: 4 | maria: 20 | 
+guard: 7 | threats: 1 | 
+procured: 4 | 
+desperate: 3 | 
+performs: 1 | 
+nature: 24 | 
+dangerous: 1 | 
+invariably: 2 | altered: 7 | 
+removed: 17 | sentinel: 1 | 
+hardest: 1 | 
+article: 3 | 
+louisa: 6 | 
+undo: 2 | repose: 1 | reluctance: 1 | 
+taciturn: 1 | 
+reasonableness: 1 | violence: 3 | 
+knighthood: 2 | 
+attentions: 26 | 
+settling: 3 | abundantly: 3 | 
+windows: 6 | 
+unabated: 1 | 
+nose: 1 | 
+branch: 4 | 
+summon: 1 | 
+wanting: 7 | 
+termed: 1 | 
+reckoned: 1 | genuine: 2 | secured: 4 | 
+reverse: 1 | 
+stop: 4 | 
+seize: 1 | assertion: 3 | 
+ancient: 1 | 
+pleasing: 22 | adieus: 2 | 
+desperation: 1 | 
+dreadful: 11 | 
+greatly: 14 | 
+brightening: 1 | 
+advantage: 34 | fireplace: 1 | 
+effect: 18 | 
+hastily: 9 | 
+generations: 1 | re: 4 | 
+characteristic: 2 | separated: 3 | obtruded: 2 | 
+dullness: 1 | 
+inattentive: 2 | 
+imitate: 1 | managed: 1 | 
+note: 8 | exuberant: 1 | 
+cup: 1 | 
+unwearying: 1 | 
+unhappily: 3 | hypocrisy: 1 | 
+apologising: 4 | respectability: 5 | 
+possessing: 1 | 
+carrying: 4 | 
+separates: 1 | 
+those: 59 | manager: 1 | 
+displaying: 2 | 
+harringtons: 1 | 
+rule: 2 | bright: 1 | 
+beauties: 4 | summons: 3 | puzzle: 2 | 
+deeply: 5 | construction: 1 | 
+adorned: 3 | 
+marks: 2 | deduced: 1 | 
+matrimony: 6 | se: 2 | 
+glow: 3 | respects: 6 | indulging: 1 | engross: 1 | 
+mistress: 9 | circumspect: 1 | accusation: 1 | 
+graces: 1 | 
+scrape: 1 | 
+solace: 1 | evenness: 2 | 
+so: 589 | 
+disgracing: 2 | paling: 1 | 
+much: 328 | everything: 44 | modern: 2 | 
+enraged: 1 | 
+st: 7 | 
+horrid: 3 | security: 3 | 
+plays: 1 | 
+severe: 8 | forego: 1 | 
+flattered: 7 | 
+beheld: 2 | found: 66 | injunctions: 1 | 
+possession: 9 | him: 764 | right: 40 | 
+extent: 7 | 
+persons: 9 | 
+his: 1271 | handkerchief: 1 | 
+unite: 2 | 
+bandbox: 1 | 
+preferred: 3 | stopped: 6 | 
+experience: 2 | obligingly: 1 | 
+secondly: 3 | lament: 3 | 
+please: 14 | remaining: 8 | 
+vestibule: 5 | liberties: 1 | 
+th: 3 | discourses: 1 | apprehension: 12 | 
+opportunity: 29 | caroline: 17 | patient: 1 | avail: 1 | attach: 3 | 
+forwarded: 2 | 
+expecting: 5 | 
+inviting: 3 | attack: 4 | 
+arrogance: 1 | 
+to: 4163 | anticipating: 2 | 
+tacit: 1 | 
+start: 2 | stoke: 1 | 
+passages: 2 | 
+hazarded: 1 | 
+modest: 2 | forwarder: 1 | 
+take: 80 | civility: 42 | exposing: 5 | founded: 3 | meanest: 1 | 
+overtures: 1 | sensibility: 2 | 
+flogged: 1 | premises: 1 | vehemence: 1 | 
+memories: 2 | 
+delicate: 6 | 
+profit: 1 | triumphant: 2 | 
+spite: 23 | stated: 2 | 
+mismanagement: 1 | 
+prosperous: 2 | illustration: 1 | 
+volubility: 1 | 
+provoke: 5 | 
+sensations: 3 | 
+westerham: 1 | invectives: 1 | runs: 1 | 
+breast: 2 | tithes: 1 | blamelessness: 1 | 
+un: 1 | 
+reconcile: 1 | 
+up: 123 | 
+overthrowing: 1 | guardians: 1 | 
+foresaw: 1 | betray: 3 | stole: 1 | perceptible: 1 | devote: 1 | 
+us: 123 | 
+abhorrence: 6 | miseries: 1 | 
+anticipation: 1 | 
+speak: 66 | prevent: 16 | 
+romantic: 1 | mystery: 1 | 
+hatefully: 1 | 
+principally: 5 | younge: 4 | 
+reaching: 3 | 
+equals: 1 | 
+talk: 32 | 
+tall: 8 | 
+breath: 2 | dale: 1 | 
+courteous: 1 | consolation: 10 | state: 19 | graceful: 1 | 
+sentiments: 10 | 
+traced: 2 | 
+discernment: 2 | 
+range: 2 | oddity: 1 | 
+consciousness: 2 | 
+reason: 51 | undutiful: 1 | 
+hardship: 1 | doleful: 1 | 
+buying: 1 | 
+compatible: 2 | 
+doing: 26 | probity: 1 | 
+traces: 1 | 
+inspiring: 1 | esteem: 11 | hasten: 1 | 
+swelling: 1 | 
+coach: 10 | detained: 3 | fonder: 2 | 
+skill: 3 | slightest: 3 | 
+resolve: 2 | 
+suitable: 3 | 
+howsoever: 1 | 
+does: 85 | 
+effectually: 3 | 
+rosings: 49 | grosvenor: 2 | 
+someone: 1 | 
+repented: 1 | 
+settlements: 1 | 
+uncomfortable: 7 | confirmation: 4 | 
+we: 253 | stress: 1 | description: 7 | afternoon: 3 | 
+falling: 3 | 
+banished: 3 | 
+disinclination: 2 | 
+memory: 8 | valued: 5 | augment: 1 | 
+demean: 1 | damp: 1 | inconceivable: 1 | 
+wretchedly: 1 | rapture: 2 | 
+mistaken: 21 | involving: 2 | 
+yawn: 2 | 
+parsonage: 18 | wickedness: 2 | 
+possessor: 2 | mistakes: 2 | stone: 2 | 
+vex: 1 | 
+wants: 11 | 
+newly: 1 | 
+weaknesses: 1 | concerned: 18 | afresh: 1 | 
+complying: 3 | sought: 5 | 
+learned: 3 | wickedest: 1 | 
+chooses: 8 | 
+misconduct: 2 | 
+laughed: 11 | naming: 1 | 
+sense: 36 | setting: 2 | 
+caprice: 4 | 
+suppositions: 1 | inconvenient: 4 | 
+letters: 16 | 
+what: 479 | resolution: 19 | pursue: 6 | 
+refusals: 1 | 
+inclined: 10 | folly: 11 | ordained: 1 | 
+consider: 33 | edward: 1 | 
+stood: 14 | living: 24 | 
+tremble: 1 | 
+seems: 22 | 
+interrupted: 9 | 
+sarah: 1 | 
+return: 49 | 
+escape: 10 | hatfield: 1 | shoulders: 1 | 
+suspended: 2 | dispelling: 1 | 
+succession: 1 | 
+courtship: 2 | foresee: 1 | 
+independence: 6 | ceremony: 5 | 
+tables: 6 | future: 15 | 
+revenge: 2 | 
+interrupt: 5 | 
+serving: 1 | 
+delighting: 1 | 
+sighted: 1 | 
+struggled: 2 | 
+replying: 3 | 
+archly: 2 | negative: 3 | 
+man: 151 | rattle: 2 | narrative: 1 | 
+reminded: 6 | unnecessary: 4 | 
+speed: 1 | 
+succeed: 3 | 
+little: 189 | thoughts: 25 | decide: 4 | conversations: 1 | unpleasing: 1 | 
+may: 193 | 
+struggles: 3 | invitations: 1 | mostly: 1 | 
+fretfulness: 2 | 
+designed: 5 | 
+nicholls: 2 | breakfasted: 1 | 
+disposition: 25 | uniformly: 3 | york: 1 | wondering: 2 | 
+prepare: 6 | 
+amendment: 2 | unimportant: 1 | concisely: 2 | 
+grieve: 3 | 
+jealous: 3 | resolute: 1 | hot: 3 | social: 1 | 
+bennet: 323 | pardon: 16 | horror: 5 | 
+how: 231 | recollected: 13 | 
+collected: 3 | 
+crowded: 3 | 
+dissuade: 1 | 
+marry: 42 | webbs: 1 | muslins: 1 | 
+enduring: 1 | conversible: 1 | thirty: 3 | 
+vacant: 5 | pursuing: 3 | oppressed: 2 | 
+wholly: 26 | resides: 1 | 
+insipid: 1 | 
+injured: 4 | recurring: 1 | 
+needless: 3 | 
+sofas: 1 | welcome: 12 | hearth: 1 | 
+person: 51 | 
+intending: 7 | 
+free: 7 | 
+horsewoman: 1 | amid: 1 | travelled: 1 | busy: 1 | 
+postilions: 1 | 
+suppressed: 2 | 
+suddenly: 16 | exert: 2 | 
+feeling: 38 | apprehensive: 1 | 
+punishment: 5 | terms: 22 | 
+tackle: 1 | 
+hearty: 2 | complied: 4 | chambermaid: 2 | named: 1 | 
+flaming: 1 | french: 1 | 
+fret: 3 | principles: 1 | submitted: 1 | 
+frequent: 13 | 
+apology: 8 | creative: 1 | 
+humoured: 7 | unwilling: 10 | 
+science: 1 | discouraged: 2 | 
+looking: 34 | avoid: 18 | 
+names: 6 | stays: 1 | recreation: 1 | seized: 2 | 
+store: 1 | presumed: 1 | 
+audible: 1 | 
+rambled: 1 | apartments: 2 | 
+intention: 15 | 
+neatness: 2 | 
+complaints: 4 | 
+inform: 7 | 
+turns: 2 | greatness: 2 | 
+storm: 2 | 
+shocking: 6 | assume: 3 | maiden: 1 | 
+nephew: 22 | foretold: 1 | solitary: 4 | distracted: 2 | 
+popular: 1 | assertions: 3 | 
+dare: 40 | experienced: 4 | decisive: 2 | barnet: 2 | 
+affectionately: 4 | 
+doubted: 8 | disturbers: 1 | 
+story: 9 | convenient: 5 | polluted: 1 | 
+when: 374 | dark: 2 | 
+wished: 40 | particularly: 32 | interesting: 14 | adds: 3 | practising: 1 | concise: 1 | spirited: 1 | 
+females: 2 | 
+grantley: 1 | grandfather: 1 | sorely: 1 | 
+herself: 227 | magistrate: 1 | 
+oblige: 6 | 
+reasons: 5 | 
+pianoforte: 5 | 
+freckled: 1 | 
+entitled: 4 | 
+design: 22 | horseback: 2 | wisher: 1 | 
+cheating: 1 | wishes: 34 | 
+blow: 1 | 
+sadly: 2 | clearing: 1 | 
+sparkled: 2 | dividing: 1 | 
+bearing: 2 | 
+netting: 1 | unjust: 4 | 
+dependence: 7 | 
+arise: 7 | qualified: 4 | impute: 1 | 
+periods: 1 | 
+your: 457 | against: 52 | decorum: 4 | 
+wherever: 8 | 
+heartily: 10 | keener: 1 | 
+told: 69 | 
+means: 57 | revolt: 1 | 
+meant: 28 | bears: 2 | 
+slightingly: 1 | pity: 9 | 
+danced: 12 | apologised: 2 | deprive: 1 | 
+men: 34 | 
+peak: 1 | 
+liberty: 7 | waiting: 10 | 
+disturbance: 1 | 
+shameful: 2 | 
+met: 39 | 
+speedily: 6 | 
+varying: 2 | 
+accepted: 16 | 
+mentioned: 28 | cheeks: 4 | unquestionably: 1 | 
+dances: 10 | follies: 4 | 
+astonish: 2 | courier: 1 | 
+proficiency: 1 | recollecting: 5 | exciting: 2 | 
+hither: 3 | 
+conceal: 13 | valley: 4 | 
+date: 2 | 
+spleen: 1 | scores: 1 | impunity: 1 | scattered: 2 | 
+transferred: 1 | 
+picturesque: 1 | 
+favours: 2 | humbling: 1 | 
+promise: 17 | subsequent: 1 | 
+unexpectedly: 3 | 
+downs: 1 | encumbrance: 1 | 
+picture: 13 | kill: 1 | 
+comprehend: 19 | 
+depending: 2 | speediest: 1 | 
+controverted: 1 | vice: 3 | additions: 1 | mindful: 1 | 
+height: 3 | 
+retaliate: 1 | household: 1 | 
+unsuitable: 2 | 
+desiring: 2 | fruits: 2 | 
+oaks: 1 | 
+haunch: 1 | 
+dispositions: 1 | positively: 2 | paper: 6 | insolence: 1 | 
+deference: 6 | 
+earnest: 15 | recommenced: 1 | 
+growth: 1 | 
+feelings: 86 | grief: 2 | 
+display: 4 | 
+stout: 2 | confidently: 1 | 
+suspicions: 4 | sufficiency: 1 | 
+used: 21 | months: 21 | 
+showed: 7 | correspondence: 5 | 
+silence: 34 | recollection: 12 | 
+lurking: 1 | 
+heads: 1 | consequent: 1 | 
+tone: 16 | 
+shield: 1 | 
+inspection: 2 | 
+exact: 3 | 
+done: 92 | hardships: 1 | 
+bourgh: 39 | 
+remembrance: 3 | 
+hug: 1 | glazing: 1 | 
+shaking: 2 | 
+day: 144 | permitted: 1 | 
+anxious: 26 | languages: 1 | remind: 3 | regularly: 1 | 
+gardener: 2 | 
+might: 200 | latterly: 1 | 
+conception: 1 | 
+imply: 1 | brooking: 1 | 
+manners: 45 | 
+character: 64 | 
+mountains: 2 | abiding: 1 | 
+obvious: 1 | 
+declared: 15 | relieve: 2 | unrestrained: 1 | blenheim: 1 | 
+denial: 6 | 
+kind: 61 | 
+duplicity: 2 | prudently: 1 | 
+king: 8 | 
+suffer: 13 | kindled: 1 | ambition: 1 | 
+took: 53 | beaux: 1 | newspaper: 1 | verdure: 1 | 
+generous: 12 | theatres: 1 | 
+unassailed: 1 | 
+exuberance: 1 | 
+detaining: 2 | declares: 1 | 
+things: 29 | undecided: 1 | serviceable: 1 | 
+equivalent: 1 | perplexity: 2 | explanations: 2 | 
+accordingly: 6 | pursuits: 1 | 
+advance: 3 | 
+assure: 39 | compliments: 11 | earnestness: 2 | 
+door: 35 | eager: 13 | 
+musical: 1 | 
+patroness: 7 | disclaimed: 1 | 
+blind: 6 | hushed: 1 | 
+difficult: 11 | sketch: 2 | 
+view: 17 | 
+observation: 14 | anxiously: 2 | 
+tenants: 2 | rallied: 2 | influenced: 1 | 
+dwelling: 7 | 
+afraid: 37 | quarters: 2 | 
+pronounce: 3 | yourselves: 2 | 
+likely: 38 | 
+closely: 1 | 
+perverse: 1 | 
+poorly: 3 | 
+preference: 10 | punish: 3 | 
+adhering: 1 | peep: 1 | 
+pratt: 2 | bosoms: 1 | 
+vow: 1 | 
+communicate: 3 | cents: 1 | 
+vexation: 10 | mix: 1 | 
+lamenting: 1 | 
+acceded: 1 | 
+consequently: 10 | quarreling: 2 | suspects: 1 | 
+implicit: 1 | domestics: 1 | 
+hotel: 1 | 
+discourage: 2 | consulting: 2 | 
+disposing: 1 | 
+finish: 4 | 
+notions: 3 | thrown: 8 | 
+entreat: 5 | supplication: 1 | 
+composure: 16 | 
+glowing: 1 | engrossing: 1 | 
+blue: 2 | 
+sacrifice: 8 | ceremonious: 3 | season: 3 | 
+desponding: 1 | 
+worthlessness: 1 | 
+require: 3 | 
+arch: 1 | 
+excessive: 4 | 
+faculties: 1 | 
+spend: 13 | stayed: 7 | 
+prone: 2 | 
+legal: 1 | 
+gloried: 1 | 
+banks: 2 | 
+nonsense: 8 | pitched: 1 | 
+politely: 3 | meanwhile: 5 | 
+canvas: 1 | 
+interview: 3 | 
+rewarded: 3 | 
+unanswerable: 1 | discontinuance: 1 | 
+novelty: 5 | extravagance: 4 | 
+spent: 22 | contrive: 3 | insignificance: 3 | 
+local: 1 | bedrooms: 1 | 
+praise: 22 | caring: 2 | luncheon: 1 | 
+encouragement: 10 | glories: 1 | 
+wounded: 3 | separating: 1 | 
+parishioners: 1 | lustre: 1 | 
+included: 2 | decamping: 1 | 
+abusing: 3 | commission: 7 | 
+calculated: 3 | 
+proposals: 9 | 
+communication: 11 | 
+themselves: 34 | 
+days: 30 | 
+envy: 3 | 
+infinitely: 4 | begging: 2 | 
+authorise: 1 | 
+address: 19 | proof: 7 | representing: 2 | 
+member: 1 | 
+attachment: 27 | 
+commiseration: 1 | 
+solemnity: 5 | 
+reproached: 2 | paintings: 1 | 
+teased: 2 | 
+fresher: 1 | 
+equal: 30 | obligation: 6 | 
+must: 308 | denied: 3 | 
+deserved: 7 | 
+prevail: 2 | 
+prefer: 6 | superintends: 1 | 
+cards: 7 | injure: 2 | irremediable: 1 | 
+furnish: 4 | 
+saving: 3 | 
+firmest: 2 | 
+reproaches: 1 | substitute: 1 | 
+watching: 8 | 
+separation: 8 | guilty: 2 | 
+criticise: 1 | foundation: 4 | spasms: 1 | 
+failure: 1 | 
+deserves: 4 | 
+dose: 1 | requited: 1 | 
+fretfully: 2 | usage: 2 | outrun: 1 | 
+universally: 3 | unconsciously: 3 | 
+cared: 7 | 
+fresh: 9 | 
+convinced: 40 | thinks: 4 | injury: 1 | whimsical: 1 | 
+waste: 1 | 
+placing: 3 | 
+judge: 12 | clerical: 1 | 
+nourishes: 1 | pages: 1 | 
+defection: 1 | 
+unnatural: 2 | 
+supposed: 26 | 
+from: 493 | 
+cares: 2 | 
+depravity: 1 | 
+delight: 25 | inheriting: 2 | authority: 9 | 
+constitute: 1 | 
+undervaluing: 1 | 
+knew: 58 | falsehood: 7 | packing: 1 | advising: 1 | 
+stranger: 13 | whatever: 34 | spot: 7 | 
+fifteen: 4 | 
+misleads: 1 | 
+doings: 2 | 
+needed: 3 | 
+longing: 2 | 
+minutely: 3 | annual: 1 | 
+agreed: 12 | 
+aught: 1 | 
+after: 200 | charge: 8 | kiss: 1 | 
+would: 471 | forgiving: 1 | 
+treating: 1 | introducing: 4 | 
+amusement: 12 | 
+strikingly: 1 | 
+extinguished: 1 | 
+write: 39 | 
+presentation: 5 | laying: 2 | travellers: 4 | 
+arrear: 1 | 
+suspicious: 1 | 
+render: 3 | 
+through: 42 | 
+whom: 84 | spring: 5 | painter: 1 | nominally: 1 | startled: 2 | 
+sunday: 9 | occasional: 6 | surveying: 1 | 
+conceit: 5 | 
+witnessed: 4 | 
+assisted: 4 | 
+sweetness: 5 | 
+distrust: 2 | tractable: 1 | 
+such: 389 | 
+punctual: 3 | 
+breathed: 1 | cooks: 1 | 
+tour: 6 | 
+forgiveness: 2 | 
+taking: 19 | acknowledgments: 2 | 
+hesitate: 3 | masters: 2 | 
+disarm: 1 | 
+ran: 13 | absence: 27 | around: 2 | 
+farewell: 3 | exclude: 1 | 
+quarrel: 5 | powerful: 3 | 
+amiss: 1 | 
+advantages: 8 | improper: 2 | 
+did: 272 | arrive: 2 | seizing: 1 | 
+ladies: 74 | die: 4 | indulgent: 1 | 
+unequal: 4 | 
+trials: 1 | accomplishment: 3 | 
+displeasure: 6 | 
+threadbare: 2 | deserts: 2 | behalf: 4 | 
+desire: 23 | touched: 4 | dovedale: 1 | 
+supposition: 4 | riding: 1 | 
+dove: 1 | 
+planning: 2 | costing: 1 | 
+number: 5 | declaring: 1 | 
+originally: 2 | 
+commerce: 1 | 
+departure: 6 | 
+heightened: 8 | wound: 2 | 
+kitchen: 1 | 
+truly: 7 | 
+promoted: 1 | 
+smiling: 10 | connections: 18 | brotherly: 2 | 
+eminence: 1 | bribe: 1 | 
+prepossession: 2 | 
+fill: 1 | blasted: 1 | sympathise: 1 | frankly: 1 | 
+leaves: 2 | 
+success: 19 | gravel: 3 | patronage: 4 | 
+symmetry: 1 | energy: 5 | coats: 1 | presuming: 2 | 
+which: 539 | 
+perceiving: 4 | distractedly: 1 | 
+closest: 2 | 
+troubling: 1 | elapsed: 2 | 
+jumps: 1 | supper: 11 | 
+dilatory: 2 | clement: 1 | 
+unbending: 1 | 
+ungenerous: 3 | 
+support: 7 | spreading: 1 | 
+undoubtedly: 10 | guiding: 1 | loving: 2 | tradesman: 2 | 
+town: 66 | forbidding: 1 | 
+refusal: 7 | backwards: 1 | 
+prognostics: 1 | mildly: 1 | 
+guarded: 9 | inducement: 5 | 
+absolute: 4 | 
+down: 73 | 
+indifference: 17 | 
+lived: 14 | 
+replied: 103 | 
+deserve: 9 | felicitations: 1 | 
+suppose: 48 | mislead: 1 | 
+breeding: 6 | effects: 3 | 
+footstool: 1 | 
+attained: 1 | 
+fordyce: 1 | 
+resentfully: 2 | adhered: 1 | gradually: 6 | 
+recover: 6 | misled: 1 | enemy: 1 | endless: 2 | 
+contentment: 3 | barely: 1 | 
+resolutely: 3 | 
+longed: 9 | 
+nobler: 1 | 
+lives: 4 | 
+cordiality: 4 | generality: 2 | trunk: 1 | varieties: 1 | replies: 1 | 
+liberally: 2 | 
+quality: 2 | each: 63 | 
+proud: 22 | occasions: 8 | connect: 2 | 
+enabled: 2 | thoughtlessness: 3 | 
+qualifications: 1 | 
+intrepidity: 1 | respectful: 1 | 
+uniformity: 1 | 
+longer: 44 | poultry: 3 | 
+stroke: 2 | 
+find: 58 | adjusting: 1 | enjoyment: 13 | acquisition: 1 | 
+fine: 32 | 
+recalled: 2 | preceded: 1 | 
+points: 4 | 
+bride: 3 | remedy: 2 | 
+occasioned: 4 | 
+eagerly: 14 | 
+grateful: 13 | undeserving: 3 | 
+anecdote: 2 | 
+accuse: 4 | communicative: 1 | 
+reference: 2 | 
+fortunate: 15 | prospect: 14 | rejoined: 1 | 
+talking: 39 | miles: 16 | 
+arising: 5 | imputing: 1 | 
+aside: 4 | 
+confused: 4 | 
+expressing: 8 | characters: 3 | 
+mrs: 343 | turned: 43 | 
+red: 3 | resignation: 2 | 
+prove: 8 | 
+lively: 15 | manor: 2 | 
+pens: 1 | 
+freely: 4 | absurdities: 2 | 
+preparing: 6 | sixteen: 7 | 
+shortness: 1 | 
+affinity: 2 | 
+exhibiting: 1 | 
+employing: 1 | 
+fortnight: 23 | 
+jane: 292 | discharged: 3 | 
+austen: 1 | aimed: 1 | stroll: 1 | 
+consent: 13 | lizzy: 97 | explained: 9 | 
+milliner: 2 | space: 2 | 
+keep: 26 | 
+abusive: 2 | 
+finished: 11 | spur: 1 | 
+talents: 5 | 
+fully: 5 | 
+arguing: 1 | 
+dispute: 2 | 
+disconcerted: 3 | jones: 5 | parish: 9 | 
+subject: 84 | quarrelsome: 1 | 
+puddles: 1 | britain: 1 | 
+deliberation: 4 | 
+directed: 9 | 
+statement: 2 | gladly: 1 | 
+mixture: 5 | hands: 7 | irreligious: 1 | 
+defective: 1 | commissioning: 1 | 
+expression: 22 | syllable: 5 | 
+feathers: 1 | 
+wonderfully: 2 | acquiesce: 1 | 
+undeserved: 1 | 
+evident: 18 | vivacity: 2 | absurdity: 1 | 
+marriage: 66 | proper: 20 | resign: 1 | ingratitude: 1 | 
+retaining: 2 | despaired: 3 | 
+wandered: 2 | 
+exhibition: 2 | yards: 1 | 
+dissatisfied: 4 | differently: 7 | resolved: 31 | grievous: 3 | perusal: 4 | wantonly: 1 | 
+stepped: 1 | 
+condescend: 1 | piece: 6 | charms: 4 | 
+resisting: 1 | 
+spokesman: 1 | 
+surely: 4 | 
+confidence: 11 | refused: 6 | 
+deceived: 13 | minutest: 1 | 
+hurt: 6 | 
+blushing: 1 | 
+fourthly: 1 | 
+poured: 1 | recovery: 3 | duchess: 1 | spread: 3 | john: 2 | 
+intolerable: 3 | surprised: 35 | imposed: 4 | mediocrity: 1 | miniatures: 3 | 
+difference: 10 | alleviated: 1 | 
+heard: 86 | evening: 74 | 
+suit: 7 | strong: 19 | disputable: 1 | retreating: 1 | labour: 1 | rough: 1 | 
+headstrong: 4 | 
+deceives: 1 | 
+variance: 1 | army: 3 | indolence: 2 | 
+scrupled: 2 | criticisms: 1 | 
+stationed: 3 | 
+oddities: 1 | 
+mud: 1 | ladyship: 42 | 
+school: 2 | 
+choose: 19 | inquiries: 23 | admitting: 1 | 
+proxy: 1 | 
+hears: 1 | vastly: 1 | 
+heart: 45 | salutation: 4 | 
+condemned: 2 | 
+wives: 1 | apply: 3 | bills: 1 | 
+manner: 98 | don: 6 | scruples: 4 | 
+hereafter: 3 | 
+join: 19 | 
+benevolent: 1 | 
+fire: 6 | 
+flutterings: 1 | 
+advice: 16 | 
+firm: 3 | 
+exceedingly: 26 | 
+basis: 1 | 
+emphatic: 1 | increasing: 10 | subsided: 1 | commencement: 2 | 
+disliking: 1 | elevate: 1 | footing: 2 | untamed: 1 | 
+vouchsafed: 1 | 
+away: 117 | dismission: 1 | 
+intrusion: 3 | benefiting: 1 | 
+justifying: 1 | 
+rid: 5 | painful: 14 | 
+pedantic: 1 | strictures: 1 | diminution: 1 | blacken: 1 | 
+determined: 32 | 
+trust: 15 | 
+conjecturing: 2 | 
+fender: 1 | straws: 1 | 
+barefaced: 1 | considering: 14 | 
+contribute: 2 | 
+overheard: 3 | 
+expect: 35 | abound: 1 | neighbouring: 2 | 
+fish: 5 | 
+great: 142 | expressions: 12 | gossiping: 1 | 
+daring: 2 | 
+prettier: 2 | kenilworth: 1 | 
+concern: 26 | supposing: 15 | remembered: 9 | 
+humiliating: 2 | 
+discussion: 5 | pleasures: 7 | 
+provided: 7 | interfering: 1 | 
+duties: 2 | regain: 1 | 
+truth: 27 | know: 238 | 
+joke: 3 | 
+supply: 7 | profusion: 1 | 
+gloomy: 2 | 
+enabling: 1 | 
+fainter: 2 | 
+upstart: 1 | 
+sideboard: 1 | apprehending: 1 | 
+sight: 17 | 
+blinded: 2 | 
+twenty: 17 | 
+elegance: 9 | coincidence: 1 | 
+unable: 14 | unheard: 1 | 
+forgotten: 12 | 
+eloped: 1 | 
+italian: 1 | 
+embraced: 2 | 
+assiduously: 1 | 
+secret: 6 | audience: 2 | 
+bounds: 1 | humiliation: 2 | 
+alarm: 14 | relate: 11 | derision: 2 | 
+tenor: 1 | repel: 1 | 
+style: 10 | correspondents: 1 | imitated: 1 | 
+insist: 8 | parasol: 2 | 
+uncompanionable: 1 | livery: 2 | 
+caught: 11 | 
+fear: 24 | 
+checked: 5 | deciding: 1 | 
+belonged: 3 | fishing: 4 | 
+probability: 9 | overcoming: 1 | 
+originate: 1 | 
+conciliating: 1 | 
+knees: 1 | fluctuating: 1 | 
+insufficient: 10 | 
+again: 177 | relieved: 8 | 
+while: 75 | 
+horses: 8 | attitude: 1 | 
+bakewell: 1 | 
+northern: 3 | 
+behave: 2 | 
+heavy: 4 | 
+quickness: 3 | 
+condition: 3 | noblest: 1 | 
+clouded: 1 | 
+sunk: 4 | 
+reflections: 9 | indifferent: 16 | commonly: 1 | 
+partners: 3 | watchfulness: 2 | 
+awed: 2 | 
+five: 32 | 
+asserted: 1 | 
+productive: 1 | became: 16 | 
+disgraced: 1 | 
+apparently: 2 | 
+explain: 6 | affronted: 2 | notes: 1 | 
+streets: 1 | 
+decency: 2 | frame: 1 | 
+looked: 74 | 
+guardianship: 3 | vicinity: 1 | 
+nnight: 1 | shewed: 1 | 
+catching: 1 | depended: 4 | carry: 5 | 
+attractions: 4 | paler: 1 | 
+minutes: 37 | pales: 2 | remorse: 1 | 
+expressive: 2 | begged: 8 | scruple: 4 | 
+dependent: 3 | forfeit: 1 | trunks: 1 | 
+whims: 2 | forfeited: 1 | 
+awake: 2 | 
+planned: 3 | 
+thinking: 21 | stanzas: 1 | superseded: 1 | 
+incredulous: 3 | stability: 1 | conquer: 2 | 
+flight: 3 | 
+creditable: 2 | blushed: 7 | 
+consenting: 1 | 
+pace: 1 | scampering: 1 | green: 3 | 
+teaching: 2 | 
+slit: 1 | 
+carriage: 44 | extort: 1 | 
+pack: 2 | apprehensions: 2 | 
+definition: 1 | 
+drawing: 21 | 
+due: 11 | surest: 1 | 
+acceptance: 4 | overflows: 1 | 
+directly: 22 | seats: 2 | later: 3 | 
+sincere: 10 | 
+illness: 2 | displease: 1 | exasperate: 2 | drooping: 1 | 
+creditably: 1 | contemptuously: 1 | 
+amount: 2 | attracted: 3 | arranged: 2 | evidently: 5 | 
+familiar: 3 | precluding: 1 | 
+kinds: 1 | 
+ignorant: 16 | bitter: 2 | 
+importune: 1 | dignified: 3 | 
+entirely: 25 | 
+unalloyed: 1 | 
+prized: 1 | 
+alone: 30 | pleasanter: 2 | disappointment: 17 | 
+round: 17 | 
+along: 9 | gathering: 1 | 
+arts: 4 | unavoidable: 1 | fulfil: 1 | 
+arranges: 1 | 
+intermission: 3 | unconcerned: 2 | thursday: 4 | 
+stiffness: 2 | disapprove: 1 | rapturous: 2 | 
+injustice: 4 | 
+warwick: 1 | 
+bring: 18 | 
+corroboration: 1 | 
+prizes: 1 | lies: 1 | 
+barbarously: 1 | brink: 2 | 
+lieu: 2 | 
+battled: 1 | 
+deferred: 2 | 
+kent: 14 | avowal: 3 | 
+brightened: 1 | retrospections: 1 | 
+trifle: 5 | achieving: 1 | unavoidably: 1 | 
+renewing: 2 | 
+moving: 5 | visited: 4 | 
+august: 1 | 
+actual: 5 | war: 1 | kympton: 1 | 
+was: 1847 | judged: 7 | rob: 2 | 
+feel: 39 | exclaimed: 8 | altar: 1 | 
+surmount: 1 | sentence: 12 | 
+rapidity: 4 | 
+urged: 6 | impatience: 10 | advantageously: 2 | 
+life: 56 | connection: 20 | obeyed: 3 | 
+way: 108 | aloof: 2 | 
+grounds: 6 | nothings: 1 | 
+feet: 1 | 
+watch: 2 | 
+sufficient: 4 | tranquil: 2 | 
+intelligence: 19 | intentions: 6 | proceeded: 10 | pointed: 5 | 
+useless: 6 | 
+finery: 2 | abundant: 1 | 
+outdone: 1 | rival: 1 | 
+sonnet: 1 | lift: 4 | 
+hoped: 20 | 
+given: 55 | 
+chance: 18 | separately: 1 | crowned: 1 | 
+admiring: 2 | 
+sarcastic: 1 | power: 42 | despise: 3 | 
+gives: 9 | 
+sure: 102 | 
+punctually: 3 | reputed: 2 | 
+agreeing: 3 | conquest: 3 | 
+extraordinary: 16 | postponed: 1 | 
+untidy: 1 | accidentally: 3 | 
+tents: 1 | paddock: 3 | 
+hopes: 23 | cure: 1 | 
+discern: 2 | 
+substantial: 2 | title: 1 | 
+regarding: 1 | 
+confirming: 2 | signs: 1 | unembarrassed: 2 | 
+rapidly: 2 | worldly: 2 | 
+inquiring: 5 | 
+finest: 2 | 
+neglect: 11 | 
+slight: 18 | 
+shyness: 2 | 
+inflexibly: 1 | 
+invalid: 1 | boundless: 1 | confession: 3 | 
+lucas: 70 | 
+everybody: 38 | dispirited: 1 | 
+inferiority: 3 | kept: 17 | 
+sensible: 32 | 
+particular: 28 | 
+sanctioned: 2 | 
+dispatched: 4 | 
+candid: 1 | obliging: 5 | advisable: 6 | 
+inoffensive: 1 | safely: 3 | contradictions: 1 | 
+occupation: 1 | 
+provision: 2 | rectitude: 1 | 
+beauty: 27 | 
+elsewhere: 5 | 
+page: 2 | 
+arrogant: 1 | 
+faintly: 1 | 
+pliancy: 1 | unequally: 1 | 
+sensibly: 2 | 
+point: 46 | proceed: 5 | inventing: 1 | 
+occupy: 2 | tenderness: 3 | noticing: 1 | 
+deceive: 4 | 
+leisurely: 1 | 
+squeamish: 1 | 
+celerity: 1 | 
+water: 4 | 
+watson: 1 | 
+prodigious: 1 | 
+boulanger: 1 | 
+unfortunately: 3 | 
+course: 46 | request: 12 | overpower: 1 | 
+families: 7 | 
