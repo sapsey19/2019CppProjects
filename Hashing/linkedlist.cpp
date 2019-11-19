@@ -1,26 +1,84 @@
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <algorithm>
-#include "myHash/linkedlist.h"
+#include "linkedlist.h"
 
-using namespace std;
+void List::createNode(string word) { //create new node, inserts at end of list
+    node *temp = new node;
+    temp->word = word;
+    temp->next = nullptr;
 
-int main () {
-    List list;
-    
-    ifstream in;
-    ofstream out;
-    in.open("pride.txt");
-    string temp;
-    string stripped;
-    while(in >> temp) {       
-        transform(temp.begin(), temp.end(), temp.begin(), ::tolower);
-        stripped = removePunc(temp);       
-        List::list.createNode(stripped);
+    if (head == nullptr) { //if empty list
+        temp->count = 1;
+        head = temp;
+        tail = temp;
+        temp = nullptr;
+        size++;
     }
+    else { 
+        if (findOccurances(word) == 0) { //if number of occurances is 0, add to list
+            temp->count = 1;
+            tail->next = temp;
+            tail = temp;
+            temp = nullptr;
+            size++;
+        }
+        else //else increase count of word
+            increaseCount(word);
+    }
+}
 
-    List::list.printOut();
-    in.close();
+void List::print() {
+    node *temp = new node;
+    temp = head;
+    while (temp != nullptr) {
+        cout << temp->word << ": " << temp->count << " | ";
+        temp = temp->next;
+    }
+    cout << endl;
+}
+
+void List::printOut() {
+    node *temp = new node;
+    temp = head;
+    while (temp != nullptr) {
+        fout << temp->word << ": " << temp->count << " | ";
+        temp = temp->next;
+    }
+    fout << endl;
+}
+
+void List::findWords(string word) {
+    node *temp = new node;
+    temp = head;
+    bool found = false;
+    while (temp != nullptr) {
+        if (temp->word == word) {
+            cout << "'" << word << "'" << " occurs " << temp->count << " times." << endl;
+            found = true;
+            break;
+        }
+        temp = temp->next;
+    }
+    if(!found)
+        cout << "'" << word << "'" << " is not in hash table" << endl;
+}
+
+int List::findOccurances(string word) {
+    node *temp = new node;
+    temp = head;
+    while (temp != nullptr) {
+        if (temp->word == word)
+            return temp->count;
+        else
+            temp = temp->next;
+    }
     return 0;
+}
+
+void List::increaseCount(string word) {
+    node *temp = new node;
+    temp = head;
+    while (temp != nullptr) {
+        if (temp->word == word)
+            temp->count += 1;
+        temp = temp->next;
+    }
 }

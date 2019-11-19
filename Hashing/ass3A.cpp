@@ -5,7 +5,6 @@
 
 #include <iostream>
 #include <fstream>
-#include <stdlib.h>
 #include <time.h>
 
 using namespace std;
@@ -13,37 +12,23 @@ using namespace std;
 void swap(int *a, int *b);
 int partition(int arr[], int index[], int low, int high);
 void quickSort(int arr[], int index[], int low, int high);
-void generateNums(int n);
+void generateNums(int arr[], int index[], int n);
 void printArr(int arr[], int index[], int n);
 
 int main() {
-    ifstream in;
-    in.open("randomNums.txt");      
 
     int n;
+    cout << "Enter number of elements: ";
     cin >> n;
-    int arr[n], index[n];
-
-    clock_t h = clock();
-    generateNums(n);
-    h = clock() - h;
-    cout << "Number generation time: " << ((double)h) / CLOCKS_PER_SEC << " seconds" << endl;
-    int temp;
-    int i = 0;
-    clock_t r = clock();
-    while(in >> arr[i]) {        
-        index[i] = i;
-        i++;
-    }
-    r = clock() - r;
-     cout << "Read in time: " << ((double)r) / CLOCKS_PER_SEC << " seconds" << endl;
+    cout << endl; 
+    int arr[n], index[n];    
+    generateNums(arr, index, n);
 
     clock_t t = clock();
 	quickSort(arr, index, 0, n-1);
 	t = clock() - t;
     cout << "Sort time: " << ((double)t) / CLOCKS_PER_SEC << " seconds" << endl;
     printArr(arr, index, n);
-    in.close();
     return 0;
 }
 
@@ -58,7 +43,7 @@ int partition (int arr[], int index[], int low, int high) {
     int i = low + 1;
     int piv = arr[index[low]];
     for(int j = i; j <= high ; j++) {
-        if(arr[index[j]] > piv) {
+        if(arr[index[j]] < piv) {
             swap(index[i], index[j]);
             i++;
         }
@@ -75,19 +60,15 @@ void quickSort(int arr[], int index[], int low, int high) {
    }
 }
 
-void generateNums(int n) {
-    ofstream randomNums;
-    randomNums.open("randomNums.txt");
+void generateNums(int arr[], int index[], int n) {
     int i = 0;
     int random;
     while(i < n) {
-        random = rand()/1000;
-        if(random > 0 && random <= 10000) {
-            randomNums << random << endl;
-            i++;
-        }
+        random = rand() % 100000;        
+        arr[i] = random;
+        index[i] = i;
+        i++;
     }
-    randomNums.close();
 }
 
 void printArr(int arr[], int index[], int n) {
