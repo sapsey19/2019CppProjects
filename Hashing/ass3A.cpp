@@ -6,6 +6,7 @@
 #include <iostream>
 #include <fstream>
 #include <time.h>
+#include <random>
 
 using namespace std;
 
@@ -61,6 +62,7 @@ void quickSort(int arr[], int index[], int low, int high) {
 }
 
 void generateNums(int arr[], int index[], int n) {
+    srand(time(NULL));
     int i = 0;
     int random;
     while(i < n) {
