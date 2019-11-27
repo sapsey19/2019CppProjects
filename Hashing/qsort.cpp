@@ -1,48 +1,18 @@
 /*
     Improved version of quickSort, using median of 3 to find pivot. 
     Median code from: https://www.geeksforgeeks.org/middle-of-three-using-minimum-comparisons/
-*/  
+    kth element code from: https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/
 
-#include <iostream>
-#include <time.h>
-#include <fstream>
-#include <random>
-#include <climits>
+    Collaborated with Bryn Loftness, Stephen Marshall
+*/ 
 
+#include "qsort.h"
 using namespace std;
-
-void swap(int *a, int *b);
-int partition(int arr[], int index[], int low, int high);
-void quickSort(int arr[], int index[], int low, int high);
-void generateNums(int arr[], int index[], int n);
-void printArr(int arr[], int index[], int n);
-int kthValue(int arr[], int index[], int low, int high, int k);
-
-int main() {
-    int n, k;
-    cout << "Enter number of elements: ";
-    cin >> n;
-    cout << endl;
-	cout << "Enter kth element to find: ";
-	cin >> k;
-	cout << endl;
-    int arr[n], index[n];
-
-    generateNums(arr, index, n);
-	cout << kthValue(arr, index, 0, n - 1, k) << endl;
-
-    clock_t t = clock();
-	quickSort(arr, index, 0, n-1);
-	t = clock() - t;
-    cout << "Sort time: " << ((double)t) / CLOCKS_PER_SEC << " seconds" << endl;
-    printArr(arr, index, n);
-    return 0;
-}
 
 int kthValue(int arr[], int index[], int low, int high, int k) { 
     if (k > 0 && k <= high - low + 1) {
 
-        int pos = partition(arr, index, low, high); 
+        int pos = increasingPartition(arr, index, low, high); 
 
         if (pos-low == k-1) 
             return arr[index[pos]]; 
@@ -51,13 +21,10 @@ int kthValue(int arr[], int index[], int low, int high, int k) {
 
         return kthValue(arr, index, pos+1, high, k-pos+low-1); 
     }
-
     return INT_MAX; 
 } 
 
-
-void sort3(int arr[], int index[], int low, int high){ 
-	//not mine
+void sort3(int arr[], int index[], int low, int high) {
 	int a = arr[index[low]];
 	int b = arr[index[high/2]];
 	int c = arr[index[high]];
@@ -72,13 +39,35 @@ int partition(int arr[], int index[], int low, int high) {
 	int pivot = arr[index[high]];
     int i = low - 1;
 	for (int j = low; j < high; j++) {
-		if (arr[index[j]] <= pivot) { //changed sign to sort by decreasing
+		if (arr[index[j]] >= pivot) { //changed sign to sort by decreasing
 			i++;
 			swap(index[i], index[j]);
 		}
 	}
 	swap(index[i+1], index[high]);
 	return i + 1;
+}
+
+int increasingPartition(int arr[], int index[], int low, int high) {
+	sort3(arr, index, low, high);
+	int pivot = arr[index[high]];
+    int i = low - 1;
+	for (int j = low; j < high; j++) {
+		if (arr[index[j]] <= pivot) {
+			i++;
+			swap(index[i], index[j]);
+		}
+	}
+	swap(index[i+1], index[high]);
+	return i + 1;
+}
+
+void increasingQuickSort(int arr[], int index[], int low, int high) {
+	if (low < high) {
+		int p = increasingPartition(arr, index, low, high);
+		increasingQuickSort(arr, index, low, p - 1);
+		increasingQuickSort(arr, index, p + 1,high);
+	}
 }
 
 void quickSort(int arr[], int index[], int low, int high) {
@@ -94,7 +83,7 @@ void generateNums(int arr[], int index[], int n) {
 	int i = 0;
     int random;
     while(i < n) {
-        random = rand() % 1000;        
+        random = rand() % 10000;        
         arr[i] = random;
         index[i] = i;
         i++;

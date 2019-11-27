@@ -1,10 +1,10 @@
-hash: main.o hashTable.o token.o linkedlist.o
-	g++ main.o hashTable.o token.o -o hash
+hash: ass3C.o hashTable.o token.o linkedlist.o
+	g++ ass3C.o hashTable.o token.o -o hash 
 
-main.o: main.cpp hashTable.h token.h linkedlist.h
-	g++ -c main.cpp
+ass3C.o: ass3C.cpp hashTable.h token.h linkedlist.h qsort.h
+	g++ -c ass3C.cpp
 
-HashTable.o: hashTable.cpp hashTable.h hashType.h linkedlist.h
+HashTable.o: hashTable.cpp hashTable.h hashType.h linkedlist.h qsort.h
 	g++ -c hashTable.cpp
 
 token.o: token.h
@@ -12,6 +12,6 @@ token.o: token.h
 
 linkedlist.o: linkedlist.h
 	g++ -c linkedlist.cpp
-	 
+
 clean:
-	rm hash main.o hashTable.o token.o linkedlist.o output.txt sortedoutput.txt
+	rm hash ass3C.o hashTable.o token.o linkedlist.o output.txt sortedhash.txt sortoutput.txt

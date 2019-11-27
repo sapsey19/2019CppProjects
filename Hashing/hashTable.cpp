@@ -6,7 +6,7 @@
 #include <array>
 
 List hashTable[TABLE_SIZE]; //array of linkedlist
-int emptyCount = 0;
+//int emptyCount;
 
 //This stores the word at hash location and deals with collisions
 void hashTableInsert(char *word) {	
@@ -15,7 +15,8 @@ void hashTableInsert(char *word) {
 }
 
 //Displays the contents of a hash table.
-void hashTableDump() {	
+void hashTableDump() {
+	int	emptyCount = 0;
 	int i;
 	for (i = 0; i < TABLE_SIZE; i++) {
 		//won't print out empty slots
@@ -65,7 +66,7 @@ void sortTable() {
 
 	quickSort(numArr, index, 0, 7000 - 1);
 	ofstream out;
-    out.open("sortedoutput.txt");
+    out.open("sortedhash.txt");
     for(int j = 0; j < 150; j++)
        out << strArr[index[j]] << ": " << numArr[index[j]] << endl;    
     out.close();
